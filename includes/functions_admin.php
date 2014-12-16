@@ -1,21 +1,21 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @InfinityCoreCMS is based on phpBB
-* @copyright (c) 2014 phpBB Group
+* @Icy Phoenix is based on phpBB
+* @copyright (c) 2008 phpBB Group
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	die('Hacking attempt');
 }
@@ -440,7 +440,7 @@ function obtain_latest_version_info($force_update = false, $warn_fail = false, $
 		$errstr = '';
 		$errno = 0;
 
-		$info = get_remote_file('www.infinitycore.org', '/version', 'ip2x.txt', $errstr, $errno);
+		$info = get_remote_file('www.icyphoenix.com', '/version', 'ip2x.txt', $errstr, $errno);
 
 		if ($info === false)
 		{

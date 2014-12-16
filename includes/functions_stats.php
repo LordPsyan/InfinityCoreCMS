@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -30,7 +30,7 @@
 // and put all your code inline to keep from redeclaring functions on accident.
 //
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	die('Hacking attempt');
 }

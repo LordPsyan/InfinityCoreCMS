@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-define('IN_INFINITYCORECMS', true);
+define('IN_ICYPHOENIX', true);
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './../');
 if (!defined('PHP_EXT')) define('PHP_EXT', substr(strrchr(__FILE__, '.'), 1));
 $no_page_header = true;
@@ -257,7 +257,7 @@ if(isset($_GET['edit']))
 	// show tree
 	$arr = array();
 	$template->assign_block_vars('tree', array(
-		'ITEM' => 'InfinityCoreCMS',
+		'ITEM' => 'Icy Phoenix',
 		'URL' => append_sid('xs_edit.' . PHP_EXT . $filter_str . '&dir='),
 		'SEPARATOR' => '',
 		));
@@ -351,7 +351,7 @@ if(isset($_GET['edit']))
 // show tree
 $arr = array();
 $template->assign_block_vars('tree', array(
-	'ITEM' => 'InfinityCoreCMS',
+	'ITEM' => 'Icy Phoenix',
 	'URL' => append_sid('xs_edit.' . PHP_EXT . $filter_str . '&dir='),
 	'SEPARATOR' => '',
 	));

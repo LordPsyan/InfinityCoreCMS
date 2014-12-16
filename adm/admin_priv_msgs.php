@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,9 +15,9 @@
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
-	define('IN_INFINITYCORECMS', true);
+	define('IN_ICYPHOENIX', true);
 }
 
 // Mighty Gorgon - ACP Privacy - BEGIN

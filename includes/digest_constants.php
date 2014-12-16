@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -19,7 +19,7 @@
 // Written by Mark D. Hamill, mhamill@computer.org
 // This software is designed to work with phpBB Version 2.0.20
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	die('Hacking attempt');
 }

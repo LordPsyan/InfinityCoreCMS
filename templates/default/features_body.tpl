@@ -4,7 +4,7 @@
 <tr>
 	<th>{L_FEATURES}</th>
 	<th width="180">{L_PHPBB2}</th>
-	<th width="180">{L_INFINITYCORECMS}</th>
+	<th width="180">{L_ICYPHOENIX}</th>
 	<th width="180">{L_PHPBB3}</th>
 </tr>
 <!-- BEGIN feature_cat -->

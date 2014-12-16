@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -14,7 +14,7 @@ define('NOTIFY_USERS', true);
 // to disable confirmation when executing PRUNE_MG
 define('KILL_CONFIRM', false);
 
-define('IN_INFINITYCORECMS', true);
+define('IN_ICYPHOENIX', true);
 
 if (empty($_POST['mode']) && empty($_GET['mode']))
 {

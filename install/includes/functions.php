@@ -1,21 +1,21 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @InfinityCoreCMS is based on phpBB
-* @copyright (c) 2014 phpBB Group
+* @Icy Phoenix is based on phpBB
+* @copyright (c) 2008 phpBB Group
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	die('Hacking attempt');
 }
@@ -791,7 +791,7 @@ function message_die($msg_code, $msg_text = '', $msg_title = '', $err_line = '',
 
 			if ( $msg_title == '' )
 			{
-				$msg_title = 'InfinityCoreCMS : <b>' . $lang['Critical_Error'] . '</b>';
+				$msg_title = 'Icy Phoenix : <b>' . $lang['Critical_Error'] . '</b>';
 			}
 			break;
 	}

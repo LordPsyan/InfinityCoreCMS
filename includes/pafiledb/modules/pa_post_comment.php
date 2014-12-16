@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -33,7 +33,7 @@ class pafiledb_post_comment extends pafiledb_public
 		}
 
 		define('IN_PA_POSTING', true);
-		define('IN_INFINITYCORECMS', true);
+		define('IN_ICYPHOENIX', true);
 		// BBCBMG - BEGIN
 		include(IP_ROOT_PATH . 'includes/bbcb_mg.' . PHP_EXT);
 		// BBCBMG - END

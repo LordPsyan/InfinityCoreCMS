@@ -1,17 +1,17 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @InfinityCoreCMS is based on phpBB
-* @copyright (c) 2014 phpBB Group
+* @Icy Phoenix is based on phpBB
+* @copyright (c) 2008 phpBB Group
 *
 */
 
@@ -22,7 +22,7 @@
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	exit;
 }
@@ -71,9 +71,9 @@ $lang = array_merge($lang, array(
 // Index
 	'Admin' => 'Administration',
 	'Not_admin' => 'You are not authorized to administer this website',
-	'Welcome_IP' => 'Welcome to InfinityCoreCMS',
-	'Admin_intro' => 'Thank you for choosing InfinityCoreCMS as your CMS solution. This screen will give you a quick overview of all the various statistics of your site. You can get back to this page by clicking on the <u>Admin Index</u> link above. To return to the index of your forum, click on the <u>Forum</u> link (also above). The menu on the left hand side of this screen will allow you to control every aspect of your website. Each secondary option link will have instructions on how to use the tools.',
-	'PayPalInfo' => 'InfinityCoreCMS is an open source project, you can show your appreciation and support future development by donating to the project.',
+	'Welcome_IP' => 'Welcome to Icy Phoenix',
+	'Admin_intro' => 'Thank you for choosing Icy Phoenix as your CMS solution. This screen will give you a quick overview of all the various statistics of your site. You can get back to this page by clicking on the <u>Admin Index</u> link above. To return to the index of your forum, click on the <u>Forum</u> link (also above). The menu on the left hand side of this screen will allow you to control every aspect of your website. Each secondary option link will have instructions on how to use the tools.',
+	'PayPalInfo' => 'Icy Phoenix is an open source project, you can show your appreciation and support future development by donating to the project.',
 	'Forum_stats' => 'Site Statistics',
 	'Admin_Index' => 'Admin Index',
 	'Preview_forum' => 'Preview Forum',
@@ -104,8 +104,8 @@ $lang = array_merge($lang, array(
 
 	'Restore' => 'Restore',
 	'Backup' => 'Backup',
-	'Restore_explain' => 'This will perform a full restore of all InfinityCoreCMS tables from a saved file. If your server supports it, you may upload a gzip-compressed text file and it will automatically be decompressed. <b>WARNING</b>: This will overwrite any existing data. The restore may take a long time to process, so please do not move from this page until it is complete.',
-	'Backup_explain' => 'Back up all your site-related data. If you have any additional custom tables in the same database with InfinityCoreCMS that you would like to back up as well, please enter their names, separated by commas, in the Additional Tables textbox below. If your server supports it you may also gzip-compress the file to reduce its size before download.',
+	'Restore_explain' => 'This will perform a full restore of all Icy Phoenix tables from a saved file. If your server supports it, you may upload a gzip-compressed text file and it will automatically be decompressed. <b>WARNING</b>: This will overwrite any existing data. The restore may take a long time to process, so please do not move from this page until it is complete.',
+	'Backup_explain' => 'Back up all your site-related data. If you have any additional custom tables in the same database with Icy Phoenix that you would like to back up as well, please enter their names, separated by commas, in the Additional Tables textbox below. If your server supports it you may also gzip-compress the file to reduce its size before download.',
 
 	'Backup_options' => 'Backup options',
 	'Start_backup' => 'Start Backup',
@@ -113,7 +113,7 @@ $lang = array_merge($lang, array(
 	'Structure_backup' => 'Structure-Only backup',
 	'Data_backup' => 'Data only backup',
 	'Additional_tables' => 'Additional tables',
-	'phpBB_only' => 'Only InfinityCoreCMS related tables',
+	'phpBB_only' => 'Only Icy Phoenix related tables',
 	'Gzip_compress' => 'Gzip compress file',
 	'Select_file' => 'Select a file',
 	'Start_Restore' => 'Start Restore',
@@ -255,7 +255,7 @@ $lang = array_merge($lang, array(
 	'Server_name' => 'Domain Name',
 	'Server_name_explain' => 'The domain name from which this board runs',
 	'Script_path' => 'Script path',
-	'Script_path_explain' => 'The path where InfinityCoreCMS is located relative to the domain name',
+	'Script_path_explain' => 'The path where Icy Phoenix is located relative to the domain name',
 	'Server_port' => 'Server Port',
 	'Server_port_explain' => 'The port your server is running on, usually 80. Only change if different',
 	'Site_name' => 'Site name',
@@ -294,7 +294,7 @@ $lang = array_merge($lang, array(
 	'Allowed_tags_explain' => 'Separate tags with commas',
 	'Allow_smilies' => 'Allow Smileys',
 	'Smilies_path' => 'Smileys Storage Path',
-	'Smilies_path_explain' => 'Path under your InfinityCoreCMS root dir, e.g. images/smiles',
+	'Smilies_path_explain' => 'Path under your Icy Phoenix root dir, e.g. images/smiles',
 	'Allow_sig' => 'Allow Signatures',
 	'Max_sig_length' => 'Maximum signature length',
 	'Max_sig_length_explain' => 'Maximum number of characters in user signatures',
@@ -312,9 +312,9 @@ $lang = array_merge($lang, array(
 	'Max_avatar_size_height' => 'Maximum Avatar Height',
 	'Max_avatar_size_explain' => 'Dimension in pixels',
 	'Avatar_storage_path' => 'Avatar Storage Path',
-	'Avatar_storage_path_explain' => 'Path under your InfinityCoreCMS root dir, e.g. images/avatars',
+	'Avatar_storage_path_explain' => 'Path under your Icy Phoenix root dir, e.g. images/avatars',
 	'Avatar_gallery_path' => 'Avatar Gallery Path',
-	'Avatar_gallery_path_explain' => 'Path under your InfinityCoreCMS root dir for pre-loaded images, e.g. images/avatars/gallery',
+	'Avatar_gallery_path_explain' => 'Path under your Icy Phoenix root dir for pre-loaded images, e.g. images/avatars/gallery',
 
 	'COPPA_settings' => 'COPPA Settings',
 	'COPPA_fax' => 'COPPA Fax Number',
@@ -397,17 +397,17 @@ $lang = array_merge($lang, array(
 	'Set_prune_data' => 'You have turned on auto-prune for this forum but did not set a frequency or number of days to prune. Please go back and do so.',
 
 	'FORUM_SIMILAR_TOPICS' => 'Similar Topics',
-	'FORUM_SIMILAR_TOPICS_EXPLAIN' => 'If you enable this option you will see a box with similar topics at the bottom of each topic in this forum (please note that you need also to enable the global switch for this feature in InfinityCoreCMS Settings => SEO TAB)',
+	'FORUM_SIMILAR_TOPICS_EXPLAIN' => 'If you enable this option you will see a box with similar topics at the bottom of each topic in this forum (please note that you need also to enable the global switch for this feature in Icy Phoenix Settings => SEO TAB)',
 	'FORUM_TOPIC_VIEWS' => 'Topics Viewer',
-	'FORUM_TOPIC_VIEWS_EXPLAIN' => 'If you enable this option all users that views topics in this forum will be stored in the DB (please note that you need also to enable the global switch for this feature in InfinityCoreCMS Settings => SQL TAB)',
+	'FORUM_TOPIC_VIEWS_EXPLAIN' => 'If you enable this option all users that views topics in this forum will be stored in the DB (please note that you need also to enable the global switch for this feature in Icy Phoenix Settings => SQL TAB)',
 	'FORUM_TAGS' => 'Forum Tags',
-	'FORUM_TAGS_EXPLAIN' => 'If you enable this option you will see a box with all the most used words in this forum (please note that you need also to enable the global switch for this feature in InfinityCoreCMS Settings => SEO TAB)',
+	'FORUM_TAGS_EXPLAIN' => 'If you enable this option you will see a box with all the most used words in this forum (please note that you need also to enable the global switch for this feature in Icy Phoenix Settings => SEO TAB)',
 	'FORUM_SORT_BOX' => 'Topic Sort Box',
-	'FORUM_SORT_BOX_EXPLAIN' => 'If you enable this option you will see a box wich allows you to alphabetically sort topics in this forum (please note that you need also to enable the global switch for this feature in InfinityCoreCMS Settings)',
+	'FORUM_SORT_BOX_EXPLAIN' => 'If you enable this option you will see a box wich allows you to alphabetically sort topics in this forum (please note that you need also to enable the global switch for this feature in Icy Phoenix Settings)',
 	'FORUM_KB_MODE' => 'KB Mode',
 	'FORUM_KB_MODE_EXPLAIN' => 'If you enable this option this forum will be shown in KB Mode (topics listed like Knowledge Base)',
 	'FORUM_INDEX_ICONS' => 'Index Icons',
-	'FORUM_INDEX_ICONS_EXPLAIN' => 'If you enable this option you will see icons for RSS and New Topic in Forum Index (please note that you need also to enable the global switch for this feature in InfinityCoreCMS Settings)',
+	'FORUM_INDEX_ICONS_EXPLAIN' => 'If you enable this option you will see icons for RSS and New Topic in Forum Index (please note that you need also to enable the global switch for this feature in Icy Phoenix Settings)',
 
 	'Move_and_Delete' => 'Move and Delete',
 
@@ -557,7 +557,7 @@ $lang = array_merge($lang, array(
 	'Rank_special' => 'Set as Special Rank',
 	'Rank_minimum' => 'Minimum Posts',
 	'Rank_maximum' => 'Maximum Posts',
-	'Rank_image' => 'Rank Image (Relative to InfinityCoreCMS root path)',
+	'Rank_image' => 'Rank Image (Relative to Icy Phoenix root path)',
 	'Rank_image_explain' => 'Use this to define a small image associated with the rank',
 
 	'Must_select_rank' => 'You must select a rank',
@@ -593,7 +593,7 @@ $lang = array_merge($lang, array(
 // Styles Admin
 	'Styles_admin' => 'Styles Administration',
 	'Styles_explain' => 'Add, remove and manage styles (templates and themes) available to your users',
-	'Styles_addnew_explain' => 'The following list contains all the themes that are available for the templates you currently have. The items on this list have not yet been installed into the InfinityCoreCMS database. To install a theme, simply click the install link beside an entry.',
+	'Styles_addnew_explain' => 'The following list contains all the themes that are available for the templates you currently have. The items on this list have not yet been installed into the Icy Phoenix database. To install a theme, simply click the install link beside an entry.',
 
 	'Select_template' => 'Select a Template',
 
@@ -608,7 +608,7 @@ $lang = array_merge($lang, array(
 	'Create_theme_explain' => 'Create a new theme for a selected template. When entering colours (for which you should use hexadecimal notation) you must not include the initial #, i.e.. cccccc is valid, #cccccc is not',
 
 	'Export_themes' => 'Export Themes',
-	'Export_explain' => 'Export the theme data for a selected template. Select the template from the list below and the script will create the theme configuration file and attempt to save it to the selected template directory. If it cannot save the file itself it will give you the option to download it. In order for the script to save the file you must give write access to the webserver for the selected template dir. For more information on this see the InfinityCoreCMS users guide.',
+	'Export_explain' => 'Export the theme data for a selected template. Select the template from the list below and the script will create the theme configuration file and attempt to save it to the selected template directory. If it cannot save the file itself it will give you the option to download it. In order for the script to save the file you must give write access to the webserver for the selected template dir. For more information on this see the Icy Phoenix users guide.',
 
 	'Theme_installed' => 'The selected theme has been installed successfully',
 	'Style_removed' => 'The selected style has been removed from the database. To fully remove this style from your system you must delete the appropriate style from your templates directory.',
@@ -704,17 +704,17 @@ $lang = array_merge($lang, array(
 
 // Version Check
 	'Version_up_to_date' => 'Your installation is up to date, no updates are available for your version of phpBB.',
-	'Version_up_to_date_ip' => 'No updates are available for your version of InfinityCoreCMS',
+	'Version_up_to_date_ip' => 'No updates are available for your version of Icy Phoenix',
 	'Version_not_up_to_date' => 'Your installation does <b>not</b> seem to be up to date. Updates are available for your version of phpBB, please visit <a href="http://www.phpbb.com/downloads.php" target="_new">http://www.phpbb.com/downloads.php</a> to obtain the latest version.',
-	'Version_not_up_to_date_ip' => 'Updates are available for your version of InfinityCoreCMS, please visit <a href="http://www.infinitycore.org/" target="_new">InfinityCoreCMS</a> to obtain the latest version.',
+	'Version_not_up_to_date_ip' => 'Updates are available for your version of Icy Phoenix, please visit <a href="http://www.icyphoenix.com/" target="_new">Icy Phoenix</a> to obtain the latest version.',
 	'Latest_version_info' => 'The latest available version is <b>phpBB %s</b>.',
 	'Current_version_info' => 'You are running <b>phpBB %s</b>.',
 	'Connect_socket_error' => 'Unable to open connection to phpBB Server, reported error is:<br />%s',
-	'Connect_socket_error_ip' => 'Unable to open connection to InfinityCoreCMS Server',
+	'Connect_socket_error_ip' => 'Unable to open connection to Icy Phoenix Server',
 	'Socket_functions_disabled' => 'Unable to use socket functions.',
 	'Mailing_list_subscribe_reminder' => 'For the latest information on updates to phpBB, why not <a href="http://www.phpbb.com/support/" target="_new">subscribe to our mailing list</a>.',
 	'Version_information' => 'Version Information',
-	'Version_not_checked' => 'Version checking is currently disabled, please visit InfinityCoreCMS support forum for information about new InfinityCoreCMS versions.',
+	'Version_not_checked' => 'Version checking is currently disabled, please visit Icy Phoenix support forum for information about new Icy Phoenix versions.',
 
 // Advanced Signature Divider Control
 	'sig_title' => 'Advanced Signature Divider Control',
@@ -1012,7 +1012,7 @@ $lang = array_merge($lang, array(
 	'Gravatar_rating' => 'Gravatar maximum rating',
 	'Gravatar_rating_explain' => '<a href="http://www.gravatar.com/rating.php" target="_blank">Read the rating guidelines</a> for more information. Set to \'None\' for no restriction.',
 	'Gravatar_default_image' => 'Gravatar default image',
-	'Gravatar_default_image_explain' => 'If no gravatar is found, the server will return this image. Path to the image is relative to the InfinityCoreCMS root directory. Leave blank for no image.',
+	'Gravatar_default_image_explain' => 'If no gravatar is found, the server will return this image. Path to the image is relative to the Icy Phoenix root directory. Leave blank for no image.',
 
 // Admin Account Actions
 	'Account_actions' => 'Account Actions',
@@ -1087,12 +1087,12 @@ $lang = array_merge($lang, array(
 
 	'Php_Info_Explain' => 'This page lists information on the version of PHP installed on this server. It includes details of loaded modules, available variables and default settings. This information may be useful when diagnosing problems. Please be aware that some hosting companies will limit what information is displayed here for security reasons. You are advised to not give out any details on this page except when asked for by support or other Team Member on the support forums.',
 
-	'IcyPhoenix_Main' => 'InfinityCoreCMS Home Page',
-	'IcyPhoenix_Download' => 'InfinityCoreCMS Download',
+	'IcyPhoenix_Main' => 'Icy Phoenix Home Page',
+	'IcyPhoenix_Download' => 'Icy Phoenix Download',
 	'IcyPhoenix_Code_Changes' => 'Code Changes Mod',
-	'IcyPhoenix_Updates' => 'InfinityCoreCMS Updates',
+	'IcyPhoenix_Updates' => 'Icy Phoenix Updates',
 	'PhpBB_Upgrade' => 'phpBB Upgrade',
-	'Header_Welcome' => 'Welcome to InfinityCoreCMS Administration Control Panel',
+	'Header_Welcome' => 'Welcome to Icy Phoenix Administration Control Panel',
 
 	'Prune_users' => 'Prune users',
 	'Prune_Overview' => 'Pruning Overview',
@@ -1110,7 +1110,7 @@ $lang = array_merge($lang, array(
 	'Admin_notepad_explain' => 'Leave global memos for other Administrators.',
 	'Allow_generator' => 'Enable avatar generator',
 	'Avatar_generator_template_path' => 'Avatar Generator Template Path',
-	'Avatar_generator_template_path_explain' => 'Path under your InfinityCoreCMS root dir for template images, e.g. images/avatars/generator_templates',
+	'Avatar_generator_template_path_explain' => 'Path under your Icy Phoenix root dir for template images, e.g. images/avatars/generator_templates',
 
 // Start Autolinks Mod
 	'Autolink_first' => 'Autolink each keyword once per post',
@@ -1197,7 +1197,7 @@ $lang = array_merge($lang, array(
 	'Yahoo_search_select_forums' => 'Select Forums',
 	'Yahoo_search_select_forums_explain' => 'Select which forums to include in this list. You may select as many forums as you wish by clicking each forum name while holding down the Ctrl Key (Windows) or the Command Key (Macintosh). By default, all publicly viewable forums are selected.',
 	'Yahoo_search_savepath' => 'Save path for the URL list',
-	'Yahoo_search_savepath_explain' => 'Enter a location for the URL listing file to be saved. Enter the path relative to the InfinityCoreCMS base path - i.e. if you save the file in the cache directory in <b>www.yoursite.com/cache/</b>, then enter <b>cache</b>. Remember that you will need to CHMOD the directory to 755 or 777 as applicable to your server.',
+	'Yahoo_search_savepath_explain' => 'Enter a location for the URL listing file to be saved. Enter the path relative to the Icy Phoenix base path - i.e. if you save the file in the cache directory in <b>www.yoursite.com/cache/</b>, then enter <b>cache</b>. Remember that you will need to CHMOD the directory to 755 or 777 as applicable to your server.',
 	'Yahoo_search_additional_urls' => 'Enter additional URLs',
 	'Yahoo_search_additional_urls_explain' => 'Enter additional URLs you would like Yahoo to crawl on one per line. You must enter the full URL - i.e. <b>http://www.yoursite.com/yourpage.html</b>.',
 	'Yahoo_search_compress_file' => 'Compress the list of URLs',
@@ -1504,7 +1504,7 @@ $lang = array_merge($lang, array(
 
 /* lang_admin_faq_editor.php - BEGIN */
 	'faq_editor' => 'Edit Language',
-	'faq_editor_explain' => '<b>Edit and re-arrange your FAQ, BBCode FAQ or Board Rules.</b><br /><br /> You <u>should not</u> remove or alter the section entitled <b>phpBB 2 Issues</b> or <b>About InfinityCoreCMS</b>.',
+	'faq_editor_explain' => '<b>Edit and re-arrange your FAQ, BBCode FAQ or Board Rules.</b><br /><br /> You <u>should not</u> remove or alter the section entitled <b>phpBB 2 Issues</b> or <b>About Icy Phoenix</b>.',
 
 	'faq_select_language' => 'Choose the language file you want to edit',
 	'faq_retrieve' => 'Retrieve File',
@@ -1707,7 +1707,7 @@ $lang = array_merge($lang, array(
 /* lang_.php - BEGIN */
 /* lang_.php - END */
 
-// InfinityCoreCMS - BUILD 009
+// Icy Phoenix - BUILD 009
 	'Replace_title' => 'Replace In Posts',
 	'Replace_text' => 'Replace words or lines with whatever you wish. <br /><b>Note!</b> This cannot be undone.',
 	'Link' => 'Link',
@@ -1716,7 +1716,7 @@ $lang = array_merge($lang, array(
 	'No_results' => 'No results found',
 	'Replaced_count' => 'Total posts updated: %s',
 
-// InfinityCoreCMS - BUILD 016
+// Icy Phoenix - BUILD 016
 	'group_rank' => 'Rank',
 	'group_color' => 'Colour',
 	'group_legend' => 'Show in legend',
@@ -1775,7 +1775,7 @@ $lang = array_merge($lang, array(
 	'List_Info' => '<b>Notes</b>: <ul><li>Hold CTRL when clicking to select multiple names. <li>If a user belongs to a user group, and is added to a specific colour group, the colour group that contains the user will be used; not the one the user group belongs to. <li>The list names are formatted as NAME (CURRENT_COLOR_GROUP). There will be no (CURRENT_COLOR_GROUP) if the entry doesn\'t belong to one. <li>If a user is a member of 2 or more user groups, the highest ranking colour group will be assigned (you order their appearance on the main page).</ul>',
 /* lang_color_groups.php - END */
 
-// InfinityCoreCMS - BUILD 023
+// Icy Phoenix - BUILD 023
 	'Empty_Cache_Main_Question' => 'If you click yes, all files in main cache folder will be permanently deleted.<br /><br /><em> Are you sure you want to do this? </em>',
 	'Empty_Cache_Posts_Question' => 'If you click yes, precompiled posts field in posts table will be permanently deleted.<br /><br /><em> Are you sure you want to do this? </em>',
 	'Empty_Cache_Thumbs_Question' => 'If you click yes, all thumbnails generated in posts will be permanently deleted.<br /><br /><em> Are you sure you want to do this? </em>',
@@ -1784,7 +1784,7 @@ $lang = array_merge($lang, array(
 	'Copy_Auth' => 'Copy permissions from',
 	'Copy_Auth_Explain' => 'Please note that you can copy permissions only from forums, not from categories!',
 
-// InfinityCoreCMS - BUILD 027
+// Icy Phoenix - BUILD 027
 /* lang_admin_db_backup.php - BEGIN */
 	'SELECT_ALL' => 'Select all',
 	'SELECT_FILE' => 'Select a file',
@@ -1882,7 +1882,7 @@ $lang = array_merge($lang, array(
 	'LOGS_ADMIN_DB_UTILITIES_BACKUP_download' => ', downloaded',
 	'LOGS_ADMIN_DB_UTILITIES_RESTORE' => 'DB restored from',
 	'LOGS_ADMIN_BOARD_CONFIG' => 'edited config settings',
-	'LOGS_ADMIN_BOARD_IP_CONFIG' => 'edited InfinityCoreCMS settings',
+	'LOGS_ADMIN_BOARD_IP_CONFIG' => 'edited Icy Phoenix settings',
 	'LOGS_ADMIN_GROUP_NEW' => 'group created',
 	'LOGS_ADMIN_GROUP_DELETE' => 'group deleted',
 	'LOGS_ADMIN_GROUP_EDIT' => 'group edited',
@@ -1968,7 +1968,7 @@ $lang = array_merge($lang, array(
 	// Tickets Submission - END
 
 	'FORUM_LIMIT_EDIT_TIME' => 'Limit User Post Edit Time',
-	'FORUM_LIMIT_EDIT_TIME_EXPLAIN' => 'By enabling this option users will be allowed to edit own messages only within the limit set in Posts configuration of InfinityCoreCMS (ACP &raquo; Configuration &raquo; Main Settings &raquo; Posting And Messages)',
+	'FORUM_LIMIT_EDIT_TIME_EXPLAIN' => 'By enabling this option users will be allowed to edit own messages only within the limit set in Posts configuration of Icy Phoenix (ACP &raquo; Configuration &raquo; Main Settings &raquo; Posting And Messages)',
 
 	// Custom BBCodes - BEGIN
 	'BBCODES_CUSTOM_BBCODES' => 'Custom BBCodes',
@@ -2026,7 +2026,7 @@ $lang = array_merge($lang, array(
 
 	// PLUGINS - BEGIN
 	'PLUGINS' => 'Plugins',
-	'PLUGINS_EXPLAIN' => 'In this section you can enable or disable InfinityCoreCMS Plugins',
+	'PLUGINS_EXPLAIN' => 'In this section you can enable or disable Icy Phoenix Plugins',
 	'PLUGINS_FOLDER' => 'Folder',
 	'PLUGINS_NAME' => 'Name',
 	'PLUGINS_DESCRIPTION' => 'Description',
@@ -2053,7 +2053,7 @@ $lang = array_merge($lang, array(
 	'POLL_COMPLETED' => ' (completed)',
 
 	'FORUM_LIKES' => 'Like Posts',
-	'FORUM_LIKES_EXPLAIN' => 'Allow users to like single posts in a topic (you need to enable the global switch in InfinityCoreCMS Settings [SQL Charge] to be able to use this feature)',
+	'FORUM_LIKES_EXPLAIN' => 'Allow users to like single posts in a topic (you need to enable the global switch in Icy Phoenix Settings [SQL Charge] to be able to use this feature)',
 
 	'POSTS_PICS' => 'Posts / Pics',
 
@@ -2076,9 +2076,9 @@ $lang = array_merge($lang, array(
 	'AJAX_CHAT_CHECK_ONLINE' => 'Private Chat Link Only For Online Users',
 	'AJAX_CHAT_CHECK_ONLINE_EXPLAIN' => 'If you enable this option, the Private Chat link will be displayed only for users already in chat, otherwise it will be displayed for all users online in the site.',
 
-// ####################### [ InfinityCoreCMS Options BEGIN ] #####################
-	'IP_CONFIGURATION' => 'InfinityCoreCMS Settings',
-	'IP_CONFIGURATION_EXPLAIN' => '<em><b>Advanced InfinityCoreCMS Settings</b></em>',
+// ####################### [ Icy Phoenix Options BEGIN ] #####################
+	'IP_CONFIGURATION' => 'Icy Phoenix Settings',
+	'IP_CONFIGURATION_EXPLAIN' => '<em><b>Advanced Icy Phoenix Settings</b></em>',
 
 	'MG_SW_Precompiled_Posts_Title' => 'Precompiled Posts',
 	'MG_SW_Logins_Title' => 'Logins Recording',
@@ -2106,7 +2106,7 @@ $lang = array_merge($lang, array(
 	'MG_FNF_MGS' => 'Mighty Gorgon\'s Suggested',
 	'MG_FNF_MGS_Explain' => 'This set of options is balanced and a good starting point for most sites. Some options will be enabled while some others which requires high CPU loads will be switched off.',
 	'MG_FNF_Full_Features' => 'Full Features',
-	'MG_FNF_Full_Features_Explain' => 'This set of options could be enabled if you don\'t have bandwidth limit or if you like having all InfinityCoreCMS features enabled. Please note! that some of the features may not be compatible with your server.',
+	'MG_FNF_Full_Features_Explain' => 'This set of options could be enabled if you don\'t have bandwidth limit or if you like having all Icy Phoenix features enabled. Please note! that some of the features may not be compatible with your server.',
 
 	'MG_SW_ACRONYMS' => 'Disable acronyms',
 	'MG_SW_ACRONYMS_Explain' => 'Disable acronyms parsing?',
@@ -2117,8 +2117,8 @@ $lang = array_merge($lang, array(
 
 	'MG_SW_No_Right_Click' => 'Block Right Click',
 
-	'Click_return_config_mg' => 'Click %sHere%s to return to InfinityCoreCMS Settings',
-// ####################### [ InfinityCoreCMS Options END ] #######################
+	'Click_return_config_mg' => 'Click %sHere%s to return to Icy Phoenix Settings',
+// ####################### [ Icy Phoenix Options END ] #######################
 	)
 );
 
@@ -2131,7 +2131,7 @@ $lang['privmsgs_from_userid'] = $lang['From'];
 $lang['privmsgs_to_userid'] = $lang['To'];
 $lang['privmsgs_type'] = $lang['PM_Type'];
 
-// ####################### [ InfinityCoreCMS Navigation BEGIN ] #######################
+// ####################### [ Icy Phoenix Navigation BEGIN ] #######################
 // Use numbers to sort the ACP Navigation menu
 // Numbers have to be changed in all /adm/*.php files too
 

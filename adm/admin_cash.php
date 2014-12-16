@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -51,7 +51,7 @@ if (!defined('ADMIN_MENU'))
 	}
 }
 
-if (!empty($navbar) && defined('IN_INFINITYCORECMS'))
+if (!empty($navbar) && defined('IN_ICYPHOENIX'))
 {
 	$menu = array();
 	if (!defined('CASH_INCLUDE'))
@@ -80,7 +80,7 @@ if (!empty($navbar) && defined('IN_INFINITYCORECMS'))
 	return;
 }
 
-if (!empty($setmodules) && defined('IN_INFINITYCORECMS'))
+if (!empty($setmodules) && defined('IN_ICYPHOENIX'))
 {
 	if (empty($table_prefix))
 	{
@@ -127,7 +127,7 @@ if (!empty($setmodules) && defined('IN_INFINITYCORECMS'))
 	return;
 }
 
-define('IN_INFINITYCORECMS', true);
+define('IN_ICYPHOENIX', true);
 define('IN_CASHMOD', true);
 
 // Load default Header

@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	die('Hacking attempt');
 }
@@ -326,7 +326,7 @@ class pafiledb_functions
 			$path = $url['path'];
 			$port = (!empty($url['port'])) ? $url['port'] : 80;
 
-			$fp = @fsockopen($host, $port, $errno, $errstr, 20);
+			$fp = @fsockopen($host, $port, &$errno, &$errstr, 20);
 
 			if(!$fp)
 			{

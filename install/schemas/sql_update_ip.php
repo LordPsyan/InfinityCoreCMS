@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	die('Hacking attempt');
 }
@@ -95,7 +95,7 @@ switch ($req_version)
 // We need to force this because in MySQL 5.5.5 the new default DB Engine is InnoDB, not MyISAM any more
 $sql[] = "SET storage_engine=MYISAM";
 
-// InfinityCoreCMS Part...
+// Icy Phoenix Part...
 if (substr($mode, 0, 6) == 'update')
 {
 
@@ -958,7 +958,7 @@ if (substr($mode, 0, 6) == 'update')
 		$sql[] = "INSERT INTO `" . $table_prefix . "album_config` VALUES ('gif_allowed', '1')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "album_config` VALUES ('desc_length', '512')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "album_config` VALUES ('hotlink_prevent', '0')";
-		$sql[] = "INSERT INTO `" . $table_prefix . "album_config` VALUES ('hotlink_allowed', 'mightygorgon.com,infinitycore.com')";
+		$sql[] = "INSERT INTO `" . $table_prefix . "album_config` VALUES ('hotlink_allowed', 'mightygorgon.com,icyphoenix.com')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "album_config` VALUES ('personal_gallery', '0')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "album_config` VALUES ('personal_gallery_private', '0')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "album_config` VALUES ('personal_gallery_limit', '-1')";
@@ -1339,10 +1339,10 @@ if (substr($mode, 0, 6) == 'update')
 		$sql[] = "INSERT INTO `" . $table_prefix . "link_config` VALUES ('pm_notify', '0')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "link_config` VALUES ('lock_submit_site', '0')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "link_config` VALUES ('allow_no_logo', '0')";
-		$sql[] = "INSERT INTO `" . $table_prefix . "link_config` VALUES ('site_logo', 'http://www.infinitycore.org/images/links/web_logo88a.gif')";
-		$sql[] = "INSERT INTO `" . $table_prefix . "link_config` VALUES ('site_url', 'http://www.infinitycore.org/')";
+		$sql[] = "INSERT INTO `" . $table_prefix . "link_config` VALUES ('site_logo', 'http://www.icyphoenix.com/images/links/web_logo88a.gif')";
+		$sql[] = "INSERT INTO `" . $table_prefix . "link_config` VALUES ('site_url', 'http://www.icyphoenix.com/')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "links` VALUES (1, 'phpBB Official Website', 'Official phpBB Website', 4, 'http://www.phpbb.com/', 'images/links/banner_phpbb88a.gif', 1125353670, 1, 0, 2, '', '')";
-		$sql[] = "INSERT INTO `" . $table_prefix . "links` VALUES (2, 'InfinityCoreCMS Official Website', 'InfinityCoreCMS', 4, 'http://www.infinitycore.org/', 'images/links/banner_ip.gif', 1125353670, 1, 0, 2, '', '')";
+		$sql[] = "INSERT INTO `" . $table_prefix . "links` VALUES (2, 'Icy Phoenix Official Website', 'Icy Phoenix', 4, 'http://www.icyphoenix.com/', 'images/links/banner_ip.gif', 1125353670, 1, 0, 2, '', '')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "links` VALUES (3, 'Mighty Gorgon Community', 'Mighty Gorgon Community', 4, 'http://www.mightygorgon.com/', 'images/links/banner_mightygorgon.gif', 1125353670, 1, 0, 2, '', '')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "news` VALUES (1, 'News', '48_leaf_orange.png')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "notes` VALUES (1, 'Write here your notes')";
@@ -1381,7 +1381,7 @@ if (substr($mode, 0, 6) == 'update')
 		$sql[] = "INSERT INTO `" . $table_prefix . "pa_config` VALUES ('validator', 'validator_admin')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "pa_config` VALUES ('pm_notify', '0')";
 
-		$sql[] = "INSERT INTO `" . $table_prefix . "referers` VALUES (1, 'infinitycore.com', 'http://infinitycore.com', '127.0.0.1', 1, 1121336515, 1121336515)";
+		$sql[] = "INSERT INTO `" . $table_prefix . "referers` VALUES (1, 'icyphoenix.com', 'http://icyphoenix.com', '127.0.0.1', 1, 1121336515, 1121336515)";
 		$sql[] = "INSERT INTO `" . $table_prefix . "stats_config` VALUES ('return_limit', '10')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "stats_config` VALUES ('version', '2.1.5')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "stats_config` VALUES ('modules_dir', 'includes/stat_modules')";
@@ -1521,7 +1521,7 @@ if (substr($mode, 0, 6) == 'update')
 		$sql[] = "INSERT INTO " . $table_prefix . "sudoku_starts VALUES (1, 20, 2, 'xaxaxaxa7axa6axax', 'xa6axaxaxa3a8a2a5', 'xa4axaxaxa5axaxax', 'xaxaxaxa5axa4axax', 'xaxaxaxaxaxa7axax', '1a9axa4axa6a8axax', '9a6axaxaxa3a7axa2', 'xaxaxaxa8axa4axax', 'xaxaxaxa1axa6axax')";
 
 		$sql[] = "INSERT INTO " . $table_prefix . "config (config_name, config_value) VALUES('yahoo_search_savepath', 'cache')";
-		$sql[] = "INSERT INTO " . $table_prefix . "config (config_name, config_value) VALUES('yahoo_search_additional_urls', 'http://www.infinitycore.org')";
+		$sql[] = "INSERT INTO " . $table_prefix . "config (config_name, config_value) VALUES('yahoo_search_additional_urls', 'http://www.icyphoenix.com')";
 		$sql[] = "INSERT INTO " . $table_prefix . "config (config_name, config_value) VALUES('yahoo_search_compress', '1')";
 		$sql[] = "INSERT INTO " . $table_prefix . "config (config_name, config_value) VALUES('yahoo_search_compression_level', '9')";
 
@@ -1915,9 +1915,9 @@ if (substr($mode, 0, 6) == 'update')
 
 		$sql[] = "ALTER TABLE " . $table_prefix . "users ADD user_personal_pics_count INT DEFAULT '0' NOT NULL";
 
-		$sql[] = "INSERT INTO " . $table_prefix . "links VALUES (4, 'InfinityCoreCMS German Support', 'InfinityCoreCMS German Support', 4, 'http://www.infinitycore.de/', 'images/links/ip_de.gif', 1125353670, 1, 0, 2, '', '')";
-		$sql[] = "INSERT INTO " . $table_prefix . "links VALUES (5, 'InfinityCoreCMS Spanish Support', 'InfinityCoreCMS Spanish Support', 4, 'http://www.infinitycore.es/', 'images/links/ip_es.gif', 1125353670, 1, 0, 2, '', '')";
-		$sql[] = "INSERT INTO " . $table_prefix . "links VALUES (6, 'InfinityCoreCMS Italian Support', 'InfinityCoreCMS Italian Support', 4, 'http://www.infinitycore.it/', 'images/links/ip_it.gif', 1125353670, 1, 0, 2, '', '')";
+		$sql[] = "INSERT INTO " . $table_prefix . "links VALUES (4, 'Icy Phoenix German Support', 'Icy Phoenix German Support', 4, 'http://www.icyphoenix.de/', 'images/links/ip_de.gif', 1125353670, 1, 0, 2, '', '')";
+		$sql[] = "INSERT INTO " . $table_prefix . "links VALUES (5, 'Icy Phoenix Spanish Support', 'Icy Phoenix Spanish Support', 4, 'http://www.icyphoenix.es/', 'images/links/ip_es.gif', 1125353670, 1, 0, 2, '', '')";
+		$sql[] = "INSERT INTO " . $table_prefix . "links VALUES (6, 'Icy Phoenix Italian Support', 'Icy Phoenix Italian Support', 4, 'http://www.icyphoenix.it/', 'images/links/ip_it.gif', 1125353670, 1, 0, 2, '', '')";
 
 		$sql[] = "INSERT INTO " . $table_prefix . "config VALUES ('use_captcha', '0')";
 		$sql[] = "INSERT INTO " . $table_prefix . "config VALUES ('enable_xs_version_check', '0')";
@@ -2095,7 +2095,7 @@ if (substr($mode, 0, 6) == 'update')
 		$sql[] = "UPDATE " . $table_prefix . "config SET `config_value` = 'images/avatars/default_avatars/member.gif' WHERE `config_name` = 'default_avatar_users_url'";
 		$sql[] = "UPDATE " . $table_prefix . "config SET `config_value` = 'images/avatars/default_avatars/member.gif' WHERE `config_name` = 'gravatar_default_image'";
 
-		// InfinityCoreCMS CMS - BEGIN
+		// Icy Phoenix CMS - BEGIN
 
 		$sql[] = "DROP TABLE `" . $table_prefix . "block_position`";
 		$sql[] = "DROP TABLE `" . $table_prefix . "block_variable`";
@@ -2219,7 +2219,7 @@ if (substr($mode, 0, 6) == 'update')
 		$sql[] = "INSERT INTO `" . $table_prefix . "cms_blocks` (`bid`, `title`, `content`, `bposition`, `weight`, `active`, `blockfile`, `view`, `layout`, `type`, `border`, `titlebar`, `background`, `local`, `groups`) VALUES (12, 'Links', '', 'l', 4, 1, 'links', 0, 1, 0, 1, 1, 1, 1, '')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "cms_blocks` (`bid`, `title`, `content`, `bposition`, `weight`, `active`, `blockfile`, `view`, `layout`, `type`, `border`, `titlebar`, `background`, `local`, `groups`) VALUES (13, 'Statistics', '', 'r', 3, 1, 'statistics', 0, 1, 0, 1, 1, 1, 1, '')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "cms_blocks` (`bid`, `title`, `content`, `bposition`, `weight`, `active`, `blockfile`, `view`, `layout`, `type`, `border`, `titlebar`, `background`, `local`, `groups`) VALUES (14, 'Wordgraph', '', 'b', 2, 1, 'wordgraph', 0, 1, 0, 0, 0, 0, 1, '')";
-		$sql[] = "INSERT INTO `" . $table_prefix . "cms_blocks` (`bid`, `title`, `content`, `bposition`, `weight`, `active`, `blockfile`, `view`, `layout`, `type`, `border`, `titlebar`, `background`, `local`, `groups`) VALUES (15, 'Welcome', '<table class=\"empty-table\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\r\n	<tr>\r\n		<td width=\"5%\"><img src=\"images/icy_phoenix_small.png\" alt=\"\" /></td>\r\n		<td width=\"90%\" align=\"center\"><div class=\"post-text\">Welcome To <b>InfinityCoreCMS</b></div><br /><br /></td>\r\n		<td width=\"5%\"><img src=\"images/icy_phoenix_small_l.png\" alt=\"\" /></td>\r\n	</tr>\r\n</table>', 'c', 2, 1, '', 0, 1, 0, 1, 1, 1, 1, '')";
+		$sql[] = "INSERT INTO `" . $table_prefix . "cms_blocks` (`bid`, `title`, `content`, `bposition`, `weight`, `active`, `blockfile`, `view`, `layout`, `type`, `border`, `titlebar`, `background`, `local`, `groups`) VALUES (15, 'Welcome', '<table class=\"empty-table\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\r\n	<tr>\r\n		<td width=\"5%\"><img src=\"images/icy_phoenix_small.png\" alt=\"\" /></td>\r\n		<td width=\"90%\" align=\"center\"><div class=\"post-text\">Welcome To <b>Icy Phoenix</b></div><br /><br /></td>\r\n		<td width=\"5%\"><img src=\"images/icy_phoenix_small_l.png\" alt=\"\" /></td>\r\n	</tr>\r\n</table>', 'c', 2, 1, '', 0, 1, 0, 1, 1, 1, 1, '')";
 
 		$sql[] = "INSERT INTO `" . $table_prefix . "cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (1, 0, 'default_portal', '1')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (2, 0, 'header_width', '180')";
@@ -2229,7 +2229,7 @@ if (substr($mode, 0, 6) == 'update')
 		$sql[] = "INSERT INTO `" . $table_prefix . "cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (6, 4, 'md_poll_bar_length', '65')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (7, 4, 'md_poll_forum_id', '1')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (8, 8, 'md_total_poster', '5')";
-		$sql[] = "INSERT INTO `" . $table_prefix . "cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (9, 9, 'md_search_option_text', 'InfinityCoreCMS')";
+		$sql[] = "INSERT INTO `" . $table_prefix . "cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (9, 9, 'md_search_option_text', 'Icy Phoenix')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (10, 11, 'md_cat_id', '0')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (11, 11, 'md_pics_all', '1')";
 		$sql[] = "INSERT INTO `" . $table_prefix . "cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (12, 11, 'md_pics_sort', '1')";
@@ -2251,7 +2251,7 @@ if (substr($mode, 0, 6) == 'update')
 		$sql[] = "INSERT INTO `" . $table_prefix . "cms_layout` (`lid`, `name`, `template`, `global_blocks`, `config_vars`, `view`, `groups`) VALUES (5, 'Portal Body', 'portal_body.tpl', 0, '', 0, '')";
 		*/
 
-		// InfinityCoreCMS CMS - END
+		// Icy Phoenix CMS - END
 
 		$sql[] = "INSERT INTO " . $table_prefix . "config VALUES ('shoutbox_floodinterval', '3')";
 		$sql[] = "INSERT INTO " . $table_prefix . "config VALUES ('display_shouts', '20')";

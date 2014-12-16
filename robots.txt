@@ -1,4 +1,4 @@
-Sitemap: http://www.infinitycore.org/sitemap.php
+Sitemap: http://www.icyphoenix.com/sitemap.php
 
 User-agent: Yahoo! Slurp
 Crawl-delay: 240

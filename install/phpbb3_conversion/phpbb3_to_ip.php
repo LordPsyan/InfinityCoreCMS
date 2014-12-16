@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
-define('IN_INFINITYCORECMS', true);
+define('IN_ICYPHOENIX', true);
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './');
 if (!defined('PHP_EXT')) define('PHP_EXT', substr(strrchr(__FILE__, '.'), 1));
 include(IP_ROOT_PATH . 'common.' . PHP_EXT);
@@ -71,15 +71,15 @@ if ($mode == 'main')
 
 	$redirect_url = append_sid(SCRIPT_NAME . '?mode=forums');
 	$message_info = '<div style="text-align: left;">';
-	$message_info .= '<h2 style="color: ' . COL_GREEN . ';">Welcome to phpBB 3 to InfinityCoreCMS import process</h2>';
+	$message_info .= '<h2 style="color: ' . COL_GREEN . ';">Welcome to phpBB 3 to Icy Phoenix import process</h2>';
 	$message_info .= '<br /><br />';
-	$message_info .= '<p style="color: ' . COL_BLUE . ';">This procedure has been designed to import phpBB 3 data into an existing InfinityCoreCMS installation. Even if the whole process has been tested on a standard phpBB 3 installation, you should be aware that the process cannot be undone, so please make sure you have a backup of your DB before going on.</p>';
+	$message_info .= '<p style="color: ' . COL_BLUE . ';">This procedure has been designed to import phpBB 3 data into an existing Icy Phoenix installation. Even if the whole process has been tested on a standard phpBB 3 installation, you should be aware that the process cannot be undone, so please make sure you have a backup of your DB before going on.</p>';
 	$message_info .= '<br /><br />';
 	$message_info .= '<div style="color: ' . COL_BLUE . ';">';
 	$message_info .= 'Before going on please make sure you have performed these steps:<br />';
 	$message_info .= '<ol style="margin-left: 20px;">';
 	$message_info .= '<li><span style="color: ' . COL_RED . ';">Make a full backup of your DB and keep it in a safe place, in case you will need to restore it</span></li>';
-	$message_info .= '<li>Make sure phpBB 3 tables are located in the same DB of this InfinityCoreCMS installation';
+	$message_info .= '<li>Make sure phpBB 3 tables are located in the same DB of this Icy Phoenix installation';
 	$message_info .= '<ul style="margin-left: 30px;">';
 	foreach ($tables_array as $table_des => $table_data)
 	{
@@ -325,7 +325,7 @@ if ($mode == 'posts')
 			$result_i = $db->sql_query($sql_i);
 		}
 
-		$message_info = '<br /><br /><span style="color: ' . COL_GREEN . ';"><b>Import complete, enjoy your InfinityCoreCMS!</b></span><br /><br />';
+		$message_info = '<br /><br /><span style="color: ' . COL_GREEN . ';"><b>Import complete, enjoy your Icy Phoenix!</b></span><br /><br />';
 		if (!function_exists('empty_cache_folders'))
 		{
 			include_once(IP_ROOT_PATH . 'includes/functions.' . PHP_EXT);

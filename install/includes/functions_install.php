@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	die('Hacking attempt');
 }
@@ -19,7 +19,7 @@ if (!defined('IN_INSTALL'))
 }
 
 /**
-* Some InfinityCoreCMS Functions
+* Some Icy Phoenix Functions
 */
 class ip_functions
 {
@@ -136,15 +136,15 @@ class ip_functions
 		$content .= '<' . '?php' . "\n";
 		$content .= '/**' . "\n";
 		$content .= '*' . "\n";
-		$content .= '* @package InfinityCoreCMS' . "\n";
+		$content .= '* @package Icy Phoenix' . "\n";
 		$content .= '* @version $Id$' . "\n";
-		$content .= '* @copyright (c) 2014 InfinityCoreCMS' . "\n";
+		$content .= '* @copyright (c) 2008 Icy Phoenix' . "\n";
 		$content .= '* @license http://opensource.org/licenses/gpl-license.php GNU Public License' . "\n";
 		$content .= '*' . "\n";
 		$content .= '*/' . "\n";
 		$content .= '' . "\n";
 		$content .= 'define(\'IN_CMS_PAGE\', true);' . "\n";
-		$content .= 'define(\'IN_INFINITYCORECMS\', true);' . "\n";
+		$content .= 'define(\'IN_ICYPHOENIX\', true);' . "\n";
 		$content .= 'if (!defined(\'IP_ROOT_PATH\')) define(\'IP_ROOT_PATH\', \'./\');' . "\n";
 		$content .= 'if (!defined(\'PHP_EXT\')) define(\'PHP_EXT\', substr(strrchr(__FILE__, \'.\'), 1));' . "\n";
 		$content .= 'include(IP_ROOT_PATH . \'common.\' . PHP_EXT);' . "\n";
@@ -271,7 +271,7 @@ class ip_functions
 		}
 		$server_url = $server_url . '/';
 
-		//$server_url = 'infinitycore.com/';
+		//$server_url = 'icyphoenix.com/';
 
 		return $server_url;
 	}
@@ -567,7 +567,7 @@ class mg_functions
 		);
 
 		$replacement_array = array(
-			'infinitycore.com',
+			'icyphoenix.com',
 		);
 
 		$text = str_replace($look_up_array, $replacement_array, $text);
@@ -585,7 +585,7 @@ class mg_functions
 		);
 
 		$replacement_array = array(
-			'infinitycore.com',
+			'icyphoenix.com',
 		);
 
 		$text = str_replace($look_up_array, $replacement_array, $text);
@@ -751,7 +751,7 @@ class mg_functions
 		}
 		$server_url = $server_url . '/';
 
-		//$server_url = 'infinitycore.com/';
+		//$server_url = 'icyphoenix.com/';
 
 		$config['short_site_url'] = $server_url;
 		return $server_url;
@@ -1083,7 +1083,7 @@ class ip_sql
 
 
 /**
-* InfinityCoreCMS Template
+* Icy Phoenix Template
 */
 class ip_page
 {
@@ -1118,12 +1118,12 @@ class ip_page
 		echo('<head>' . "\n");
 		echo('	<meta http-equiv="Content-Type" content="text/html; charset=' . $encoding_charset . '" />' . "\n");
 		echo('	<meta http-equiv="content-style-type" content="text/css" />' . "\n");
-		echo('	<meta name="author" content="InfinityCoreCMS Team" />' . "\n");
+		echo('	<meta name="author" content="Icy Phoenix Team" />' . "\n");
 		if ($meta_refresh != '')
 		{
 			echo('	' . $meta_refresh . "\n");
 		}
-		echo('	<title>' . $page_title . ' :: InfinityCoreCMS</title>' . "\n");
+		echo('	<title>' . $page_title . ' :: Icy Phoenix</title>' . "\n");
 		echo('	<link rel="stylesheet" href="style/style.css" type="text/css" />' . "\n");
 		if (!empty($extra_css))
 		{
@@ -1159,13 +1159,13 @@ class ip_page
 
 		echo('<tr>' . "\n");
 		echo('	<td width="100%" colspan="3" valign="top">' . "\n");
-		echo('		<div id="top_logo"><div style="margin-top:20px;margin-left:10px;"><a href="http://www.infinitycore.org" title="InfinityCoreCMS"><img src="style/sitelogo_small.png" alt="InfinityCoreCMS" title="InfinityCoreCMS" /></a></div></div>' . "\n");
+		echo('		<div id="top_logo"><div style="margin-top:20px;margin-left:10px;"><a href="http://www.icyphoenix.com" title="Icy Phoenix"><img src="style/sitelogo_small.png" alt="Icy Phoenix" title="Icy Phoenix" /></a></div></div>' . "\n");
 		echo('	</td>' . "\n");
 		echo('</tr>' . "\n");
 
 		echo('<tr>' . "\n");
 		echo('	<td width="100%" class="forum-buttons" colspan="3">' . "\n");
-		echo('	&nbsp;<img src="style/menu_sep.gif" alt="" />&nbsp;<a href="http://www.infinitycore.org/">InfinityCoreCMS</a>&nbsp;<img src="style/menu_sep.gif" alt="" />&nbsp;' . "\n");
+		echo('	&nbsp;<img src="style/menu_sep.gif" alt="" />&nbsp;<a href="http://www.icyphoenix.com/">Icy Phoenix</a>&nbsp;<img src="style/menu_sep.gif" alt="" />&nbsp;' . "\n");
 		echo('	</td>' . "\n");
 		echo('</tr>' . "\n");
 
@@ -1191,7 +1191,7 @@ class ip_page
 		echo('	<div id="bottom_logo">' . "\n");
 		echo('		<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">' . "\n");
 		echo('			<tr>' . "\n");
-		echo('				<td nowrap="nowrap" class="min250" align="left"><span class="copyright">&nbsp;Powered by <a href="http://www.infinitycore.org/" target="_blank">InfinityCoreCMS</a> based on <a href="http://www.phpbb.com/" target="_blank">phpBB</a></span></td>' . "\n");
+		echo('				<td nowrap="nowrap" class="min250" align="left"><span class="copyright">&nbsp;Powered by <a href="http://www.icyphoenix.com/" target="_blank">Icy Phoenix</a> based on <a href="http://www.phpbb.com/" target="_blank">phpBB</a></span></td>' . "\n");
 		echo('				<td nowrap="nowrap" align="center">&nbsp;<br />&nbsp;</td>' . "\n");
 		echo('				<td nowrap="nowrap" class="min250" align="right"><span class="copyright">Design by <a href="http://www.mightygorgon.com" target="_blank">Mighty Gorgon</a>&nbsp;</span></td>' . "\n");
 		echo('			</tr>' . "\n");
@@ -1465,10 +1465,6 @@ class ip_page
 		echo('		<td class="row2"><input type="text" class="post" name="dbhost" value="' . (($dbhost != '') ? $dbhost : '') . '" /></td>' . "\n");
 		echo('	</tr>' . "\n");
 		echo('	<tr>' . "\n");
-		echo('		<td class="row1" align="right"><span class="gen">' . $lang['DB_AName'] . ': </span></td>' . "\n");
-		echo('		<td class="row2"><input type="text" class="post" name="dbaname" value="' . (($dbaname != '') ? $dbaname : '') . '" /></td>' . "\n");
-		echo('	</tr>' . "\n");
-		echo('	<tr>' . "\n");
 		echo('		<td class="row1" align="right"><span class="gen">' . $lang['DB_Name'] . ': </span></td>' . "\n");
 		echo('		<td class="row2"><input type="text" class="post" name="dbname" value="' . (($dbname != '') ? $dbname : '') . '" /></td>' . "\n");
 		echo('	</tr>' . "\n");
@@ -1480,11 +1476,11 @@ class ip_page
 		echo('		<td class="row1" align="right"><span class="gen">' . $lang['DB_Password'] . ': </span></td>' . "\n");
 		echo('		<td class="row2"><input type="password" class="post" name="dbpasswd" value="' . (($dbpasswd != '') ? $dbpasswd : '') . '" /></td>' . "\n");
 		echo('	</tr>' . "\n");
-/*		echo('	<tr>' . "\n");
+		echo('	<tr>' . "\n");
 		echo('		<td class="row1" align="right"><span class="gen">' . $lang['Table_Prefix'] . ': </span></td>' . "\n");
 		echo('		<td class="row2"><input type="text" class="post" name="prefix" value="' . ((!empty($table_prefix)) ? $table_prefix : 'ip_') . '" /></td>' . "\n");
 		echo('	</tr>' . "\n");
-*/
+
 		echo('	<tr>' . "\n");
 		echo('		<td class="cat" colspan="3" align="center" style="border-width: 0px;">' . "\n");
 		echo('			' . $hidden_fields);
@@ -2420,7 +2416,7 @@ class ip_page
 
 	/**
 	* Convert all usernames to username_clean
-	* Theoretically there should be no collision, since InfinityCoreCMS doesn't allow special chars in usernames
+	* Theoretically there should be no collision, since Icy Phoenix doesn't allow special chars in usernames
 	*/
 	function convert_usernames()
 	{
@@ -2942,7 +2938,7 @@ class ip_page
 		$table_update_options .= '<li><a href="' . ip_functions::append_sid(THIS_FILE . '?mode=fix_posts_ip2' . $lang_append) . '"><span class="text_orange">' . $lang['FixPosts_IP2'] . '</span></a><br /><br /></li>' . "\n";
 		$table_update_options .= '<li><a href="' . ip_functions::append_sid(THIS_FILE . '?mode=fix_signatures_ip2' . $lang_append) . '"><span class="text_orange">' . $lang['FixSignatures_IP2'] . '</span></a><br /><br /></li>' . "\n";
 		$table_update_options .= '<li><a href="' . ip_functions::append_sid(THIS_FILE . '?mode=add_uploaded_images_to_db' . $lang_append) . '"><span class="text_orange">' . $lang['AddPostedPicsDB'] . '</span></a><br /><br /></li>' . "\n";
-		// Updating to InfinityCoreCMS 1.3
+		// Updating to Icy Phoenix 1.3
 		/*
 		$table_update_options .= '<li><a href="' . ip_functions::append_sid(THIS_FILE . '?mode=fix_forums' . $lang_append) . '"><span class="text_orange">' . $lang['FixForums'] . '</span></a><br /><br /></li>' . "\n";
 		$table_update_options .= '<li><a href="' . ip_functions::append_sid(THIS_FILE . '?mode=fix_posts' . $lang_append) . '"><span class="text_orange">' . $lang['Remove_BBCodeUID'] . '</span></a><br /><br /></li>' . "\n";
@@ -2987,7 +2983,7 @@ class ip_page
 
 		//$this->output_lang_select(THIS_FILE, true);
 
-		//$this->box('yellow', 'red', 'InfinityCoreCMS');
+		//$this->box('yellow', 'red', 'Icy Phoenix');
 
 		$table_update_options = '';
 		$table_update_options .= '<div class="post-text">' . "\n";

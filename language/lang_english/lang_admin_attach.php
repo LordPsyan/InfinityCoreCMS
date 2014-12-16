@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -16,7 +16,7 @@
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	exit;
 }
@@ -45,7 +45,7 @@ $lang = array_merge($lang, array(
 	'Attach_options_settings' => 'Attachment Options',
 
 	'Upload_directory' => 'Upload Directory',
-	'Upload_directory_explain' => 'Enter the relative path from your InfinityCoreCMS installation to the Attachments upload directory. For example, enter <b>files</b> if your InfinityCoreCMS Installation is located at http://www.yourdomain.com/ip and the Attachment Upload Directory is located at http://www.yourdomain.com/ip/files.',
+	'Upload_directory_explain' => 'Enter the relative path from your Icy Phoenix installation to the Attachments upload directory. For example, enter <b>files</b> if your Icy Phoenix Installation is located at http://www.yourdomain.com/ip and the Attachment Upload Directory is located at http://www.yourdomain.com/ip/files.',
 	'Attach_img_path' => 'Attachment Posting Icon',
 	'Attach_img_path_explain' => 'This Image is displayed next to Attachment Links in individual Posts. Leave this field empty if you don\'t want an icon to be displayed. This Setting will be overwritten by the Settings in Extension Groups Management.',
 	'Attach_topic_icon' => 'Attachment Topic Icon',
@@ -79,7 +79,7 @@ $lang = array_merge($lang, array(
 	'Attachment_topic_review_explain' => 'If you choose yes, all attached Files will be displayed in Topic Review when you post a reply.',
 
 	'Ftp_server' => 'FTP Upload Server',
-	'Ftp_server_explain' => 'Enter the IP-Address or FTP-Hostname of the Server used for your uploaded files. If you leave this field empty, the Server on which your InfinityCoreCMS is installed will be used. Please note that it is not allowed to add ftp:// or something else to the address, just plain ftp.foo.com or (which is a lot faster) the plain IP Address.',
+	'Ftp_server_explain' => 'Enter the IP-Address or FTP-Hostname of the Server used for your uploaded files. If you leave this field empty, the Server on which your Icy Phoenix is installed will be used. Please note that it is not allowed to add ftp:// or something else to the address, just plain ftp.foo.com or (which is a lot faster) the plain IP Address.',
 
 	'ftp_username' => 'Your FTP Username',
 	'ftp_password' => 'Your FTP Password',
@@ -87,7 +87,7 @@ $lang = array_merge($lang, array(
 	'Attach_ftp_path' => 'FTP Path to your upload directory',
 	'Attach_ftp_path_explain' => 'The Directory where your Attachments will be stored. This Directory doesn\'t have to be chmodded. Please don\'t enter your IP or FTP-Address here, this input field is only for the FTP Path.<br />For example: /home/web/uploads',
 	'Ftp_download_path' => 'Download Link to FTP Path',
-	'Ftp_download_path_explain' => 'Enter the URL to your FTP Path where your Attachments are stored.<br />If you are using a Remote FTP Server, please enter the complete url, for example http://www.mystorage.com/ip/upload.<br />If you are using your Local Host to store your Files, you are able to enter the url path relative to your InfinityCoreCMS Directory, for example \'upload\'.<br />A trailing slash will be removed. Leave this field empty, if the FTP Path is not accessible from the Internet. With this field empty you are unable to use the physical download method.',
+	'Ftp_download_path_explain' => 'Enter the URL to your FTP Path where your Attachments are stored.<br />If you are using a Remote FTP Server, please enter the complete url, for example http://www.mystorage.com/ip/upload.<br />If you are using your Local Host to store your Files, you are able to enter the url path relative to your Icy Phoenix Directory, for example \'upload\'.<br />A trailing slash will be removed. Leave this field empty, if the FTP Path is not accessible from the Internet. With this field empty you are unable to use the physical download method.',
 	'Ftp_passive_mode' => 'Enable FTP Passive Mode',
 	'Ftp_passive_mode_explain' => 'The PASV command requests that the remote server open a port for the data connection and return the address of that port. The remote server listens on that port and the client connects to it.',
 

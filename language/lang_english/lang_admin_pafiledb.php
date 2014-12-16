@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	exit;
 }
@@ -145,15 +145,15 @@ $lang = array_merge($lang, array(
 	'Hotlink_prevent' => 'Hotlink Prevention',
 	'Hotlinl_prevent_info' => 'Set this to yes if you don\'t want to allow hotlinks to the files',
 	'Hotlink_allowed' => 'Allowed domains for hotlink',
-	'Hotlink_allowed_info' => 'Allowed domains for hotlink (separated by a comma), for example, www.phpbb.com, www.infinitycore.org',
+	'Hotlink_allowed_info' => 'Allowed domains for hotlink (separated by a comma), for example, www.phpbb.com, www.icyphoenix.com',
 	'Default_sort_method' => 'Default Sort Method',
 	'Default_sort_order' => 'Default Sort Order',
 	'Max_filesize' => 'Maximum File Size',
 	'Max_filesize_explain' => 'Maximum File Size for Files. A value of 0 means \'unlimited\'. This Setting is restricted by your Server Configuration. For example, if your php Configuration only allows a maximum of 2 MB uploads, this cannot be overwritten by the Mod.',
 	'Upload_directory' => 'Upload Directory',
-	'Upload_directory_explain' => 'Enter the relative path from your infinitycore installation to the Files upload directory. For example, enter \'downloads/\' if your infinitycore Installation is located at http://www.yourdomain.com/infinitycore and the Attachment Upload Directory is located at http://www.yourdomain.com/infinitycore/downloads.',
+	'Upload_directory_explain' => 'Enter the relative path from your icyphoenix installation to the Files upload directory. For example, enter \'downloads/\' if your icyphoenix Installation is located at http://www.yourdomain.com/icyphoenix and the Attachment Upload Directory is located at http://www.yourdomain.com/icyphoenix/downloads.',
 	'Screenshots_directory' => 'Screenshots Directory',
-	'Screenshots_directory_explain' => 'Enter the relative path from your infinitycore installation to the Screenshots upload directory. For example, enter \'files/screenshots/\' if your infinitycore Installation is located at http://www.yourdomain.com/infinitycore and the Attachment Upload Directory is located at http://www.yourdomain.com/infinitycore/files/screenshots.',
+	'Screenshots_directory_explain' => 'Enter the relative path from your icyphoenix installation to the Screenshots upload directory. For example, enter \'files/screenshots/\' if your icyphoenix Installation is located at http://www.yourdomain.com/icyphoenix and the Attachment Upload Directory is located at http://www.yourdomain.com/icyphoenix/files/screenshots.',
 	'Forbidden_extensions' => 'Forbidden Extensions',
 	'Forbidden_extensions_explain' => 'Add or delete the forbidden extensions. Separate each extension with a comma.',
 	'Permission_settings' => 'Permission settings',

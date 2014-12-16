@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -29,7 +29,7 @@
 */
 
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	exit;
 }
@@ -141,7 +141,7 @@ $lang = array_merge($lang, array(
 	'ctracker_settings_m33' => 'Disposable-Mailservice Protection',
 	'ctracker_settings_e33' => 'cTracker has an internal list of so-called Disposable-Mailservices. By enabling this feature, users with such Email Addresses will not be able to register.',
 	'ctracker_settings_m34' => 'Identification of incorrect configuration',
-	'ctracker_settings_e34' => 'By enabling this feature CrackerTracker checks the general settings of InfinityCoreCMS for validity. So you can\'t damage your site by misconfiguration!',
+	'ctracker_settings_e34' => 'By enabling this feature CrackerTracker checks the general settings of Icy Phoenix for validity. So you can\'t damage your site by misconfiguration!',
 	'ctracker_settings_m35' => 'Spammer Detection Boost',
 	'ctracker_settings_e35' => 'By enabling this feature cTracker will look for Spammers or Spam-Posts. Most of them will be blocked.',
 	'ctracker_settings_m36' => 'Spammer Keyword Check',
@@ -165,14 +165,14 @@ $lang = array_merge($lang, array(
 	'ctracker_credits_thanks_text' => 'I would like to say thank you to the following persons:',
 	'ctracker_credits_thanks_to' => '<b>Ideas, Safety tests and Proofreading</b><br />Tekin Bird&uuml;zen<br /><i>(<a href="http://www.cybercosmonaut.de" target="_blank">cYbercOsmOnauT</a>)</i><br /><br /><br /><br /><b>Ideas:</b><br />Bernhard Jaud<br /><i>(GenuineParts)</i><br /><br /><br /><br /><b>Translator (English)</b><br />Marc Renninger<br /><i>(mc-dragon)</i><br /><br /><br /><br /><b>Corrector (English)</b><br />George <br />Sommerset<br /><i>(<a href="http://www.englisch-hilfen.de" target="_blank">www.englisch-hilfen.de</a>)</i><br /><br /><br /><br /><b>Beta Tester</b><br />Thanks to all participants of Beta-Tests<br />to the CBACK Premium users and of course to<br />our colleagues of the "Mod-Scene" who helped with Beta Tests and Proof-reading, too.</i>',
 	'ctracker_credits_info' => 'More Safety?',
-	'ctracker_credits_info_text' => 'The perfect add-on for InfinityCoreCMS and the CrackerTracker: For optimal safety we recommend the Mod <b>Advanced Visual Confirmation</b> by AmigaLink. This MOD expands the CAPTCHA feature of phpBB and CrackerTracker Professional with a more complex system which cannot be read by Bots. This MOD you can download from <a href="http://www.amigalink.de" target="_blank">www.AmigaLink.de</a>.<br /><br /><br /><br />We suggest that you also integrate this MOD into your Board for additional security.',
+	'ctracker_credits_info_text' => 'The perfect add-on for Icy Phoenix and the CrackerTracker: For optimal safety we recommend the Mod <b>Advanced Visual Confirmation</b> by AmigaLink. This MOD expands the CAPTCHA feature of phpBB and CrackerTracker Professional with a more complex system which cannot be read by Bots. This MOD you can download from <a href="http://www.amigalink.de" target="_blank">www.AmigaLink.de</a>.<br /><br /><br /><br />We suggest that you also integrate this MOD into your Board for additional security.',
 
 
 /*
 * File Hash Check in ACP
 */
 	'ctracker_fchk_head' => 'CrackerTracker Checksum Scanner',
-	'ctracker_fchk_subhead' => '<b>Create a checksum of each PHP file on your Board.</b><br /> Click on "Create or upgrade Checksums". Afterwards, you have the possibility with \'Verify File changes\' to determine whether or not the files have changed since last producing checksums. If files have changed without your prior knowledge it could be a sign that someone had gained access to your forum site. Pay attention to the last time that you checked to see if an unauthorized person activated the checksum scanner!<br /><br /><b>Please Note:</b> Not all servers support this feature. Occasionally it can come to Script Timeout if the server takes too long to produce the InfinityCoreCMS file list. Other servers stop the procedure since it is quite performance intensive.<br /><br />&raquo; The last actualization of the file check totals took place <b>%s</b>.',
+	'ctracker_fchk_subhead' => '<b>Create a checksum of each PHP file on your Board.</b><br /> Click on "Create or upgrade Checksums". Afterwards, you have the possibility with \'Verify File changes\' to determine whether or not the files have changed since last producing checksums. If files have changed without your prior knowledge it could be a sign that someone had gained access to your forum site. Pay attention to the last time that you checked to see if an unauthorized person activated the checksum scanner!<br /><br /><b>Please Note:</b> Not all servers support this feature. Occasionally it can come to Script Timeout if the server takes too long to produce the Icy Phoenix file list. Other servers stop the procedure since it is quite performance intensive.<br /><br />&raquo; The last actualization of the file check totals took place <b>%s</b>.',
 	'ctracker_fchk_funcheader' => 'Features',
 	'ctracker_fchk_tableheader' => 'System Output',
 	'ctracker_fchk_option1' => 'Create or upgrade Checksums',
@@ -195,13 +195,13 @@ $lang = array_merge($lang, array(
 	'ctracker_fscan_prob_1' => 'extension.inc not / or included too late',
 	'ctracker_fscan_prob_2' => 'IP_ROOT_PATH may not be initialised correctly',
 	'ctracker_fscan_prob_3' => 'common.php / pagestart.php may have not be included or included too late.',
-	'ctracker_fscan_prob_4' => 'Code in the file is possibly executable from beyond InfinityCoreCMS',
+	'ctracker_fscan_prob_4' => 'Code in the file is possibly executable from beyond Icy Phoenix',
 	'ctracker_fscan_prob_5' => 'extension.inc is missing and / or IP_ROOT_PATH and / or constant not found',
 	'ctracker_fscan_prob_def' => 'An undefined case occurred during scanning',
 	'ctracker_fscan_important' => 'Please Read This!',
 	'ctracker_fscan_sel_action' => 'To start the check of all files please click on "Start Filecheck". When this is completed click on "Show Results" to show the results of the check. This list can be retrieved any time using the ACP until a new check is started.<br /><br />For technical reasons it is not possible to give <u>unambiguous</u> and <u>unfailing</u> information about the security of a PHP Script. So don\'t be too certain. It can happen, that the scanner classifies a secure file as insecure, and vice versa. PHP code is complex - so there can\'t be a hundred percent guarantee that there won\'t be insecure scripts anymore. ;-)<br /><br />This scanner is specialised to detect security holes in included files. With this scanner you can easily find these risks and correct them.<br /><br />For more detailed instructions please visit CBACK Community!<br /><br />',
 	'ctracker_fscan_head' => 'CBACK CrackerTracker Security Scanner',
-	'ctracker_fscan_subhead' => 'The Security scanner checks all PHP files of your Forum to try to detect security holes which could be exploited by Worms. These holes can be accessed from outside InfinityCoreCMS by not having the protection of the board security, or the CrackerTracker System. This scan presents the opportunity to correct those files.<br /><br /><b>Please note:</b> The algorithm of this Scanner is on one\'s best optimised and not all servers support this feature! With very large Boards it can occur that this performance-intensive Scan-system oversteps the PHP Execution Time and fails.<br /><br /><b><em>Please consider this if it fails.</em></b><br /><br />&raquo; The last check took place at <b>%s</b>.',
+	'ctracker_fscan_subhead' => 'The Security scanner checks all PHP files of your Forum to try to detect security holes which could be exploited by Worms. These holes can be accessed from outside Icy Phoenix by not having the protection of the board security, or the CrackerTracker System. This scan presents the opportunity to correct those files.<br /><br /><b>Please note:</b> The algorithm of this Scanner is on one\'s best optimised and not all servers support this feature! With very large Boards it can occur that this performance-intensive Scan-system oversteps the PHP Execution Time and fails.<br /><br /><b><em>Please consider this if it fails.</em></b><br /><br />&raquo; The last check took place at <b>%s</b>.',
 	'ctracker_fscan_option1' => 'Start Filecheck',
 	'ctracker_fscan_option2' => 'Show Results',
 
@@ -303,7 +303,7 @@ $lang = array_merge($lang, array(
 	'ctracker_ma_scheck_1' => 'PHP Version (<a href="http://www.php.net" target="_blank">Visit Website</a>)',
 	'ctracker_ma_scheck_2' => '&raquo; PHP SAFE MODE',
 	'ctracker_ma_scheck_3' => '&raquo; PHP GLOBALS',
-	'ctracker_ma_scheck_4' => 'InfinityCoreCMS Version (<a href="http://www.infinitycore.org" target="_blank">Visit Website</a>)',
+	'ctracker_ma_scheck_4' => 'Icy Phoenix Version (<a href="http://www.icyphoenix.com" target="_blank">Visit Website</a>)',
 	'ctracker_ma_scheck_4a' => '&raquo; Visual Confirmation',
 	'ctracker_ma_scheck_4b' => '&raquo; Account Activation',
 	'ctracker_ma_scheck_5' => 'CBACK CrackerTracker (<a href="http://www.cback.de" target="_blank">Visit Website</a>)',

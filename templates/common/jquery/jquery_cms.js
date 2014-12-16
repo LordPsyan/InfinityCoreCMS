@@ -1,5 +1,5 @@
 /*
-* InfinityCoreCMS jQuery CMS
+* Icy Phoenix jQuery CMS
 * Luca Libralato
 * Vjacheslav Trushkin
 */

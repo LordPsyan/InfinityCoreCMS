@@ -1,22 +1,22 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @InfinityCoreCMS is based on phpBB
-* @copyright (c) 2014 phpBB Group
+* @Icy Phoenix is based on phpBB
+* @copyright (c) 2008 phpBB Group
 *
 */
 
 define('CTRACKER_DISABLED', true);
-define('IN_INFINITYCORECMS', true);
+define('IN_ICYPHOENIX', true);
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './');
 if (!defined('PHP_EXT')) define('PHP_EXT', substr(strrchr(__FILE__, '.'), 1));
 include(IP_ROOT_PATH . 'common.' . PHP_EXT);
@@ -45,7 +45,7 @@ $search_lang = !empty($lang['HEADER_LANG']) ? $lang['HEADER_LANG'] : 'en-gb';
 $template->assign_vars(array(
 	'S_SEARCH_ACTION' => append_sid('gsearch.' . PHP_EXT),
 	'S_SEARCH_DOMAIN' => preg_replace('#^\/?(.*?)\/?$#', '\1', trim($config['server_name'])),
-	//'S_SEARCH_DOMAIN' => 'infinitycore.com',
+	//'S_SEARCH_DOMAIN' => 'icyphoenix.com',
 	'S_ADSENSE_CODE' => (!empty($config['adsense_code']) ? ('<input type="hidden" name="client" value="' . $config['adsense_code'] . '" />') : ''),
 	'S_LANGUAGE' => $search_lang,
 	'L_SEARCH' => $lang['Search']

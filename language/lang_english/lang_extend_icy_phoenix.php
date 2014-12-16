@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	exit;
 }
@@ -45,7 +45,7 @@ $lang = array_merge($lang, array(
 if ($lang_extend_admin)
 {
 	$lang = array_merge($lang, array(
-		'Lang_extend_icy_phoenix' => 'InfinityCoreCMS',
+		'Lang_extend_icy_phoenix' => 'Icy Phoenix',
 
 // TAB - SERVER
 		'SITE_META_KEYWORDS' => 'Meta Keywords',
@@ -65,9 +65,9 @@ if ($lang_extend_admin)
 		'IP_mobile_style_disable' => 'Disable Mobile Devices Dectection',
 		'IP_mobile_style_disable_explain' => 'Usually when a mobile device connect to the site, the <b>Mobile</b> style is automatically enabled (it could be manually switched off by each user). If you want to disable this automatic detection, just select this option.',
 
-// TAB - InfinityCoreCMS
-		'IP_enable_xs_version_check' => 'Enable InfinityCoreCMS Version Check',
-		'IP_enable_xs_version_check_explain' => 'Enable this option to check if a newer InfinityCoreCMS version is available to download each time you enter the ACP. Disabling this option may speed up ACP loading a bit. <br /><b>Note:</b> This check is done just once per day and then cached.',
+// TAB - Icy Phoenix
+		'IP_enable_xs_version_check' => 'Enable Icy Phoenix Version Check',
+		'IP_enable_xs_version_check_explain' => 'Enable this option to check if a newer Icy Phoenix version is available to download each time you enter the ACP. Disabling this option may speed up ACP loading a bit. <br /><b>Note:</b> This check is done just once per day and then cached.',
 
 		'IP_disable_email_error' => 'Disable errors on email sending',
 
@@ -367,9 +367,9 @@ if ($lang_extend_admin)
 
 // forum links type
 		'Forum_link_url' => 'Link URL',
-		'Forum_link_url_explain' => 'Set a URI to an InfinityCoreCMS file or a full URL to an external server',
-		'Forum_link_internal' => 'InfinityCoreCMS File',
-		'Forum_link_internal_explain' => 'Choose yes if you invoke a program that stands in the InfinityCoreCMS dirs',
+		'Forum_link_url_explain' => 'Set a URI to an Icy Phoenix file or a full URL to an external server',
+		'Forum_link_internal' => 'Icy Phoenix File',
+		'Forum_link_internal_explain' => 'Choose yes if you invoke a program that stands in the Icy Phoenix dirs',
 		'Forum_link_hit_count' => 'Hit count',
 		'Forum_link_hit_count_explain' => 'Choose yes if you want the board to count and display the number of hits using this link',
 		'Forum_link_with_attachment_deny' => 'You can\'t set a forum as a link if it has existing sub-levels',
@@ -438,7 +438,7 @@ if ($lang_extend_admin)
 		'IP_word_graph_max_words_explain' => 'Select the maximum number of words to display. A higher number could affect server load. The recommended number is 250.',
 
 		'IP_word_graph_word_counts' => 'TAGS :: Enable Word Counts',
-		'IP_word_graph_word_counts_explain' => 'Display the total number of words next to each word?<br />Example: <b>InfinityCoreCMS (365)</b>?',
+		'IP_word_graph_word_counts_explain' => 'Display the total number of words next to each word?<br />Example: <b>Icy Phoenix (365)</b>?',
 
 		'IP_forum_wordgraph' => 'TAGS :: Forum Tags (Global Switch)',
 		'IP_forum_wordgraph_explain' => 'This feature will enable a forum based tags table at the bottom of each forum. You will need also to enable single forums in Forums Management section.',
@@ -538,8 +538,8 @@ if ($lang_extend_admin)
 
 
 // lang_extend_settings.php
-		'Lang_extend_settings' => 'InfinityCoreCMS Settings',
-		'Configuration_extend' => 'InfinityCoreCMS',
+		'Lang_extend_settings' => 'Icy Phoenix Settings',
+		'Configuration_extend' => 'Icy Phoenix',
 		'Override_user_choices' => 'Override user choices',
 		)
 	);

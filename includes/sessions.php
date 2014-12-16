@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -11,14 +11,14 @@
 /**
 * @ignore
 */
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	exit;
 }
 
 /**
 * Session class
-* @package phpBB3 / InfinityCoreCMS
+* @package phpBB3 / Icy Phoenix
 */
 class session
 {
@@ -74,7 +74,7 @@ class session
 			$this->cookie_data['k'] = request_var($config['cookie_name'] . '_k', '', false, true);
 			$this->session_id = request_var($config['cookie_name'] . '_sid', '', false, true);
 
-			// Mighty Gorgon: I'm still not sure if I want to keep 'sid=' in InfinityCoreCMS as well... maybe better removing it!!!
+			// Mighty Gorgon: I'm still not sure if I want to keep 'sid=' in Icy Phoenix as well... maybe better removing it!!!
 			//$SID = (defined('NEED_SID')) ? ('sid=' . $this->session_id) : 'sid=';
 			$SID = (defined('NEED_SID')) ? ('sid=' . $this->session_id) : '';
 			$_SID = (defined('NEED_SID')) ? $this->session_id : '';
@@ -235,7 +235,7 @@ class session
 					if (!$session_expired)
 					{
 						// Only update session DB a minute or so after last update or if page changes
-						// Mighty Gorgon: in InfinityCoreCMS we give maximum priority to $this->update_session_page, because we don't want the session to be updated for thumbnails or other special features!
+						// Mighty Gorgon: in Icy Phoenix we give maximum priority to $this->update_session_page, because we don't want the session to be updated for thumbnails or other special features!
 						if ($this->update_session_page && ($session_refresh || ($this->data['session_page'] != $this->page['page'])) && empty($_REQUEST['explain']))
 						{
 							$sql_ary = array();
@@ -489,7 +489,7 @@ class session
 					$this->bots_session_gc(false);
 				}
 
-				// Mighty Gorgon: I'm still not sure if I want to keep 'sid=' in InfinityCoreCMS as well... maybe better removing it!!!
+				// Mighty Gorgon: I'm still not sure if I want to keep 'sid=' in Icy Phoenix as well... maybe better removing it!!!
 				//$SID = 'sid=';
 				$SID = '';
 				$_SID = '';
@@ -677,7 +677,7 @@ class session
 			$this->data['session_time'] = $this->time_now;
 			$this->data['session_last_visit'] = $this->time_now;
 
-			// Mighty Gorgon: I'm still not sure if I want to keep 'sid=' in InfinityCoreCMS as well... maybe better removing it!!!
+			// Mighty Gorgon: I'm still not sure if I want to keep 'sid=' in Icy Phoenix as well... maybe better removing it!!!
 			//$SID = 'sid=';
 			$SID = '';
 			$_SID = '';
@@ -741,7 +741,7 @@ class session
 		$this->set_cookie('sid', '', $cookie_expire);
 		unset($cookie_expire);
 
-		// Mighty Gorgon: I'm still not sure if I want to keep 'sid=' in InfinityCoreCMS as well... maybe better removing it!!!
+		// Mighty Gorgon: I'm still not sure if I want to keep 'sid=' in Icy Phoenix as well... maybe better removing it!!!
 		//$SID = 'sid=';
 		$SID = '';
 		$_SID = '';
@@ -864,7 +864,7 @@ class session
 	/**
 	* Bots session garbage collection
 	*
-	* This is needed to avoid bots filling up the whole sessions table due to SID removal... this is needed because in InfinityCoreCMS bots don't have USER_ID but are guests!
+	* This is needed to avoid bots filling up the whole sessions table due to SID removal... this is needed because in Icy Phoenix bots don't have USER_ID but are guests!
 	*/
 	function bots_session_gc($clear_all = false)
 	{
@@ -1995,7 +1995,7 @@ class user extends session
 	*/
 	function set_lang(&$lang, &$help, $lang_file, $use_db = false, $use_help = false)
 	{
-		// In InfinityCoreCMS we still need to keep this global assignment for backward compatibility
+		// In Icy Phoenix we still need to keep this global assignment for backward compatibility
 		global $lang;
 
 		// Make sure the language name is set (if the user setup did not happen it is not set)

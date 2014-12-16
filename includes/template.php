@@ -1,17 +1,17 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @InfinityCoreCMS is based on phpBB
-* @copyright (c) 2014 phpBB Group
+* @Icy Phoenix is based on phpBB
+* @copyright (c) 2008 phpBB Group
 *
 */
 
@@ -42,7 +42,7 @@
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	die('Hacking attempt');
 }
@@ -1996,7 +1996,7 @@ class Template {
 			return false;
 		}
 
-		$data = '<' . '?php' . "\n\n// eXtreme Styles mod cache. Generated on " . gmdate('r') . " (time = " . time() . ")\n\n" . "if (!defined('IN_INFINITYCORECMS')) exit;\n\n" . '?' . '>' . $code;
+		$data = '<' . '?php' . "\n\n// eXtreme Styles mod cache. Generated on " . gmdate('r') . " (time = " . time() . ")\n\n" . "if (!defined('IN_ICYPHOENIX')) exit;\n\n" . '?' . '>' . $code;
 
 		@flock($file, LOCK_EX);
 		@fwrite ($file, $data);

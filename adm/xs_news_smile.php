@@ -1,22 +1,22 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @InfinityCoreCMS is based on phpBB
-* @copyright (c) 2014 phpBB Group
+* @Icy Phoenix is based on phpBB
+* @copyright (c) 2008 phpBB Group
 * UseLess
 *
 */
 
-define('IN_INFINITYCORECMS', true);
+define('IN_ICYPHOENIX', true);
 
 // start script
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './../');

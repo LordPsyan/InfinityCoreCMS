@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -22,7 +22,7 @@ if (php_sapi_name() === 'cli')
 	define('IP_ROOT_PATH', dirname(dirname($argv[0])) . '/');
 }
 
-define('IN_INFINITYCORECMS', true);
+define('IN_ICYPHOENIX', true);
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './');
 if (!defined('PHP_EXT')) define('PHP_EXT', substr(strrchr(__FILE__, '.'), 1));
 
@@ -44,8 +44,8 @@ echo("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://
 echo("<html xmlns=\"http://www.w3.org/1999/xhtml\">\n");
 echo("<head>\n");
 echo("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n");
-echo("<meta name=\"author\" content=\"InfinityCoreCMS Team\" />\n");
-echo("<title>InfinityCoreCMS :: UTF-8 Conversion</title>\n");
+echo("<meta name=\"author\" content=\"Icy Phoenix Team\" />\n");
+echo("<title>Icy Phoenix :: UTF-8 Conversion</title>\n");
 echo("</head>\n");
 echo("<body>\n");
 echo("<div style=\"font-family: 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif; font-size: 10px;\">\n");

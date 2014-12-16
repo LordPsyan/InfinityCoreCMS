@@ -1,17 +1,17 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @InfinityCoreCMS is based on phpBB
-* @copyright (c) 2014 phpBB Group
+* @Icy Phoenix is based on phpBB
+* @copyright (c) 2008 phpBB Group
 *
 */
 
@@ -22,7 +22,7 @@
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	exit;
 }
@@ -33,7 +33,7 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang['BBC_IP_CREDITS_STATIC'] = '
-<a href="http://www.infinitycore.org" title="InfinityCoreCMS"><img src="http://www.infinitycore.org/images/logo_ip.png" alt="InfinityCoreCMS" title="InfinityCoreCMS" /></a><br />
+<a href="http://www.icyphoenix.com" title="Icy Phoenix"><img src="http://www.icyphoenix.com/images/logo_ip.png" alt="Icy Phoenix" title="Icy Phoenix" /></a><br />
 <span style="color: #dd2222;"><b>Mighty Gorgon</b></span>&nbsp;<i>(Luca Libralato)</i><br />
 <b><i>Project Manager And Main Developer</i></b><br />
 <br />
@@ -1176,7 +1176,7 @@ $lang = array_merge($lang, array(
 
 // Retroactive Signature MOD
 	'Retro_sig' => 'Attach my signature to my prior posts',
-	'Retro_sig_explain' => 'If adding/editing your signature, InfinityCoreCMS normally applies this only to future posts',
+	'Retro_sig_explain' => 'If adding/editing your signature, Icy Phoenix normally applies this only to future posts',
 	'Retro_sig_checkbox' => 'Check here to attach your signature to your previous posts as well',
 // End Retro Sig MOD
 
@@ -1464,7 +1464,7 @@ $lang = array_merge($lang, array(
 	'Users_with_Junior_Admin_Privileges' => 'Members with junior administrator privileges',
 	'Users_with_Admin_Privileges' => 'Members with administrator privileges',
 	'DB_size' => 'Size of the database',
-	'Version_of_ip' => 'Version of <a href="http://www.infinitycore.org/">InfinityCoreCMS</a>',
+	'Version_of_ip' => 'Version of <a href="http://www.icyphoenix.com/">Icy Phoenix</a>',
 	'Version_of_board' => 'Version of <a href="http://www.phpbb.com">phpBB</a>',
 	'Version_of_PHP' => 'Version of <a href="http://www.php.net/">PHP</a>',
 	'Version_of_MySQL' => 'Version of <a href="http://www.mysql.com/">MySQL</a>',
@@ -1759,7 +1759,7 @@ $lang = array_merge($lang, array(
 	'Change_Style' => 'Style',
 	'Change_Lang' => 'Language',
 	'Permissions_List' => 'Permissions List',
-	'IP_TEAM' => 'InfinityCoreCMS Team',
+	'IP_TEAM' => 'Icy Phoenix Team',
 
 //	'' => '',
 // Mighty Gorgon - LANG - END
@@ -1803,7 +1803,7 @@ $lang = array_merge($lang, array(
 	'CUSTOM_PAGE' => 'Customized Page',
 // MG CMS - END
 
-// InfinityCoreCMS - BUILD 001
+// Icy Phoenix - BUILD 001
 	'SimilarTopics' => 'Similar Topics',
 	'Chat' => 'Chat',
 	'DIGESTS' => 'Digests',
@@ -1869,7 +1869,7 @@ $lang = array_merge($lang, array(
 	'Contact_us_explain' => 'Using this page you can send us an email',
 	'Session_invalid' => 'Invalid Session. Please re-submit the form.',
 
-// InfinityCoreCMS - BUILD 007
+// Icy Phoenix - BUILD 007
 	'Reg_Username_Short' => ' this username is too short',
 	'Reg_Username_Long' => ' this username is too long',
 	'Reg_Username_Taken' => ' this username is not available',

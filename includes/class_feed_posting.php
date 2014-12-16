@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	die('Hacking attempt');
 }
@@ -26,9 +26,9 @@ define('POSTING_DEBUG', true);
 define('SMIXMODS_FEED_NEWS_CENTER_FEEDS', $table_prefix . 'smixmods_feed_news_center');
 $feeds_array = array(
 	'1' => array(
-		'feed_name' => 'InfinityCoreCMS',
+		'feed_name' => 'Icy Phoenix',
 		'feed_type' => 'rss',
-		'url' => 'http://www.infinitycore.org/rss.php',
+		'url' => 'http://www.icyphoenix.com/rss.php',
 		'encoding' => 'UTF-8',
 		'enabled_posting' => '1',
 		'enabled_displaying' => '1',
@@ -696,7 +696,7 @@ class class_feed_posting
 				$message = $this->html_to_bbcode($this->feed_name . "\n\n" . $this->items[$i][$temp]);
 				$post_time = time();
 
-				// InfinityCoreCMS Posting - BEGIN
+				// Icy Phoenix Posting - BEGIN
 				// Force the user to be admin to avoid flood check...
 				$user->data['user_level'] = ADMIN;
 				$topic_title_clean = substr(ip_clean_string($subject, $lang['ENCODING']), 0, 254);
@@ -722,7 +722,7 @@ class class_feed_posting
 					prepare_post($post_mode, $post_data, 1, 0, 0, '', $poster_data['username'], $subject, $message, '', array(), $poll_data, '', '', '', '', '', '', '', 0, 0);
 					submit_post($post_mode, $post_data, '', '', $forum_id, $topic_id, $post_id, $topic_type, 1, 0, 1, 0, 1, $poster_data['username'], $subject, $topic_title_clean, '', $message, '', '', $poll_data, '', '', '', '', '', '', 0, 0, false, '', 0, 0);
 				}
-				// InfinityCoreCMS Posting - END
+				// Icy Phoenix Posting - END
 			}
 			// change $i to the next (ehm previous :D ) item
 			$i--;

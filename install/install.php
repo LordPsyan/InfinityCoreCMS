@@ -1,21 +1,21 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 // MANUAL CONFIG - BEGIN
 
-// If you decomment this line, then you will be able to use this file without sessions handling in latest InfinityCoreCMS
+// If you decomment this line, then you will be able to use this file without sessions handling in latest Icy Phoenix
 //define('BYPASS_SESSION', true);
 
 // Just in case these are needed...
 /*
-$config['server_name'] = 'http://www.infinitycore.org';
+$config['server_name'] = 'http://www.icyphoenix.com';
 $config['server_port'] = '';
 $config['script_path'] = '';
 */
@@ -23,7 +23,7 @@ $config['script_path'] = '';
 // MANUAL CONFIG - END
 
 define('IN_INSTALL', true);
-define('IN_INFINITYCORECMS', true);
+define('IN_ICYPHOENIX', true);
 // Uncomment the following line to completely disable the ftp option...
 //define('NO_FTP', true);
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './../');
@@ -44,7 +44,7 @@ if (!isset($_POST['install_step']))
 		include(IP_ROOT_PATH . 'config.' . PHP_EXT);
 	}
 
-	// Check if InfinityCoreCMS or phpBB are already installed
+	// Check if Icy Phoenix or phpBB are already installed
 	if (defined('IP_INSTALLED') || defined('PHPBB_INSTALLED'))
 	{
 		if (defined('BYPASS_SESSION'))
@@ -56,7 +56,7 @@ if (!isset($_POST['install_step']))
 		else
 		{
 			// phpBB only - BEGIN
-			// No need to add an IF because these vars won't damage anything if we are in InfinityCoreCMS ;-)
+			// No need to add an IF because these vars won't damage anything if we are in Icy Phoenix ;-)
 			define('IN_PHPBB', true);
 			$phpbb_root_path = IP_ROOT_PATH;
 			$phpEx = PHP_EXT;
@@ -127,7 +127,7 @@ if (!isset($_POST['install_step']))
 		else
 		{
 			$page_framework = new ip_page();
-			$page_framework->page_header('InfinityCoreCMS', '', false, false);
+			$page_framework->page_header('Icy Phoenix', '', false, false);
 			$page_framework->stats_box($current_ip_version, $current_phpbb_version);
 			$page_framework->box_upgrade_info();
 			$page_framework->page_footer(false);
@@ -137,9 +137,9 @@ if (!isset($_POST['install_step']))
 	}
 }
 
-// If InfinityCoreCMS not yet installed, then start the install wizard
+// If Icy Phoenix not yet installed, then start the install wizard
 
-define('INSTALLING_INFINITYCORECMS', true);
+define('INSTALLING_ICYPHOENIX', true);
 require('common.' . PHP_EXT);
 include('language/lang_' . $language . '/lang_install.' . PHP_EXT);
 
@@ -247,7 +247,7 @@ elseif (($install_step == 1) || ($admin_pass1 != $admin_pass2) || empty($admin_p
 
 	$upgrade_option = '';
 	$page_framework->page_header($lang['Welcome_install'], $instruction_text);
-	$page_framework->setup_form($error, $lang_select, $dbms_select, $upgrade_option, $dbhost, $dbname, $dbaname, $dbuser, $dbpasswd, $table_prefix, $board_email, $server_name, $server_port, $script_path, $admin_name, $admin_pass1, $admin_pass2, $language, $s_hidden_fields);
+	$page_framework->setup_form($error, $lang_select, $dbms_select, $upgrade_option, $dbhost, $dbname, $dbuser, $dbpasswd, $table_prefix, $board_email, $server_name, $server_port, $script_path, $admin_name, $admin_pass1, $admin_pass2, $language, $s_hidden_fields);
 	$page_framework->page_footer();
 	exit;
 }
@@ -418,12 +418,11 @@ else
 
 		// Write out the config file.
 		$config_data = '<' . '?php' . "\n\n";
-		$config_data .= '// InfinityCoreCMS auto-generated config file' . "\n";
+		$config_data .= '// Icy Phoenix auto-generated config file' . "\n";
 		$config_data .= '// Do not change anything in this file!' . "\n\n";
 		$config_data .= '$dbms = \'' . $dbms . '\';' . "\n\n";
 		$config_data .= '$dbhost = \'' . $dbhost . '\';' . "\n";
 		$config_data .= '$dbname = \'' . $dbname . '\';' . "\n";
-		$config_data .= '$dbaname = \'' . $dbaname . '\';' . "\n";
 		$config_data .= '$dbuser = \'' . $dbuser . '\';' . "\n";
 		$config_data .= '$dbpasswd = \'' . $dbpasswd . '\';' . "\n\n";
 		$config_data .= '$table_prefix = \'' . $table_prefix . '\';' . "\n\n";

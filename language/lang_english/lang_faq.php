@@ -1,17 +1,17 @@
 <?php
 /**
 *
-* @package InfinityCoreCMS
+* @package Icy Phoenix
 * @version $Id$
-* @copyright (c) 2014 InfinityCoreCMS
+* @copyright (c) 2008 Icy Phoenix
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @InfinityCoreCMS is based on phpBB
-* @copyright (c) 2014 phpBB Group
+* @Icy Phoenix is based on phpBB
+* @copyright (c) 2008 phpBB Group
 *
 */
 
@@ -22,7 +22,7 @@
 *
 */
 
-if (!defined('IN_INFINITYCORECMS'))
+if (!defined('IN_ICYPHOENIX'))
 {
 	exit;
 }
@@ -52,7 +52,7 @@ $faq[] = array("--","User Preferences and settings");
 $faq[] = array("How do I change my settings?", "All your settings (if you are registered) are stored in the database. To alter them click the <u>Profile</u> link (generally shown at the top of pages but this may not be the case). This will allow you to change all your settings.");
 $faq[] = array("The times are not correct!", "The times are almost certainly correct; however, what you may be seeing are times displayed in a timezone different from the one you are in. If this is the case, you should change your profile setting for the timezone to match your particular area, e.g. London, Paris, New York, Sydney, etc. Please note that changing the timezone, like most settings, can only be done by registered users. So if you are not registered, this is a good time to do so, if you pardon the pun!");
 $faq[] = array("I changed the timezone and the time is still wrong!", "If you are sure you have set the timezone correctly and the time is still different, the most likely answer is daylight-saving time (or summer time as it is known in the UK and other places). The board is not designed to handle the changeover between standard and daylight time so during summer months the time may be an hour different from the real local time.");
-$faq[] = array("My language is not in the list!", "The most likely reasons for this are either the administrator did not install your language or someone has not translated this board into your language. Try asking the board administrator if they can install the language pack you need or if it does not exist, please feel free to create a new translation. More information can be found at the InfinityCoreCMS Group website (see link at bottom of pages)");
+$faq[] = array("My language is not in the list!", "The most likely reasons for this are either the administrator did not install your language or someone has not translated this board into your language. Try asking the board administrator if they can install the language pack you need or if it does not exist, please feel free to create a new translation. More information can be found at the Icy Phoenix Group website (see link at bottom of pages)");
 $faq[] = array("How do I show an image below my username?", "There may be two images below a username when viewing posts. The first is an image associated with your rank; generally these take the form of stars or blocks indicating how many posts you have made or your status on the forums. Below this may be a larger image known as an avatar; this is generally unique or personal to each user. It is up to the board administrator to enable avatars and they have a choice over the way in which avatars can be made available. If you are unable to use avatars then this is the decision of the board admin and you should ask them their reasons (we're sure they'll be good!)");
 $faq[] = array("How do I change my rank?", "In general you cannot directly change the wording of any rank (ranks appear below your username in topics and on your profile depending on the style used). Most boards use ranks to indicate the number of posts you have made and to identify certain users. For example, moderators and administrators may have a special rank. Please do not abuse the board by posting unnecessarily just to increase your rank -- you will probably find the moderator or administrator will simply lower your post count.");
 $faq[] = array("When I click the email link for a user it asks me to log in.", "Sorry, but only registered users can send email to people via the built-in email form (if the admin has enabled this feature). This is to prevent malicious use of the email system by anonymous users.");
@@ -167,10 +167,10 @@ $faq[] = array("Why isn't X feature available?", "This software was written by a
 $faq[] = array("Whom do I contact about abusive and/or legal matters related to this board?", "You should contact the administrator of this board. If you cannot find who that is, you should first contact one of the forum moderators and ask them who you should in turn contact. If still get no response you should contact the owner of the domain (do a whois lookup) or, if this is running on a free service (e.g. yahoo, free.fr, f2s.com, etc.), the management or abuse department of that service. Please note that phpBB Group has absolutely no control and cannot in any way be held liable over how, where or by whom this board is used. It is absolutely pointless contacting phpBB Group in relation to any legal (cease and desist, liable, defamatory comment, etc.) matter not directly related to the phpbb.com website or the discrete software of phpBB itself. If you do email phpBB Group about any third party use of this software then you should expect a terse response or no response at all.");
 
 
-$faq[] = array("--", "About InfinityCoreCMS");
-$faq[] = array("What is InfinityCoreCMS?", "InfinityCoreCMS is a CMS (Content Management System) which allows users to easily create dynamic websites with several embedded features: forum, portal, customizable pages and blocks, downloads, photo gallery, and much more.");
-$faq[] = array("Who wrote this software?", "This software is based upon phpBB which is released under the GNU General Public License, so InfinityCoreCMS must be released under the same license also, and this means that it can be freely modified and distributed. Most of the files have been directly coded or modified by Mighty Gorgon and <a href=\"http://www.infinitycore.org/\" target=\"_blank\">InfinityCoreCMS Staff</a>. A non exhaustive list of the contributors to this project may be found here: <a href=\"http://www.infinitycore.org/credits.php\" target=\"_blank\">InfinityCoreCMS Credits</a>.");
-$faq[] = array("Whom do I contact about abusive and/or legal matters related to this site?", "You should contact the webmaster. If you cannot find who that is, you should first contact one of the forum moderators and ask them who you should in turn contact. If still get no response you should contact the owner of the domain (do a whois lookup) or, if this is running on a free service (e.g. yahoo, free.fr, f2s.com, etc.), the management or abuse department of that service. Please note that InfinityCoreCMS has absolutely no control and cannot in any way be held liable over how, where or by whom this site is used. It is absolutely pointless contacting InfinityCoreCMS in relation to any legal (cease and desist, liable, defamatory comment, etc.) matter not directly related to the infinitycore.com website or the discrete software of InfinityCoreCMS itself. If you do email InfinityCoreCMS about any third party use of this software then you should expect a terse response or no response at all.");
+$faq[] = array("--", "About Icy Phoenix");
+$faq[] = array("What is Icy Phoenix?", "Icy Phoenix is a CMS (Content Management System) which allows users to easily create dynamic websites with several embedded features: forum, portal, customizable pages and blocks, downloads, photo gallery, and much more.");
+$faq[] = array("Who wrote this software?", "This software is based upon phpBB which is released under the GNU General Public License, so Icy Phoenix must be released under the same license also, and this means that it can be freely modified and distributed. Most of the files have been directly coded or modified by Mighty Gorgon and <a href=\"http://www.icyphoenix.com/\" target=\"_blank\">Icy Phoenix Staff</a>. A non exhaustive list of the contributors to this project may be found here: <a href=\"http://www.icyphoenix.com/credits.php\" target=\"_blank\">Icy Phoenix Credits</a>.");
+$faq[] = array("Whom do I contact about abusive and/or legal matters related to this site?", "You should contact the webmaster. If you cannot find who that is, you should first contact one of the forum moderators and ask them who you should in turn contact. If still get no response you should contact the owner of the domain (do a whois lookup) or, if this is running on a free service (e.g. yahoo, free.fr, f2s.com, etc.), the management or abuse department of that service. Please note that Icy Phoenix has absolutely no control and cannot in any way be held liable over how, where or by whom this site is used. It is absolutely pointless contacting Icy Phoenix in relation to any legal (cease and desist, liable, defamatory comment, etc.) matter not directly related to the icyphoenix.com website or the discrete software of Icy Phoenix itself. If you do email Icy Phoenix about any third party use of this software then you should expect a terse response or no response at all.");
 
 
 ?>
