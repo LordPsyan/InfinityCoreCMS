@@ -2429,7 +2429,7 @@ CREATE TABLE `phpbb_digest_subscribed_forums` (
 ## Digests - END
 
 
-## Icy Phoenix CMS - BEGIN
+## InfinityCoreCMS CMS - BEGIN
 
 CREATE TABLE `phpbb_cms_block_position` (
 	`bpid` INT(10) NOT NULL auto_increment,
@@ -2541,7 +2541,7 @@ CREATE TABLE `phpbb_cms_nav_menu` (
 	KEY `cat_id` (`cat_id`)
 );
 
-## Icy Phoenix CMS - END
+## InfinityCoreCMS CMS - END
 
 
 ## AJAX Shoutbox - BEGIN

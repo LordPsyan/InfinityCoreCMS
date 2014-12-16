@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -21,7 +21,7 @@ $lang = array_merge($lang, array(
 	'LEFT' => 'left',
 	'RIGHT' => 'right',
 
-	'Welcome_install' => 'Icy Phoenix Installation',
+	'Welcome_install' => 'InfinityCoreCMS Installation',
 	'Initial_config' => 'Configuration',
 	'DB_config' => 'Database Configuration',
 	'Admin_config' => 'Admin Configuration',
@@ -32,11 +32,11 @@ $lang = array_merge($lang, array(
 	'Previous_Install' => 'A previous installation has been detected',
 	'Install_db_error' => 'An error occurred trying to update the database',
 
-	'Re_install' => 'Your previous installation is still active.<br /><br />If you would like to re-install Icy Phoenix you should click the Yes button below. Please be aware that doing so will destroy all existing data and no backups will be made! The Administrator username and password you have used to log in to the board will be re-created after the re-installation and no other settings will be retained.<br /><br />Think carefully before pressing Yes!',
+	'Re_install' => 'Your previous installation is still active.<br /><br />If you would like to re-install InfinityCoreCMS you should click the Yes button below. Please be aware that doing so will destroy all existing data and no backups will be made! The Administrator username and password you have used to log in to the board will be re-created after the re-installation and no other settings will be retained.<br /><br />Think carefully before pressing Yes!',
 
-	'Inst_Step_0' => 'Thank you for choosing Icy Phoenix. This wizard will guide you through the installation process.<br /><span class="text_red">Please note that you should have uploaded all Icy Phoenix files to your server and that the database you install into should already exist.</span>',
+	'Inst_Step_0' => 'Thank you for choosing InfinityCoreCMS. This wizard will guide you through the installation process.<br /><span class="text_red">Please note that you should have uploaded all InfinityCoreCMS files to your server and that the database you install into must already exist.</span>',
 
-	'Inst_Step_1' => 'In order to complete this install please fill out the details requested below.<br /><span class="text_red">Please note that the database you are going to install into should already exist (Setup procedure cannot create one).</span>',
+	'Inst_Step_1' => 'In order to complete this install please fill out the details requested below.<br /><span class="text_red">Please note that the database you are going to install into must already exist.</span>',
 
 	'Start_Install' => 'Start Install',
 	'Start_Install_Anyway' => 'Start Install Anyway',
@@ -48,7 +48,7 @@ $lang = array_merge($lang, array(
 	'CHMOD_Error' => 'Error',
 	'CHMOD_777' => 'CHMOD 777',
 	'CHMOD_666' => 'CHMOD 666',
-	'CHMOD_Files_Explain_Error' => 'Some errors occurred while verifying CHMOD permissions. Please make sure that all files/folders from the installation package exist and they have the correct CHMOD permissions, otherwise Icy Phoenix cannot run correctly.',
+	'CHMOD_Files_Explain_Error' => 'Some errors occurred while verifying CHMOD permissions. Please make sure that all files/folders from the installation package exist and they have the correct CHMOD permissions, otherwise InfinityCoreCMS cannot run correctly.',
 	'Confirm_Install_anyway' => ' If you have double checked everything you may proceed by clicking on "<i>Start Install Anyway</i>".',
 	'CHMOD_Files_Explain_Ok' => 'All CHMOD permissions seems to be fine.',
 	'Can_Install' => 'You can proceed to next step.',
@@ -56,13 +56,14 @@ $lang = array_merge($lang, array(
 	'CHMOD_File_NotExists' => 'This File/Folder doesn\'t exist, please upload it and apply the correct CHMOD permissions.',
 	'CHMOD_File_Exists_Read_Only' => 'This File/Folder exists but its permissions may not be modified automatically, please apply CHMOD manually and then click on "<i>Start Install Anyway</i>".',
 	'CHMOD_File_UnknownError' => 'Unknown error while checking this File/Folder. Please make sure that this File/Folder exists on the server, that it has the correct CHMOD permissions and then click on "<i>Start Install Anyway</i>".',
-	'CHMOD_Apply' => 'Apply CHMOD permissions to Icy Phoenix files and folders via PHP',
+	'CHMOD_Apply' => 'Apply CHMOD permissions to InfinityCoreCMS files and folders via PHP',
 	'CHMOD_Apply_Warn' => 'Please note that not all servers support CHMOD via PHP, manual editing may be required!!!',
 
 	'Default_lang' => 'Default site language',
 	'Select_lang' => 'Language',
 	'DB_Host' => 'Database Server Hostname / DSN',
-	'DB_Name' => 'Your Database Name',
+	'DB_Name' => 'Website Database Name',
+	'DB_AName' => 'Auth Database Name',
 	'DB_Username' => 'Database Username',
 	'DB_Password' => 'Database Password',
 	'Database' => 'Your Database',
@@ -73,18 +74,18 @@ $lang = array_merge($lang, array(
 	'Admin_Password' => 'Administrator Password',
 	'Admin_Password_confirm' => 'Administrator Password [ Confirm ]',
 
-	'Inst_Step_2' => 'Your admin username has been created.<br />At this point to complete the setup process you need to <span class="text_red">remove <u>install</u> folder</span>. Finally you should click on <b>Finish Installation</b> and then access ACP (Admin Control Panel) and CMS (Content Management System) where you can manage all Icy Phoenix settings and preferences.<br />In ACP you can adjust the main settings and preferences for the whole site, (styles, languages, time, forums, download, users, album, etc.) and while in CMS section you can configure options regarding the site pages (define permissions, add blocks, create new pages, create new menu, etc.). You may also want to configure <b>.htaccess</b> and <b>lang_main_settings.php</b> (for each installed lang) to fine tune some other preferences, like error reporting, url rewrite, keywords, welcome message, charset and so on.<br /><br />Thank you for choosing Icy Phoenix and remember to backup your db periodically.<br /><br />',
+	'Inst_Step_2' => 'Your admin username has been created.<br />At this point to complete the setup process you need to <span class="text_red">remove <u>install</u> folder</span>. Finally you should click on <b>Finish Installation</b> and then access ACP (Admin Control Panel) and CMS (Content Management System) where you can manage all InfinityCoreCMS settings and preferences.<br />In ACP you can adjust the main settings and preferences for the whole site, (styles, languages, time, forums, download, users, album, etc.) and while in CMS section you can configure options regarding the site pages (define permissions, add blocks, create new pages, create new menu, etc.). You may also want to configure <b>.htaccess</b> and <b>lang_main_settings.php</b> (for each installed lang) to fine tune some other preferences, like error reporting, url rewrite, keywords, welcome message, charset and so on.<br /><br />Thank you for choosing InfinityCoreCMS and remember to backup your db periodically.<br /><br />',
 
-	'Unwriteable_config' => 'Your config file is not writable. A copy of the config file will be downloaded to your computer when you click the button below. You should upload this file to the same directory where Icy Phoenix has been uploaded. Once this is done you should delete the install folder and log in using the administrator name and password you provided on the previous form to visit the admin control centre; (a link will appear at the bottom of each screen once logged in) to check the general configuration. Thank you for choosing Icy Phoenix.',
+	'Unwriteable_config' => 'Your config file is not writable. A copy of the config file will be downloaded to your computer when you click the button below. You should upload this file to the same directory where InfinityCoreCMS has been uploaded. Once this is done you should delete the install folder and log in using the administrator name and password you provided on the previous form to visit the admin control centre; (a link will appear at the bottom of each screen once logged in) to check the general configuration. Thank you for choosing InfinityCoreCMS.',
 	'Download_config' => 'Download Config',
 
 	'ftp_choose' => 'Choose Download Method',
 	'ftp_option' => '<br />Since FTP extensions are enabled in this version of PHP you may also be given the option of first trying to automatically FTP the config file into place.',
-	'ftp_instructs' => 'You have chosen to FTP the file to the account containing Icy Phoenix automatically. Please enter the information below to facilitate this process. Note that the FTP path should be the exact path via FTP to your Icy Phoenix installation as if you were FTPing it using any normal client.',
+	'ftp_instructs' => 'You have chosen to FTP the file to the account containing InfinityCoreCMS automatically. Please enter the information below to facilitate this process. Note that the FTP path should be the exact path via FTP to your InfinityCoreCMS installation as if you were FTPing it using any normal client.',
 	'ftp_info' => 'Enter Your FTP Information',
 	'Attempt_ftp' => 'Attempt to FTP config file into place',
 	'Send_file' => 'Just send the file to me and I\'ll FTP it manually',
-	'ftp_path' => 'FTP path to Icy Phoenix',
+	'ftp_path' => 'FTP path to InfinityCoreCMS',
 	'ftp_username' => 'Your FTP Username',
 	'ftp_password' => 'Your FTP Password',
 	'Transfer_config' => 'Start Transfer',
@@ -95,26 +96,26 @@ $lang = array_merge($lang, array(
 
 	'Install_Method' => 'Choose your installation method',
 	'Install_No_Ext' => 'The PHP configuration on your server doesn\'t support the database type that you chose',
-	'Install_No_PCRE' => 'Icy Phoenix Requires the Perl-Compatible Regular Expressions Module for PHP which your PHP configuration doesn\'t appear to support!',
+	'Install_No_PCRE' => 'InfinityCoreCMS Requires the Perl-Compatible Regular Expressions Module for PHP which your PHP configuration doesn\'t appear to support!',
 
 	'Server_name' => 'Domain Name',
 	'Script_path' => 'Script Path',
 	'Server_port' => 'Server Port',
 	'Admin_email' => 'Admin Email Address',
 
-	'IP_Utilities' => 'Icy Phoenix Utilities',
+	'IP_Utilities' => 'InfinityCoreCMS Utilities',
 	'Upgrade_Options' => 'Upgrade Options:',
-	'Upgrade_From' => 'Upgrade to latest Icy Phoenix',
+	'Upgrade_From' => 'Upgrade to latest InfinityCoreCMS',
 	'Upgrade_From_Version' => 'from version',
 	'Upgrade_From_phpBB' => 'from phpBB or any older phpBB XS version',
 	'Upgrade_Higher' => 'or higher',
 
-	'IcyPhoenix' => 'Icy Phoenix',
+	'IcyPhoenix' => 'InfinityCoreCMS',
 	'phpBB' => 'phpBB',
 	'Information' => 'Information',
 	'VersionInformation' => 'Server And Version Information',
 	'NotInstalled' => 'Not Installed',
-	'Current_IP_Version' => 'Installed Icy Phoenix version',
+	'Current_IP_Version' => 'Installed InfinityCoreCMS version',
 	'Current_phpBB_Version' => 'Installed phpBB version',
 	'Latest_Release' => 'Latest release',
 	'Version_UpToDate' => 'Version up-to-date',
@@ -122,7 +123,7 @@ $lang = array_merge($lang, array(
 	'UpdateInProgress' => 'Update in progress',
 	'CleaningInProgress' => 'Files cleaning in progress',
 	'UpdateCompleted' => 'Update completed!',
-	'UpdateCompleted_phpBB' => 'phpBB update completed, now you can upgrade to Icy Phoenix!',
+	'UpdateCompleted_phpBB' => 'phpBB update completed, now you can upgrade to InfinityCoreCMS!',
 	'UpdateInProgress_Schema' => 'Updating database schema',
 	'UpdateInProgress_Data' => 'Updating data',
 	'Optimizing_Tables' => 'Optimizing tables',
@@ -146,15 +147,15 @@ $lang = array_merge($lang, array(
 	'FileCreation_ERROR' => 'Your server doesn\'t support file creation and editing.',
 	'FileCreation_ERROR_Explain' => 'The script cannot create / edit files for you automatically. Unfortunately you will need to do it on your own.',
 
-	'IcyPhoenix_Version_UpToDate' => 'Your Icy Phoenix is version is up-to-date',
-	'IcyPhoenix_Version_NotUpToDate' => 'Your Icy Phoenix is version is not up-to-date',
-	'IcyPhoenix_Version_NotInstalled' => 'Icy Phoenix is not installed',
+	'IcyPhoenix_Version_UpToDate' => 'Your InfinityCoreCMS is version is up-to-date',
+	'IcyPhoenix_Version_NotUpToDate' => 'Your InfinityCoreCMS is version is not up-to-date',
+	'IcyPhoenix_Version_NotInstalled' => 'InfinityCoreCMS is not installed',
 	'phpBB_Version_UpToDate' => 'Your phpBB is version is up-to-date',
 	'phpBB_Version_NotUpToDate' => 'Your phpBB is version is not up-to-date',
 	'ClickUpdate' => 'Please click %sHere%s to update!',
 	'ClickReturn' => 'Please click %sHere%s to return to menu!',
 
-	'Clean_OldFiles_Explain' => 'Remove all unused Icy Phoenix (files still on your server from older versions)',
+	'Clean_OldFiles_Explain' => 'Remove all unused InfinityCoreCMS (files still on your server from older versions)',
 	'ActionUndone' => 'Please note that this action cannot be undone. Make sure you have a backup!!!',
 	'ClickToClean' => 'Please click on the link below to proceed',
 	'FileDeletion_OK' => 'File deleted successfully',
@@ -178,7 +179,7 @@ $lang = array_merge($lang, array(
 	'Update_phpBB' => 'Update phpBB DB (if needed)',
 	'Remove_BBCodeUID' => 'Process all posts: remove BBCode UID, replace text, remove old BBCodes',
 	'Merge_PostsTables' => 'Merge posts tables',
-	'Update_IcyPhoenix' => 'Update Icy Phoenix DB',
+	'Update_IcyPhoenix' => 'Update InfinityCoreCMS DB',
 	'Upload_NewFiles' => 'Upload all new files',
 	'Adjust_Config' => 'Update constants in config.php (only works if files are writeable)',
 	'Adjust_CMSPages' => 'Update constants in CMS pages (only works if files are writeable)',
@@ -193,8 +194,8 @@ $lang = array_merge($lang, array(
 	'ColorsLegendBlue' => 'Blue: this action is optional and can be performed automatically (may require manual edits on some files though)',
 	'ColorsLegendGreen' => 'Green: this action is suggested and can be performed automatically (if requirements are met)',
 
-	'FixBirthdays' => 'Fix Birthdays (Upgrading from Icy Phoenix 1.2 or below)',
-	'FixBirthdaysExplain' => 'This feature will allow you to adjust all birthdays for compatibility with new features. You don\'t need to run this feature if you are upgrading from Icy Phoenix 1.3 or above.',
+	'FixBirthdays' => 'Fix Birthdays (Upgrading from InfinityCoreCMS 1.2 or below)',
+	'FixBirthdaysExplain' => 'This feature will allow you to adjust all birthdays for compatibility with new features. You don\'t need to run this feature if you are upgrading from InfinityCoreCMS 1.3 or above.',
 	'FixingBirthdaysInProgress' => 'Fixing birthdays in progress',
 	'FixingBirthdaysInProgressRedirect' => 'You will be automatically redirected to next step in three seconds',
 	'FixingBirthdaysInProgressRedirectClick' => 'If you are not automatically redirected within three seconds you may click %sHere%s',
@@ -204,8 +205,8 @@ $lang = array_merge($lang, array(
 	'FixingBirthdaysComplete' => 'Fixing birthdays complete',
 	'BirthdaysPerStep' => 'Number of birthdays per step',
 
-	'FixConstantsInFiles' => 'Fix Constants (Upgrading from Icy Phoenix 1.2 or below)',
-	'FixConstantsInFilesExplain' => 'Fix all files with new Icy Phoenix constants. You don\'t need to run this feature if you are upgrading from Icy Phoenix 1.3 or above.',
+	'FixConstantsInFiles' => 'Fix Constants (Upgrading from InfinityCoreCMS 1.2 or below)',
+	'FixConstantsInFilesExplain' => 'Fix all files with new InfinityCoreCMS constants. You don\'t need to run this feature if you are upgrading from InfinityCoreCMS 1.3 or above.',
 	'FixingInProgress' => 'Fixing files in progress',
 	'FixingComplete' => 'Fixing files complete',
 	'ClickToFix' => 'Please click on one of the link below to proceed',
@@ -215,15 +216,15 @@ $lang = array_merge($lang, array(
 	'NotFixed' => 'Not Fixed',
 	'FilesProcessed' => 'Files processed',
 
-	'FixForums' => 'Convert Forums (Upgrading from Icy Phoenix 1.2 or below)',
-	'FixForumsExplain' => 'This feature will convert forums and categories into the new format. You don\'t need to run this feature if you are upgrading from Icy Phoenix 1.3 or above.',
+	'FixForums' => 'Convert Forums (Upgrading from InfinityCoreCMS 1.2 or below)',
+	'FixForumsExplain' => 'This feature will convert forums and categories into the new format. You don\'t need to run this feature if you are upgrading from InfinityCoreCMS 1.3 or above.',
 	'FixingForumsInProgress' => 'Conversion in progress...',
 	'FixingForumsComplete' => 'Work complete!',
 
-	'FixPosts' => 'Fix Posts (Upgrading from Icy Phoenix 1.2 or below)',
-	'FixPosts_Explain' => 'This feature will allow you to fix all posts in your forums. You can use this feature to: find and replace any text in your posts, remove all BBCode UID, automatically adjust the address of posted images. You don\'t need to run this feature if you are upgrading from Icy Phoenix 1.3 or above.',
-	'FixPosts_IP2' => 'Fix Posts (Upgrading from Icy Phoenix 1.3)',
-	'FixPosts_IP2_Explain' => 'This feature will allow you to adjust the path of uploaded images, since the path in Icy Phoenix 2.0 is different from the past versions of Icy Phoenix. You can use this feature also to find and replace any text in your posts (by leaving the search fild empty no replacement will be performed and only images paths will be adjusted).',
+	'FixPosts' => 'Fix Posts (Upgrading from InfinityCoreCMS 1.2 or below)',
+	'FixPosts_Explain' => 'This feature will allow you to fix all posts in your forums. You can use this feature to: find and replace any text in your posts, remove all BBCode UID, automatically adjust the address of posted images. You don\'t need to run this feature if you are upgrading from InfinityCoreCMS 1.3 or above.',
+	'FixPosts_IP2' => 'Fix Posts (Upgrading from InfinityCoreCMS 1.3)',
+	'FixPosts_IP2_Explain' => 'This feature will allow you to adjust the path of uploaded images, since the path in InfinityCoreCMS 2.0 is different from the past versions of InfinityCoreCMS. You can use this feature also to find and replace any text in your posts (by leaving the search fild empty no replacement will be performed and only images paths will be adjusted).',
 	'FixingPostsInProgress' => 'Fixing posts in progress',
 	'FixingPostsInProgressRedirect' => 'You will be automatically redirected to next step in three seconds',
 	'FixingPostsInProgressRedirectClick' => 'If you are not automatically redirected within three seconds you may click %sHere%s',
@@ -239,10 +240,10 @@ $lang = array_merge($lang, array(
 	'RemoveBBCodeUID_Guess' => 'Try to guess and remove BBCode UID',
 	'FixPostedImagesPaths' => 'Fix all posted images paths (adjust paths to reflect users subfolders)',
 
-	'FixSignatures' => 'Fix Signatures (Upgrading from Icy Phoenix 1.2 or below)',
-	'FixSignatures_Explain' => 'This feature will allow you to fix all users signatures. You can use this feature to: find and replace any text in signatures, remove all BBCode UID, automatically adjust the address of posted images. You don\'t need to run this feature if you are upgrading from Icy Phoenix 1.3 or above.',
-	'FixSignatures_IP2' => 'Fix Signatures (Upgrading from Icy Phoenix 1.3)',
-	'FixSignatures_IP2_Explain' => 'This feature will allow you to adjust the path of uploaded images, since the path in Icy Phoenix 2.0 is different from the past versions of Icy Phoenix. You can use this feature also to find and replace any text in signatures (by leaving the search fild empty no replacement will be performed and only images paths will be adjusted).',
+	'FixSignatures' => 'Fix Signatures (Upgrading from InfinityCoreCMS 1.2 or below)',
+	'FixSignatures_Explain' => 'This feature will allow you to fix all users signatures. You can use this feature to: find and replace any text in signatures, remove all BBCode UID, automatically adjust the address of posted images. You don\'t need to run this feature if you are upgrading from InfinityCoreCMS 1.3 or above.',
+	'FixSignatures_IP2' => 'Fix Signatures (Upgrading from InfinityCoreCMS 1.3)',
+	'FixSignatures_IP2_Explain' => 'This feature will allow you to adjust the path of uploaded images, since the path in InfinityCoreCMS 2.0 is different from the past versions of InfinityCoreCMS. You can use this feature also to find and replace any text in signatures (by leaving the search fild empty no replacement will be performed and only images paths will be adjusted).',
 	'FixingSignaturesInProgress' => 'Fixing signatures in progress',
 	'FixingSignaturesFrom' => 'Signatures modified this step from %s to %s',
 	'FixingSignaturesTotal' => '%s signatures of %s modified so far',
@@ -251,8 +252,8 @@ $lang = array_merge($lang, array(
 	'SignaturesPerStep' => 'Number of signatures per step',
 	'StartFromSignature' => 'Start from signature',
 
-	'FixPics' => 'Fix Album Pics Paths (Upgrading from Icy Phoenix 1.2 or below)',
-	'FixPicsExplain' => 'This feature will move all album pics from the main folder into users subfolders and will also update the database with the new paths. You don\'t need to run this feature if you are upgrading from Icy Phoenix 1.3 or above.',
+	'FixPics' => 'Fix Album Pics Paths (Upgrading from InfinityCoreCMS 1.2 or below)',
+	'FixPicsExplain' => 'This feature will move all album pics from the main folder into users subfolders and will also update the database with the new paths. You don\'t need to run this feature if you are upgrading from InfinityCoreCMS 1.3 or above.',
 	'FixingPicsInProgress' => 'Fixing pics in progress',
 	'FixingPicsInProgressRedirect' => 'You will be automatically redirected to next step in three seconds',
 	'FixingPicsInProgressRedirectClick' => 'If you are not automatically redirected within three seconds you may click %sHere%s',
@@ -263,10 +264,10 @@ $lang = array_merge($lang, array(
 	'PicStartFrom' => 'Start from pic',
 	'PicsPerStep' => 'Number of pics per step',
 
-	'RenMovePics' => 'Rename And Move Posted Pics (Upgrading from Icy Phoenix 1.2 or below)',
-	'RenMovePicsExplain' => 'This feature will rename and move all posted pics from the main folder into users subfolders: you will then need to update posts table using the <i>Fix Posts</i> function to adjust all paths in posts. You don\'t need to run this feature if you are upgrading from Icy Phoenix 1.3 or above.',
+	'RenMovePics' => 'Rename And Move Posted Pics (Upgrading from InfinityCoreCMS 1.2 or below)',
+	'RenMovePicsExplain' => 'This feature will rename and move all posted pics from the main folder into users subfolders: you will then need to update posts table using the <i>Fix Posts</i> function to adjust all paths in posts. You don\'t need to run this feature if you are upgrading from InfinityCoreCMS 1.3 or above.',
 
-	'AddPostedPicsDB' => 'Add Uploaded Images To DB (Upgrading from Icy Phoenix 1.3 or above)',
+	'AddPostedPicsDB' => 'Add Uploaded Images To DB (Upgrading from InfinityCoreCMS 1.3 or above)',
 	'AddPostedPicsDBExplain' => 'This feature will import all uploaded images to DB.',
 
 	'COLLIDING_CLEAN_USERNAME' => '<strong>%s</strong> is the clean username for:',
@@ -277,7 +278,7 @@ $lang = array_merge($lang, array(
 );
 
 $lang['BBC_IP_CREDITS_STATIC'] = '
-<a href="http://www.icyphoenix.com" title="Icy Phoenix"><img src="./style/icy_phoenix_small.png" alt="Icy Phoenix" title="Icy Phoenix" /></a><br />
+<a href="http://www.infinitycore.org" title="InfinityCoreCMS"><img src="./style/icy_phoenix_small.png" alt="InfinityCoreCMS" title="InfinityCoreCMS" /></a><br />
 <span style="color: #dd2222;"><b>Mighty Gorgon</b></span>&nbsp;<i>(Luca Libralato)</i><br />
 <b><i>Project Manager And Main Developer</i></b><br />
 <br />

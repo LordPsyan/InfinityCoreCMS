@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -19,7 +19,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 // @todo Review this test and see if we can find out what it is which prevents PHP 4.2.x from even displaying the page with requirements on it
 if (version_compare(PHP_VERSION, '4.3.3') < 0)
 {
-	die('You are running an unsupported PHP version. Please upgrade to PHP 4.3.3 or higher before trying to install Icy Phoenix');
+	die('You are running an unsupported PHP version. Please upgrade to PHP 4.3.3 or higher before trying to install InfinityCoreCMS');
 }
 
 // If we are on PHP >= 6.0.0 we do not need some code
@@ -70,7 +70,7 @@ if (defined('BASIC_COMMON'))
 	include(IP_ROOT_PATH . 'includes/utf/utf_tools.' . PHP_EXT);
 }
 
-if (defined('INSTALLING_ICYPHOENIX'))
+if (defined('INSTALLING_INFINITYCORECMS'))
 {
 	// Initialise some basic arrays
 	$user = array();
@@ -108,6 +108,7 @@ if (defined('INSTALLING_ICYPHOENIX'))
 	$dbuser = $ip_functions->request_var('dbuser', '');
 	$dbpasswd = $ip_functions->request_var('dbpasswd', '');
 	$dbname = $ip_functions->request_var('dbname', '');
+	$dbaname = $ip_functions->request_var('dbaname', '');
 
 	$table_prefix = $ip_functions->request_var('prefix', '');
 

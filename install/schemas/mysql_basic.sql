@@ -45,7 +45,7 @@ INSERT INTO `phpbb_album_config` (`config_name`, `config_value`) VALUES ('png_al
 INSERT INTO `phpbb_album_config` (`config_name`, `config_value`) VALUES ('gif_allowed', '1');
 INSERT INTO `phpbb_album_config` (`config_name`, `config_value`) VALUES ('desc_length', '512');
 INSERT INTO `phpbb_album_config` (`config_name`, `config_value`) VALUES ('hotlink_prevent', '0');
-INSERT INTO `phpbb_album_config` (`config_name`, `config_value`) VALUES ('hotlink_allowed', 'mightygorgon.com,icyphoenix.com');
+INSERT INTO `phpbb_album_config` (`config_name`, `config_value`) VALUES ('hotlink_allowed', 'mightygorgon.com,infinitycore.com');
 INSERT INTO `phpbb_album_config` (`config_name`, `config_value`) VALUES ('personal_gallery', '0');
 INSERT INTO `phpbb_album_config` (`config_name`, `config_value`) VALUES ('personal_gallery_private', '0');
 INSERT INTO `phpbb_album_config` (`config_name`, `config_value`) VALUES ('personal_gallery_limit', '-1');
@@ -314,7 +314,7 @@ INSERT INTO `phpbb_cms_block_settings` (`bs_id`, `user_id`, `name`, `content`, `
 INSERT INTO `phpbb_cms_block_settings` (`bs_id`, `user_id`, `name`, `content`, `blockfile`, `view`, `type`, `groups`, `locked`) VALUES(11, 0, 'Links', '', 'links', 0, 0, '', 1);
 INSERT INTO `phpbb_cms_block_settings` (`bs_id`, `user_id`, `name`, `content`, `blockfile`, `view`, `type`, `groups`, `locked`) VALUES(12, 0, 'Statistics', '', 'statistics', 0, 0, '', 1);
 INSERT INTO `phpbb_cms_block_settings` (`bs_id`, `user_id`, `name`, `content`, `blockfile`, `view`, `type`, `groups`, `locked`) VALUES(13, 0, 'Wordgraph', '', 'wordgraph', 0, 0, '', 1);
-INSERT INTO `phpbb_cms_block_settings` (`bs_id`, `user_id`, `name`, `content`, `blockfile`, `view`, `type`, `groups`, `locked`) VALUES(14, 0, 'Welcome', '<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">\r\n	<tr>\r\n		<td width="5%"><img src="images/icy_phoenix_small.png" alt="" /></td>\r\n		<td width="90%" align="center"><div class="post-text">Welcome To <b>Icy Phoenix</b></div><br /><br /></td>\r\n		<td width="5%"><img src="images/icy_phoenix_small_l.png" alt="" /></td>\r\n	</tr>\r\n</table>', '', 0, 0, '', 1);
+INSERT INTO `phpbb_cms_block_settings` (`bs_id`, `user_id`, `name`, `content`, `blockfile`, `view`, `type`, `groups`, `locked`) VALUES(14, 0, 'Welcome', '<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">\r\n	<tr>\r\n		<td width="5%"><img src="images/icy_phoenix_small.png" alt="" /></td>\r\n		<td width="90%" align="center"><div class="post-text">Welcome To <b>InfinityCoreCMS</b></div><br /><br /></td>\r\n		<td width="5%"><img src="images/icy_phoenix_small_l.png" alt="" /></td>\r\n	</tr>\r\n</table>', '', 0, 0, '', 1);
 
 ## `phpbb_cms_block_variable`
 ##
@@ -374,7 +374,7 @@ INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALU
 INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (8, 3, 'md_poll_topic_id', '');
 INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (9, 3, 'md_poll_bar_length', '65');
 INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (10, 7, 'md_total_poster', '5');
-INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (11, 8, 'md_search_option_text', 'Icy Phoenix');
+INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (11, 8, 'md_search_option_text', 'InfinityCoreCMS');
 INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (12, 10, 'md_cat_id', '0');
 INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (13, 10, 'md_pics_all', '1');
 INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (14, 10, 'md_pics_sort', '1');
@@ -478,7 +478,7 @@ INSERT INTO `phpbb_cms_nav_menu` (`menu_item_id`, `menu_id`, `menu_parent_id`, `
 INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('config_id', '1');
 INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('board_disable', '0');
 INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('sitename', 'yourdomain.com');
-INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('site_desc', 'Icy Phoenix Rocks!');
+INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('site_desc', 'InfinityCoreCMS Rocks!');
 INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('cookie_name', 'ip_cookie');
 INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('cookie_path', '/');
 INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('cookie_domain', '');
@@ -625,7 +625,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('autolink_fir
 INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('smilies_insert', '1');
 INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('sudoku_version', '1.0.6');
 INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('yahoo_search_savepath', 'cache');
-INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('yahoo_search_additional_urls', 'http://www.icyphoenix.com');
+INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('yahoo_search_additional_urls', 'http://www.infinitycore.org');
 INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('yahoo_search_compress', '1');
 INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('yahoo_search_compression_level', '9');
 INSERT INTO `phpbb_config` (`config_name`, `config_value`) VALUES ('max_link_bookmarks', '0');
@@ -1447,7 +1447,7 @@ INSERT INTO `phpbb_link_config` (`config_name`, `config_value`) VALUES ('allow_n
 
 ## `phpbb_links`
 ##
-INSERT INTO `phpbb_links` (`link_id`, `link_title`, `link_desc`, `link_category`, `link_url`, `link_logo_src`, `link_joined`, `link_active`, `link_hits`, `user_id`, `user_ip`, `last_user_ip`) VALUES (1, 'Icy Phoenix Official Website', 'Icy Phoenix', 4, 'http://www.icyphoenix.com/', 'images/links/banner_ip.gif', 1241136000, 1, 0, 2, '', '');
+INSERT INTO `phpbb_links` (`link_id`, `link_title`, `link_desc`, `link_category`, `link_url`, `link_logo_src`, `link_joined`, `link_active`, `link_hits`, `user_id`, `user_ip`, `last_user_ip`) VALUES (1, 'InfinityCoreCMS Official Website', 'InfinityCoreCMS', 4, 'http://www.infinitycore.org/', 'images/links/banner_ip.gif', 1241136000, 1, 0, 2, '', '');
 INSERT INTO `phpbb_links` (`link_id`, `link_title`, `link_desc`, `link_category`, `link_url`, `link_logo_src`, `link_joined`, `link_active`, `link_hits`, `user_id`, `user_ip`, `last_user_ip`) VALUES (2, 'Mighty Gorgon Community', 'Mighty Gorgon Community', 4, 'http://www.mightygorgon.com/', 'images/links/banner_mightygorgon.gif', 1241136000, 1, 0, 2, '', '');
 INSERT INTO `phpbb_links` (`link_id`, `link_title`, `link_desc`, `link_category`, `link_url`, `link_logo_src`, `link_joined`, `link_active`, `link_hits`, `user_id`, `user_ip`, `last_user_ip`) VALUES (3, 'phpBB Official Website', 'Official phpBB Website', 4, 'http://www.phpbb.com/', 'images/links/banner_phpbb88a.gif', 1241136000, 1, 0, 2, '', '');
 
@@ -1538,7 +1538,7 @@ INSERT INTO `phpbb_pa_config` (`config_name`, `config_value`) VALUES ('pm_notify
 
 ## `phpbb_posts`
 ##
-INSERT INTO `phpbb_posts` (`post_id`, `topic_id`, `forum_id`, `poster_id`, `post_time`, `poster_ip`, `post_username`, `enable_bbcode`, `enable_html`, `enable_smilies`, `enable_sig`, `post_edit_time`, `post_edit_count`, `post_attachment`, `post_bluecard`, `enable_autolinks_acronyms`, `post_subject`, `post_text`, `post_text_compiled`, `edit_notes`) VALUES (1, 1, 3, 2, 1241136000, '127.0.0.1', '', 1, 0, 1, 0, 1129068420, 0, 0, NULL, 1, 'Welcome to Icy Phoenix', 'If you can read this Topic it seems that you have successfully installed your new Forum using [b]Icy Phoenix[/b]. You should now visit the Admin Control Panel to configure some Settings. In ACP you can set the main settings and preferences for the whole sites (styles, languages, time, forums, download, users, album, etc.) while in CMS section you can configure options regarding the site pages (define permissions, add blocks, create new pages, create new menu, etc.). You may also want to configure [b].htaccess[/b] and [b]lang_main_settings.php[/b] (for each installed lang) to fine tune some other preferences, like error reporting, url rewrite, keywords, welcome message, charset and so on. Since everything seems to work fine you are now free to delete this Topic, this Forum and also the Category.\r\n\r\nShould you need any help you can refer to [url]http://www.icyphoenix.com/[/url] for support.\r\n\r\nThank you for choosing Icy Phoenix and remember to backup your db periodically.', '', '');
+INSERT INTO `phpbb_posts` (`post_id`, `topic_id`, `forum_id`, `poster_id`, `post_time`, `poster_ip`, `post_username`, `enable_bbcode`, `enable_html`, `enable_smilies`, `enable_sig`, `post_edit_time`, `post_edit_count`, `post_attachment`, `post_bluecard`, `enable_autolinks_acronyms`, `post_subject`, `post_text`, `post_text_compiled`, `edit_notes`) VALUES (1, 1, 3, 2, 1241136000, '127.0.0.1', '', 1, 0, 1, 0, 1129068420, 0, 0, NULL, 1, 'Welcome to InfinityCoreCMS', 'If you can read this Topic it seems that you have successfully installed your new Forum using [b]InfinityCoreCMS[/b]. You should now visit the Admin Control Panel to configure some Settings. In ACP you can set the main settings and preferences for the whole sites (styles, languages, time, forums, download, users, album, etc.) while in CMS section you can configure options regarding the site pages (define permissions, add blocks, create new pages, create new menu, etc.). You may also want to configure [b].htaccess[/b] and [b]lang_main_settings.php[/b] (for each installed lang) to fine tune some other preferences, like error reporting, url rewrite, keywords, welcome message, charset and so on. Since everything seems to work fine you are now free to delete this Topic, this Forum and also the Category.\r\n\r\nShould you need any help you can refer to [url]http://www.infinitycore.org/[/url] for support.\r\n\r\nThank you for choosing InfinityCoreCMS and remember to backup your db periodically.', '', '');
 INSERT INTO `phpbb_posts` (`post_id`, `topic_id`, `forum_id`, `poster_id`, `post_time`, `poster_ip`, `post_username`, `enable_bbcode`, `enable_html`, `enable_smilies`, `enable_sig`, `post_edit_time`, `post_edit_count`, `post_attachment`, `post_bluecard`, `enable_autolinks_acronyms`, `post_subject`, `post_text`, `post_text_compiled`, `edit_notes`) VALUES (2, 2, 3, 2, 1241136000, '127.0.0.1', '', 1, 0, 1, 0, 1129111805, 0, 0, NULL, 1, 'Sample News Post in Home Page', 'As you can see this Topic is Attached to a News Category which is displayed in the Home Page. You can simply create News Postings in Home Page by Posting a Topic and select the News Category into which the News Message should be posted.\r\n\r\nHave Fun...', '', '');
 
 ## `phpbb_privmsgs`
@@ -1572,7 +1572,7 @@ INSERT INTO `phpbb_ranks` (`rank_id`, `rank_title`, `rank_min`, `rank_special`, 
 
 ## `phpbb_referers`
 ##
-INSERT INTO `phpbb_referers` (`id`, `host`, `url`, `ip`, `hits`, `firstvisit`, `lastvisit`) VALUES (1, 'www.icyphoenix.com', 'http://icyphoenix.com', '127.0.0.1', 1, 1121336515, 1121336515);
+INSERT INTO `phpbb_referers` (`id`, `host`, `url`, `ip`, `hits`, `firstvisit`, `lastvisit`) VALUES (1, 'www.infinitycore.org', 'http://infinitycore.com', '127.0.0.1', 1, 1121336515, 1121336515);
 
 ## `phpbb_search_results`
 ##
@@ -1591,7 +1591,7 @@ INSERT INTO `phpbb_referers` (`id`, `host`, `url`, `ip`, `hits`, `firstvisit`, `
 
 ## `phpbb_shout`
 ##
-INSERT INTO `phpbb_shout` (`shout_id`, `shout_username`, `shout_user_id`, `shout_group_id`, `shout_session_time`, `shout_ip`, `shout_text`, `shout_active`, `enable_bbcode`, `enable_html`, `enable_smilies`, `enable_sig`) VALUES (1, '', 2, 0, 1129051367, '127.0.0.1', 'Welcome to [b]Icy Phoenix[/b]', 0, 1, 0, 1, 0);
+INSERT INTO `phpbb_shout` (`shout_id`, `shout_username`, `shout_user_id`, `shout_group_id`, `shout_session_time`, `shout_ip`, `shout_text`, `shout_active`, `enable_bbcode`, `enable_html`, `enable_smilies`, `enable_sig`) VALUES (1, '', 2, 0, 1129051367, '127.0.0.1', 'Welcome to [b]InfinityCoreCMS[/b]', 0, 1, 0, 1, 0);
 
 ## `phpbb_site_history`
 ##
@@ -1716,7 +1716,7 @@ INSERT INTO `phpbb_sudoku_starts` (`game_pack`, `game_num`, `game_level`, `line_
 
 ## `phpbb_themes`
 ##
-INSERT INTO `phpbb_themes` (`themes_id`, `template_name`, `style_name`, `head_stylesheet`, `body_background`, `body_bgcolor`, `tr_class1`, `tr_class2`, `tr_class3`, `td_class1`, `td_class2`, `td_class3`) VALUES (1, 'icy_phoenix', 'Frozen Phoenix', 'style_cyan.css', 'cyan', '', 'row1', 'row2', 'row3', 'row1', 'row2', 'row3');
+INSERT INTO `phpbb_themes` (`themes_id`, `template_name`, `style_name`, `head_stylesheet`, `body_background`, `body_bgcolor`, `tr_class1`, `tr_class2`, `tr_class3`, `td_class1`, `td_class2`, `td_class3`) VALUES (1, 'prosilver_ip', 'hInfinity Dark', 'style_dark.css', 'dark', '', 'row1', 'row2', 'row3', 'row1', 'row2', 'row3');
 
 ## `phpbb_title_infos`
 ##
@@ -1726,7 +1726,7 @@ INSERT INTO `phpbb_themes` (`themes_id`, `template_name`, `style_name`, `head_st
 
 ## `phpbb_topics`
 ##
-INSERT INTO `phpbb_topics` (`topic_id`, `forum_id`, `topic_title`, `topic_desc`, `topic_poster`, `topic_time`, `topic_views`, `topic_replies`, `topic_status`, `topic_type`, `topic_first_post_id`, `topic_last_post_id`, `topic_moved_id`, `topic_attachment`, `title_compl_infos`, `news_id`, `topic_calendar_time`, `topic_calendar_duration`, `topic_rating`, `topic_show_portal`) VALUES (1, 3, 'Welcome to Icy Phoenix', '', 2, 1241136000, 0, 0, 0, 0, 1, 1, 0, 0, NULL, 0, NULL, NULL, 0, 0);
+INSERT INTO `phpbb_topics` (`topic_id`, `forum_id`, `topic_title`, `topic_desc`, `topic_poster`, `topic_time`, `topic_views`, `topic_replies`, `topic_status`, `topic_type`, `topic_first_post_id`, `topic_last_post_id`, `topic_moved_id`, `topic_attachment`, `title_compl_infos`, `news_id`, `topic_calendar_time`, `topic_calendar_duration`, `topic_rating`, `topic_show_portal`) VALUES (1, 3, 'Welcome to InfinityCoreCMS', '', 2, 1241136000, 0, 0, 0, 0, 1, 1, 0, 0, NULL, 0, NULL, NULL, 0, 0);
 INSERT INTO `phpbb_topics` (`topic_id`, `forum_id`, `topic_title`, `topic_desc`, `topic_poster`, `topic_time`, `topic_views`, `topic_replies`, `topic_status`, `topic_type`, `topic_first_post_id`, `topic_last_post_id`, `topic_moved_id`, `topic_attachment`, `title_compl_infos`, `news_id`, `topic_calendar_time`, `topic_calendar_duration`, `topic_rating`, `topic_show_portal`) VALUES (2, 3, 'Sample News Post in Portal', '', 2, 1241136000, 0, 0, 0, 4, 2, 2, 0, 0, NULL, 1, 0, 0, 0, 0);
 
 ## `phpbb_topics_watch`
