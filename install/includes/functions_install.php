@@ -1396,7 +1396,7 @@ class ip_page
 		echo('	</table>' . "\n");
 	}
 
-	function setup_form($error, $lang_select, $dbms_select, $upgrade_option, $dbhost, $dbname, $dbuser, $dbpasswd, $table_prefix, $board_email, $server_name, $server_port, $script_path, $admin_name, $admin_pass1, $admin_pass2, $language, $hidden_fields)
+	function setup_form($error, $lang_select, $dbms_select, $upgrade_option, $dbhost, $dbname, $dbaname, $dbuser, $dbpasswd, $table_prefix, $board_email, $server_name, $server_port, $script_path, $admin_name, $admin_pass1, $admin_pass2, $language, $hidden_fields)
 	{
 		global $lang;
 
