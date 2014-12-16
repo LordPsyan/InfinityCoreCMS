@@ -315,7 +315,7 @@ INSERT INTO `phpbb_cms_block_settings` (`bs_id`, `user_id`, `name`, `content`, `
 INSERT INTO `phpbb_cms_block_settings` (`bs_id`, `user_id`, `name`, `content`, `blockfile`, `view`, `type`, `groups`, `locked`) VALUES(12, 0, 'Statistics', '', 'statistics', 0, 0, '', 1);
 INSERT INTO `phpbb_cms_block_settings` (`bs_id`, `user_id`, `name`, `content`, `blockfile`, `view`, `type`, `groups`, `locked`) VALUES(13, 0, 'Wordgraph', '', 'wordgraph', 0, 0, '', 1);
 INSERT INTO `phpbb_cms_block_settings` (`bs_id`, `user_id`, `name`, `content`, `blockfile`, `view`, `type`, `groups`, `locked`) VALUES(14, 0, 'Welcome', '<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">\r\n	<tr>\r\n		<td width="5%"><img src="images/icy_phoenix_small.png" alt="" /></td>\r\n		<td width="90%" align="center"><div class="post-text">Welcome To <b>InfinityCoreCMS</b></div><br /><br /></td>\r\n		<td width="5%"><img src="images/icy_phoenix_small_l.png" alt="" /></td>\r\n	</tr>\r\n</table>', '', 0, 0, '', 1);
-
+INSERT INTO `phpbb_cms_block_settings` (`bs_id`, `user_id`, `name`, `content`, `blockfile`, `view`, `type`, `groups`, `locked`) VALUES(15, 2, 'shoutbox', '', 'shoutbox', 0, 0, '', 1);
 ## `phpbb_cms_block_variable`
 ##
 
@@ -360,6 +360,7 @@ INSERT INTO `phpbb_cms_blocks` (`bid`, `bs_id`, `block_cms_id`, `layout`, `layou
 INSERT INTO `phpbb_cms_blocks` (`bid`, `bs_id`, `block_cms_id`, `layout`, `layout_special`, `title`, `bposition`, `weight`, `active`, `border`, `titlebar`, `background`, `local`) VALUES(12, 12, 0, 1, 0, 'Statistics', 'r', 3, 1, 1, 1, 1, 1);
 INSERT INTO `phpbb_cms_blocks` (`bid`, `bs_id`, `block_cms_id`, `layout`, `layout_special`, `title`, `bposition`, `weight`, `active`, `border`, `titlebar`, `background`, `local`) VALUES(13, 13, 0, 1, 0, 'Wordgraph', 'b', 2, 1, 0, 0, 0, 1);
 INSERT INTO `phpbb_cms_blocks` (`bid`, `bs_id`, `block_cms_id`, `layout`, `layout_special`, `title`, `bposition`, `weight`, `active`, `border`, `titlebar`, `background`, `local`) VALUES(14, 14, 0, 1, 0, 'Welcome', 'c', 2, 1, 1, 1, 1, 1);
+INSERT INTO `phpbb_cms_blocks` (`bid`, `bs_id`, `block_cms_id`, `layout`, `layout_special`, `title`, `bposition`, `weight`, `active`, `border`, `titlebar`, `background`, `local`) VALUES(15, 15, 0, 1, 0, 'Shoutbox', 'n', 1, 1, 1, 1, 1, 1);
 
 ## `phpbb_cms_config`
 ##
@@ -1448,8 +1449,7 @@ INSERT INTO `phpbb_link_config` (`config_name`, `config_value`) VALUES ('allow_n
 ## `phpbb_links`
 ##
 INSERT INTO `phpbb_links` (`link_id`, `link_title`, `link_desc`, `link_category`, `link_url`, `link_logo_src`, `link_joined`, `link_active`, `link_hits`, `user_id`, `user_ip`, `last_user_ip`) VALUES (1, 'InfinityCoreCMS Official Website', 'InfinityCoreCMS', 4, 'http://www.infinitycore.org/', 'images/links/banner_ip.gif', 1241136000, 1, 0, 2, '', '');
-INSERT INTO `phpbb_links` (`link_id`, `link_title`, `link_desc`, `link_category`, `link_url`, `link_logo_src`, `link_joined`, `link_active`, `link_hits`, `user_id`, `user_ip`, `last_user_ip`) VALUES (2, 'Mighty Gorgon Community', 'Mighty Gorgon Community', 4, 'http://www.mightygorgon.com/', 'images/links/banner_mightygorgon.gif', 1241136000, 1, 0, 2, '', '');
-INSERT INTO `phpbb_links` (`link_id`, `link_title`, `link_desc`, `link_category`, `link_url`, `link_logo_src`, `link_joined`, `link_active`, `link_hits`, `user_id`, `user_ip`, `last_user_ip`) VALUES (3, 'phpBB Official Website', 'Official phpBB Website', 4, 'http://www.phpbb.com/', 'images/links/banner_phpbb88a.gif', 1241136000, 1, 0, 2, '', '');
+INSERT INTO `phpbb_links` (`link_id`, `link_title`, `link_desc`, `link_category`, `link_url`, `link_logo_src`, `link_joined`, `link_active`, `link_hits`, `user_id`, `user_ip`, `last_user_ip`) VALUES (2, 'phpBB Official Website', 'Official phpBB Website', 4, 'http://www.phpbb.com/', 'images/links/banner_phpbb88a.gif', 1241136000, 1, 0, 2, '', '');
 
 ## `phpbb_liw_cache`
 ##
