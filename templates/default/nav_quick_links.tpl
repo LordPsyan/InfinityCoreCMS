@@ -94,14 +94,6 @@ if(GetCookie(tmp) == '2')
 				<!-- IF S_LOGGED_IN -->
 				<tr>
 					<td align="left" width="8">{IMG_NAV_MENU_SEP}</td>
-					<td class="genmed" align="left"><a href="{U_BOOKMARKS}">{L_LINK_BOOKMARKS}</a></td>
-				</tr>
-				<tr>
-					<td align="left" width="8">{IMG_NAV_MENU_SEP}</td>
-					<td class="genmed" align="left"><a href="{U_DRAFTS}">{L_LINK_DRAFTS}</a></td>
-				</tr>
-				<tr>
-					<td align="left" width="8">{IMG_NAV_MENU_SEP}</td>
 					<td class="genmed" align="left"><a href="{U_UPLOADED_IMAGES}">{L_LINK_UPLOADED_IMAGES}</a></td>
 				</tr>
 				<!-- ENDIF -->
@@ -171,51 +163,6 @@ if(GetCookie(tmp) == '2')
 			if(GetCookie(tmp) == '2')
 			{
 				ShowHide('news2_links', 'news2_links2', 'news2_links');
-			}
-			//-->
-			</script>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th style="cursor: pointer;" align="left" onclick="ShowHide('info_links', 'info_links2', 'info_links');">
-		<img src="{IMG_NAV_MENU_INFORMATION}" alt="{L_INFO_LINKS}" title="{L_INFO_LINKS}" />&nbsp;
-		<a href="#" onclick="return false;" title="{L_INFO_LINKS}" class="nav-menu-link"><b>{L_INFO_LINKS}</b></a>
-	</th>
-</tr>
-<tr>
-	<td class="row5">
-		<div id="info_links2" class="nav-menu">
-			<table class="forumline-no2" width="100%" cellspacing="0" cellpadding="2" border="0">
-				<tr>
-					<td width="8" align="left">{IMG_NAV_MENU_SEP}</td>
-					<td class="genmed" align="left"><a href="{U_CREDITS}">{L_LINK_CREDITS}</a></td>
-				</tr>
-				<tr>
-					<td width="8" align="left">{IMG_NAV_MENU_SEP}</td>
-					<td class="genmed" align="left"><a href="{U_REFERERS}">{L_LINK_REFERERS}</a></td>
-				</tr>
-				<tr>
-					<td width="8" align="left">{IMG_NAV_MENU_SEP}</td>
-					<td class="genmed" align="left"><a href="{U_VIEWONLINE}">{L_LINK_VIEWONLINE}</a></td>
-				</tr>
-				<tr>
-					<td width="8" align="left">{IMG_NAV_MENU_SEP}</td>
-					<td class="genmed" align="left"><a href="{U_STATISTICS}">{L_LINK_STATISTICS}</a></td>
-				</tr>
-				<tr>
-					<td width="8" align="left">{IMG_NAV_MENU_SEP}</td>
-					<td class="genmed" align="left"><a href="{U_DELETE_COOKIES}">{L_LINK_DELETE_COOKIES}</a></td>
-				</tr>
-			</table>
-		</div>
-		<div id="info_links" class="js-sh-box">
-			<script type="text/javascript">
-			<!--
-			tmp = 'info_links';
-			if(GetCookie(tmp) == '2')
-			{
-				ShowHide('info_links', 'info_links2', 'info_links');
 			}
 			//-->
 			</script>
