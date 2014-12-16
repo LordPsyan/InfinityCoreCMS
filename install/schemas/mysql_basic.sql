@@ -1448,7 +1448,7 @@ INSERT INTO `phpbb_link_config` (`config_name`, `config_value`) VALUES ('allow_n
 
 ## `phpbb_links`
 ##
-INSERT INTO `phpbb_links` (`link_id`, `link_title`, `link_desc`, `link_category`, `link_url`, `link_logo_src`, `link_joined`, `link_active`, `link_hits`, `user_id`, `user_ip`, `last_user_ip`) VALUES (1, 'InfinityCoreCMS Official Website', 'InfinityCoreCMS', 4, 'http://www.infinitycore.org/', 'images/links/banner_ip.gif', 1241136000, 1, 0, 2, '', '');
+INSERT INTO `phpbb_links` (`link_id`, `link_title`, `link_desc`, `link_category`, `link_url`, `link_logo_src`, `link_joined`, `link_active`, `link_hits`, `user_id`, `user_ip`, `last_user_ip`) VALUES (1, 'InfinityCoreCMS Official Website', 'InfinityCoreCMS', 4, 'http://www.infinitycore.org/', 'images/links/banner_ip.png', 1241136000, 1, 0, 2, '', '');
 INSERT INTO `phpbb_links` (`link_id`, `link_title`, `link_desc`, `link_category`, `link_url`, `link_logo_src`, `link_joined`, `link_active`, `link_hits`, `user_id`, `user_ip`, `last_user_ip`) VALUES (2, 'phpBB Official Website', 'Official phpBB Website', 4, 'http://www.phpbb.com/', 'images/links/banner_phpbb88a.gif', 1241136000, 1, 0, 2, '', '');
 
 ## `phpbb_liw_cache`
