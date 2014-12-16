@@ -1,21 +1,21 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @Icy Phoenix is based on phpBB
-* @copyright (c) 2008 phpBB Group
+* @InfinityCoreCMS is based on phpBB
+* @copyright (c) 2014 phpBB Group
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -242,18 +242,18 @@ function extract_current_page($root_path)
 
 	$page_full = $page_name . (($query_string) ? '?' . $query_string : '');
 
-	// Current page from Icy Phoenix root (for example: adm/index.php?i=10&b=2)
+	// Current page from InfinityCoreCMS root (for example: adm/index.php?i=10&b=2)
 	$page = (($page_dir) ? $page_dir . '/' : '') . $page_full;
 
 	// The script path from the webroot to the current directory (for example: /ip/adm/) : always prefixed with / and ends in /
 	$script_path = trim(str_replace('\\', '/', dirname($script_name)));
 
-	// The script path from the webroot to the Icy Phoenix root (for example: /ip/)
+	// The script path from the webroot to the InfinityCoreCMS root (for example: /ip/)
 	$script_dirs = explode('/', $script_path);
 	array_splice($script_dirs, -sizeof($page_dirs));
 	$root_script_path = implode('/', $script_dirs) . (sizeof($root_dirs) ? '/' . implode('/', $root_dirs) : '');
 
-	// We are on the base level (Icy Phoenix root == webroot), lets adjust the variables a bit...
+	// We are on the base level (InfinityCoreCMS root == webroot), lets adjust the variables a bit...
 	if (!$root_script_path)
 	{
 		$root_script_path = ($page_dir) ? str_replace($page_dir, '', $script_path) : $script_path;
@@ -716,7 +716,7 @@ function ip_mysql_escape($string)
 }
 
 /**
-* Icy Phoenix UTF8 Conditional Decode
+* InfinityCoreCMS UTF8 Conditional Decode
 */
 function ip_utf8_decode($string)
 {
@@ -5903,7 +5903,7 @@ function msg_handler($errno, $msg_text, $errfile, $errline)
 				$errfile = str_replace(array(phpbb_realpath(IP_ROOT_PATH), '\\'), array('', '/'), $errfile);
 				$msg_text = str_replace(array(phpbb_realpath(IP_ROOT_PATH), '\\'), array('', '/'), $msg_text);
 
-				echo '<b>[Icy Phoenix Debug] PHP Notice</b>: in file <b>' . $errfile . '</b> on line <b>' . $errline . '</b>: <b>' . $msg_text . '</b><br />' . "\n";
+				echo '<b>[InfinityCoreCMS Debug] PHP Notice</b>: in file <b>' . $errfile . '</b> on line <b>' . $errline . '</b>: <b>' . $msg_text . '</b><br />' . "\n";
 			}
 
 			return;
@@ -5972,7 +5972,7 @@ function html_message($msg_title, $msg_text, $return_url)
 	echo '		</div>';
 	echo '	</div>';
 	echo '	<div id="page-footer">';
-	echo '		Powered by <a href="http://www.icyphoenix.com/" target="_blank">Icy Phoenix</a> based on <a href="http://www.phpbb.com/" target="_blank">phpBB</a>';
+	echo '		Powered by <a href="http://www.infinitycore.org/" target="_blank">InfinityCoreCMS</a> based on <a href="http://www.phpbb.com/" target="_blank">phpBB</a>';
 	echo '	</div>';
 	echo '</div>';
 	echo '</body>';

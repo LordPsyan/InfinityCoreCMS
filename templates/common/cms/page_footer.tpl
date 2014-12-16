@@ -14,7 +14,7 @@
 <br />
 <div id="footer">
 	<p class="align-left">{L_CMS_THANKS}</p>
-	<p class="align-right"><!-- IF S_GENERATION_TIME -->{PAGE_GEN_TIME} <b>{GENERATION_TIME}s</b> &bull; {SQL_QUERIES}: {NUMBER_QUERIES}<!-- ELSE -->{CURRENT_TIME}<!-- ENDIF --> &bull; <a href="http://www.icyphoenix.com/" style="text-decoration: none;" target="_blank">Icy Phoenix {IP_VERSION}</a></p>
+	<p class="align-right"><!-- IF S_GENERATION_TIME -->{PAGE_GEN_TIME} <b>{GENERATION_TIME}s</b> &bull; {SQL_QUERIES}: {NUMBER_QUERIES}<!-- ELSE -->{CURRENT_TIME}<!-- ENDIF --> &bull; <a href="http://www.infinitycore.org/" style="text-decoration: none;" target="_blank">InfinityCoreCMS {IP_VERSION}</a></p>
 </div>
 
 <!-- INCLUDE ../common/cms/cms_jquery_ajax.tpl -->

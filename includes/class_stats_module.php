@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -45,7 +45,7 @@ class Statistics
 	}
 
 	// Setup Bars for Modules (for example Top Posters, Top Smilies etc...)
-	// Mighty Gorgon: code removed because it has been replaced with standard Icy Phoenix template system
+	// Mighty Gorgon: code removed because it has been replaced with standard InfinityCoreCMS template system
 	function init_bars($bars = '')
 	{
 	}

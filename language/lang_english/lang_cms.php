@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	exit;
 }
@@ -27,10 +27,10 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	// MG CMS - BEGIN
-	'CMS_WELCOME' => 'Welcome to Icy Phoenix',
-	'CMS_THANKS' => 'Thanks for using <a href="http://www.icyphoenix.com/" title="Icy Phoenix">Icy Phoenix</a>. If you need help you can check <a href="http://www.icyphoenix.com/viewforumlist.php?f=4" title="Documentation">Documentation</a> or <a href="http://www.icyphoenix.com/forum.php" title="Support Forum">Support Forum</a>.',
+	'CMS_WELCOME' => 'Welcome to InfinityCoreCMS',
+	'CMS_THANKS' => 'Thanks for using <a href="http://www.infinitycore.org/" title="InfinityCoreCMS">InfinityCoreCMS</a>. If you need help you can check <a href="http://www.infinitycore.org/viewforumlist.php?f=4" title="Documentation">Documentation</a> or <a href="http://www.infinitycore.org/forum.php" title="Support Forum">Support Forum</a>.',
 	'BP_Title' => 'Blocks Position Tag',
-	'BP_Explain' => 'Add, edit or delete blocks position that can be used in site pages. The default positions are \'header\', \'footer\', \'right\', \'left\' and \'centre\'. These positions correspond to the layout being used for a specific site page. Only existing positions per site page must be added here. Position keys that are not existing in the specified layout will not appear in the site page. Each position tag key and character must be unique per site page.',
+	'BP_Explain' => 'Add, edit or delete blocks position that can be used in site pages. The default positions are \'header\', \'footer\', \'right\', \'left\' and \'center\'. These positions correspond to the layout being used for a specific site page. Only existing positions per site page must be added here. Position keys that are not existing in the specified layout will not appear in the site page. Each position tag key and character must be unique per site page.',
 	'BP_Position' => 'Position character',
 	'BP_Key' => 'Position Tag Key',
 	'BP_Layout' => 'Site Page',
@@ -302,8 +302,8 @@ $lang = array_merge($lang, array(
 
 // CMS - TIPS - BEGIN
 	'CMS_TIP_TITLE' => 'Main CMS page',
-	'CMS_TIP_CUSTOM_PAGES' => 'Customized pages: all pages created from scratch into Icy Phoenix based on one among the available layouts templates.<br />You can customize each page by adding, editing or deleting blocks and contents.<br />You can also assign a a physical name to a page (if your server allows it, you can create for example a new page called <b>mypage.php</b>).<br />In this section you can also customize permissions and global page settings like breadcrumbs and global blocks.',
-	'CMS_TIP_STANDARD_PAGES' => 'Standard pages: default pages in Icy Phoenix.<br />These pages already have a defined content, but you can customize them by adding blocks or content in one of the allowed positions.<br />You can also add new pages, but these must already exists on your server.<br />In this section you can also customize permissions and global page settings like breadcrumbs and global blocks.',
+	'CMS_TIP_CUSTOM_PAGES' => 'Customized pages: all pages created from scratch into InfinityCoreCMS based on one among the available layouts templates.<br />You can customize each page by adding, editing or deleting blocks and contents.<br />You can also assign a a physical name to a page (if your server allows it, you can create for example a new page called <b>mypage.php</b>).<br />In this section you can also customize permissions and global page settings like breadcrumbs and global blocks.',
+	'CMS_TIP_STANDARD_PAGES' => 'Standard pages: default pages in InfinityCoreCMS.<br />These pages already have a defined content, but you can customize them by adding blocks or content in one of the allowed positions.<br />You can also add new pages, but these must already exists on your server.<br />In this section you can also customize permissions and global page settings like breadcrumbs and global blocks.',
 	'CMS_TIP_BLOCK_SETTINGS' => 'A block is a section or widget you can add to any page.<br />Before being able to add a block to a page, you need to create it in this section.<br />Once block content has been defined and saved, you can then add the block on any page.<br />After you have created a new block, you can also add the same block on multiple pages without having to duplicate its content again.',
 	'CMS_TIP_GLOBAL_BLOCKS' => 'Global blocks are blocks that could be used on any page without the needs to add them on any page.<br />To be able to display global blocks you need to make sure that the target page has Global Blocks enabled in its settings.',
 	'CMS_TIP_AUTH' => 'Permissions system for CMS and plugins.',
@@ -554,9 +554,9 @@ $lang = array_merge($lang, array(
 	'cms_var_md_recent_topics_wide_style' => 'Recent Topics Style',
 	'cms_var_md_recent_topics_wide_style_explain' => 'Choose between static and scrolling',
 	'cms_var_md_rss_feeder' => 'RSS Feed Address',
-	'cms_var_md_rss_feeder_explain' => 'Enter the address of the RSS feed (i.e. http://www.icyphoenix.com/rss.php)',
+	'cms_var_md_rss_feeder_explain' => 'Enter the address of the RSS feed (i.e. http://www.infinitycore.org/rss.php)',
 	'cms_var_md_rss_title' => 'RSS Feed Title',
-	'cms_var_md_rss_title_explain' => 'Enter the title of the RSS feed (i.e. Icy Phoenix)',
+	'cms_var_md_rss_title_explain' => 'Enter the title of the RSS feed (i.e. InfinityCoreCMS)',
 	'cms_var_md_rss_style' => 'RSS Block Style',
 	'cms_var_md_rss_style_explain' => 'Choose between horizontal and vertical',
 	'cms_var_md_rss_scroll' => 'RSS Block Scroll',
@@ -643,7 +643,7 @@ $lang = array_merge($lang, array(
 	'cms_option_Yes' => 'Yes',
 	'cms_option_No' => 'No',
 	'cms_option_Left' => 'Left',
-	'cms_option_Center' => 'Centre',
+	'cms_option_Center' => 'Center',
 	'cms_option_Right' => 'Right',
 
 	// BLOCKS VALUES
@@ -660,16 +660,16 @@ $lang = array_merge($lang, array(
 	// BLOCKS POSITIONS
 	'cms_pos_header' => 'Page Header',
 	'cms_pos_headerleft' => 'Left',
-	'cms_pos_headercenter' => 'Top/Centre',
-	'cms_pos_footercenter' => 'Bottom/Centre',
+	'cms_pos_headercenter' => 'Top/Center',
+	'cms_pos_footercenter' => 'Bottom/Center',
 	'cms_pos_footerright' => 'Right',
 	'cms_pos_footer' => 'Page Footer',
 	'cms_pos_nav' => 'Navigation Bar',
 	'cms_pos_left' => 'Left',
-	'cms_pos_center' => 'Centre',
+	'cms_pos_center' => 'Center',
 	'cms_pos_right' => 'Right',
-	'cms_pos_xsnews' => 'News (Centre)',
-	'cms_pos_centerbottom' => 'Bottom/Centre',
+	'cms_pos_xsnews' => 'News (Center)',
+	'cms_pos_centerbottom' => 'Bottom/Center',
 	'cms_pos_toprow' => 'Top',
 	'cms_pos_column1' => 'Column 1 (Left)',
 	'cms_pos_column2' => 'Column 2 (Right)',
@@ -678,8 +678,8 @@ $lang = array_merge($lang, array(
 	'cms_pos_gfooter' => 'Global Footer',
 	'cms_pos_ghtop' => 'Header Top',
 	'cms_pos_ghbottom' => 'Header Bottom',
-	'cms_pos_ghleft' => 'Header Centre (Left)',
-	'cms_pos_ghright' => 'Header Centre (Right)',
+	'cms_pos_ghleft' => 'Header Center (Left)',
+	'cms_pos_ghright' => 'Header Center (Right)',
 
 	// BLOCKS GLOBAL VARS
 	'cms_var_cms_style' => 'CMS Modern Style',

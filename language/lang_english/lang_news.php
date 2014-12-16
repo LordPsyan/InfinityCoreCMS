@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	exit;
 }
@@ -57,7 +57,7 @@ $lang = array_merge($lang, array(
 
 	'Enable_News' => '<strong>Enable news posting</strong>',
 	'News_Path' => '<strong>News icons path</strong>',
-	'News_Path_Explain' => 'Path under your icyphoenix root dir, e.g. images/news',
+	'News_Path_Explain' => 'Path under your infinitycore root dir, e.g. images/news',
 
 	'News_explain' => 'Configure the Slashdot News Mod by CMX.',
 	'News_settings' => 'News Settings',

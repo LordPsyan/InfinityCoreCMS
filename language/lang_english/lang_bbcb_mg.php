@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	exit;
 }
@@ -200,7 +200,7 @@ $lang = array_merge($lang, array(
 	'xs_bbc_hide_quote_message' => 'Quoted Hidden Message, which is still hidden.',
 	'xs_bbc_hide_message_explain' => 'Sorry, but you must be registered and also post a reply to view this message.',
 
-	'bbcode_url' => 'Enter the URL (eg. http://www.icyphoenix.com)',
+	'bbcode_url' => 'Enter the URL (eg. http://www.infinitycore.org)',
 	'bbcode_url_title' => 'Enter the title of the link',
 	'bbcode_url_empty' => 'You didn\'t enter a url',
 	'bbcode_url_errors' => 'Error!',
@@ -213,7 +213,7 @@ $js_lang = array();
 
 $js_lang['s_formerrors'] = 'You must insert some text to send a message';
 $js_lang['s_gen_error'] = ':: Error ::\n\n';
-$js_lang['s_url_insert'] = 'Insert the URL (eg. http://www.icyphoenix.com/)';
+$js_lang['s_url_insert'] = 'Insert the URL (eg. http://www.infinitycore.org/)';
 $js_lang['s_url_insert_tip'] = 'http://';
 $js_lang['s_url_error'] = 'You didn\'t enter any URL';
 $js_lang['s_url_title_insert'] = 'Enter the title of the link';

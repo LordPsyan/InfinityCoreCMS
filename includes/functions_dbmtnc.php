@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -200,8 +200,8 @@ $config_data = array('dbmtnc_disallow_postcounter', 'dbmtnc_disallow_rebuild', '
 $default_config = array(
 	'config_id' => '1',
 	'board_disable' => '0',
-	'sitename' => 'Icy Phoenix',
-	'site_desc' => 'Icy Phoenix',
+	'sitename' => 'InfinityCoreCMS',
+	'site_desc' => 'InfinityCoreCMS',
 	'cookie_name' => 'ip',
 	'cookie_path' => '/',
 	'cookie_domain' => '',
@@ -337,7 +337,7 @@ $default_config = array(
 	'smilies_insert' => '1',
 	'sudoku_version' => '1.0.6',
 	'yahoo_search_savepath' => 'cache',
-	'yahoo_search_additional_urls' => 'http://www.icyphoenix.com',
+	'yahoo_search_additional_urls' => 'http://www.infinitycore.org',
 	'yahoo_search_compress' => '1',
 	'yahoo_search_compression_level' => '9',
 	'max_link_bookmarks' => '0',
@@ -716,7 +716,7 @@ $default_config = array(
 	'ajax_chat_check_online' => '0',
 
 	// IP Version
-	'ip_version' => ICYPHOENIX_VERSION,
+	'ip_version' => INFINITYCORECMS_VERSION,
 	'cms_version' => '2.0.0',
 
 	// Cash

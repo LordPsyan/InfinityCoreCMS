@@ -1,21 +1,21 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @Icy Phoenix is based on phpBB
-* @copyright (c) 2008 phpBB Group
+* @InfinityCoreCMS is based on phpBB
+* @copyright (c) 2014 phpBB Group
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -167,7 +167,7 @@ require(IP_ROOT_PATH . 'config.' . PHP_EXT);
 
 if(!defined('IP_INSTALLED') && !defined('IN_INSTALL'))
 {
-	die('<p>config.' . PHP_EXT . ' could not be found.</p><p><a href="' . IP_ROOT_PATH . 'install/install.' . PHP_EXT . '">Click here to install Icy Phoenix</a></p>');
+	die('<p>config.' . PHP_EXT . ' could not be found.</p><p><a href="' . IP_ROOT_PATH . 'install/install.' . PHP_EXT . '">Click here to install InfinityCoreCMS</a></p>');
 	//header('Location: ' . IP_ROOT_PATH . 'install/install.' . PHP_EXT);
 	exit;
 }

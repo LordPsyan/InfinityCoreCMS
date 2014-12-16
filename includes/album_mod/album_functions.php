@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -1032,7 +1032,7 @@ function album_build_detail_vars(&$result, $data, $page_params = '', $auth_right
 {
 	global $config, $user, $lang, $album_config;
 
-	album_build_column_vars(&$result, $data, $page_params);
+	album_build_column_vars($result, $data, $page_params);
 
 	$rating = '';
 	if ($album_config['rate'] == 1)

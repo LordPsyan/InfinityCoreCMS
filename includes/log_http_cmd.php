@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -175,7 +175,7 @@ if(($page_array['page_dir'] == ADM) || ($page_array['page_dir'] == ('../' . ADM)
 		case ('admin_config_settings.' . PHP_EXT):
 			if(isset($_POST['submit']))
 			{
-				$content .= '[Icy Phoenix Config]';
+				$content .= '[InfinityCoreCMS Config]';
 				if ($db_log_actions == true)
 				{
 					$db_log = array(

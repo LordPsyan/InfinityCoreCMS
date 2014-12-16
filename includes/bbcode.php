@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -92,9 +92,9 @@ $text = $bbcode->autolink_text($text, $forum_id);
 // If included via function we need to make sure to have the requested globals...
 global $db, $cache, $config, $lang;
 
-// To use this file outside Icy Phoenix you need to comment the define below and remove the check on top of the file.
-define('IS_ICYPHOENIX', true);
-if(defined('IS_ICYPHOENIX'))
+// To use this file outside InfinityCoreCMS you need to comment the define below and remove the check on top of the file.
+define('IS_INFINITYCORECMS', true);
+if(defined('IS_INFINITYCORECMS'))
 {
 	// Include moved to functions... to avoid including wrong lang file ($config['default_lang'] is only assigned after session request)
 	//setup_extra_lang(array('lang_bbcb_mg'));
@@ -105,7 +105,7 @@ else
 	if (!defined('PHP_EXT')) define('PHP_EXT', substr(strrchr(__FILE__, '.'), 1));
 	$config['allow_all_bbcode'] = 0;
 	$config['default_lang'] = 'english';
-	$config['server_name'] = 'icyphoenix.com';
+	$config['server_name'] = 'infinitycore.com';
 	$config['script_path'] = '/';
 	$config['liw_enabled'] = 0;
 	$config['liw_max_width'] = 0;
@@ -1884,7 +1884,7 @@ class bbcode
 				return $error;
 			}
 			$show = false;
-			if(defined('IS_ICYPHOENIX') && $user->data['session_logged_in'])
+			if(defined('IS_INFINITYCORECMS') && $user->data['session_logged_in'])
 			{
 				if (($user->data['user_level'] == ADMIN) || ($user->data['user_level'] == MOD))
 				{
@@ -3385,7 +3385,7 @@ class bbcode
 	// Converts text to html code
 	function parse($text, $id = false, $light = false, $clean_tags = false)
 	{
-		if(defined('IN_ICYPHOENIX'))
+		if(defined('IN_INFINITYCORECMS'))
 		{
 			// if you have an old phpBB based site with old posts, you may want to enable this BBCode UID strip REG EX Replace
 			//$text = preg_replace("/\:([a-f0-9]{10})/s", '', $text);
@@ -3449,7 +3449,7 @@ class bbcode
 		$this->html = $this->process(0, strlen($this->text), $this->data, $clean_tags);
 		$this->process_smilies();
 
-		if(defined('IN_ICYPHOENIX'))
+		if(defined('IN_INFINITYCORECMS'))
 		{
 			global $db, $cache, $config, $lang;
 			if (!empty($config['enable_custom_bbcodes']))
@@ -4133,7 +4133,7 @@ class bbcode
 
 	function acronym_pass($text)
 	{
-		if (!defined('IS_ICYPHOENIX'))
+		if (!defined('IS_INFINITYCORECMS'))
 		{
 			return $text;
 		}

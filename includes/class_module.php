@@ -1,21 +1,21 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (C) 2008 Icy Phoenix
+* @copyright (C) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @Icy Phoenix is based on phpBB
-* @copyright (c) 2008 phpBB Group
+* @InfinityCoreCMS is based on phpBB
+* @copyright (c) 2014 phpBB Group
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }

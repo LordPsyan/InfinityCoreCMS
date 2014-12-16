@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -17,7 +17,7 @@
 
 // Set constants
 define('CTRACKER_ACP', true);
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 
 /**
 * <b>Module Number Documentation:</b>

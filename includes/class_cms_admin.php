@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -211,7 +211,7 @@ class cms_admin
 				'<a href="' . IP_ROOT_PATH . CMS_PAGE_CMS . '?sid=' . $user->data['session_id'] . '">' . strtoupper($lang['LINK_CMS']) . '</a>',
 				'<a href="' . IP_ROOT_PATH . CMS_PAGE_HOME . '">' . strtoupper($lang['LINK_HOME']) . '</a>',
 				'<a href="' . IP_ROOT_PATH . CMS_PAGE_FORUM . '">' . strtoupper($lang['LINK_FORUM']) . '</a>',
-				'<a href="http://www.icyphoenix.com" target="_blank">ICY PHOENIX</a>'
+				'<a href="http://www.infinitycore.org" target="_blank">ICY PHOENIX</a>'
 			),
 			'AUTH' => AUTH_ALL,
 		);

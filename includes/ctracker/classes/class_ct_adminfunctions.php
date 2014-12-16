@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -29,7 +29,7 @@
 
 
 // Constant check
-if (!defined('IN_ICYPHOENIX') || !defined('CTRACKER_ACP'))
+if (!defined('IN_INFINITYCORECMS') || !defined('CTRACKER_ACP'))
 {
 	die('Hacking attempt!');
 }
@@ -312,17 +312,17 @@ class ct_adminfunctions
 					$action_counter++;
 
 					// New condition added to avoid warning where some constants are defined on top of the file!
-					if(empty($constant_set) && empty($root_path) && ($action_counter == 1) && preg_match('/define\\(|\\$ct_ignorepvar|\\$ct_ignoregvar/', $scanline) && !preg_match('/define\\(\'in_icyphoenix\'./m', $scanline))
+					if(empty($constant_set) && empty($root_path) && ($action_counter == 1) && preg_match('/define\\(|\\$ct_ignorepvar|\\$ct_ignoregvar/', $scanline) && !preg_match('/define\\(\'in_infinitycore\'./m', $scanline))
 					{
 						$action_counter = 0;
 					}
 					else
 					{
-						if(preg_match('/define\\(\'in_icyphoenix\'./m', $scanline) && in_array($action_counter, array(1)))
+						if(preg_match('/define\\(\'in_infinitycore\'./m', $scanline) && in_array($action_counter, array(1)))
 						{
 							$constant_set = true;
 						}
-						elseif(preg_match('/if\\(!defined\\(\'in_icyphoenix\'./m', $scanline) && in_array($action_counter, array(1)))
+						elseif(preg_match('/if\\(!defined\\(\'in_infinitycore\'./m', $scanline) && in_array($action_counter, array(1)))
 						{
 							$constant_check = true;
 							break;

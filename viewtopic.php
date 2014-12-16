@@ -1,17 +1,17 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @Icy Phoenix is based on phpBB
-* @copyright (c) 2008 phpBB Group
+* @InfinityCoreCMS is based on phpBB
+* @copyright (c) 2014 phpBB Group
 *
 */
 
@@ -24,7 +24,7 @@ define('CT_SECLEVEL', 'MEDIUM');
 $ct_ignoregvar = array('');
 // Added to optimize memory for attachments
 define('ATTACH_DISPLAY', true);
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './');
 if (!defined('PHP_EXT')) define('PHP_EXT', substr(strrchr(__FILE__, '.'), 1));
 include(IP_ROOT_PATH . 'common.' . PHP_EXT);
@@ -65,7 +65,7 @@ $sort_days_array = array(0, 1, 7, 14, 30, 90, 180, 365);
 $sort_days_lang_array = array(0 => $lang['ALL_POSTS'], 1 => $lang['1_DAY'], 7 => $lang['7_DAYS'], 14 => $lang['2_WEEKS'], 30 => $lang['1_MONTH'], 90 => $lang['3_MONTHS'], 180 => $lang['6_MONTHS'], 365 => $lang['1_YEAR']);
 $sort_key_array = array('t', 's', 'a');
 $sort_key_lang_array = array('t' => $lang['POST_TIME'], 's' => $lang['SUBJECT'], 'a' => $lang['AUTHOR']);
-// In Icy Phoenix we still prefer sorting by time instead by ID... it could lead to collateral problems I know...
+// In InfinityCoreCMS we still prefer sorting by time instead by ID... it could lead to collateral problems I know...
 //$sort_key_sql_array = array('t' => 'p.post_id', 's' => 'p.post_subject', 'a' => 'u.username_clean');
 $sort_key_sql_array = array('t' => 'p.post_time', 's' => 'p.post_subject', 'a' => 'u.username_clean');
 $sort_dir_array = array('a', 'd');

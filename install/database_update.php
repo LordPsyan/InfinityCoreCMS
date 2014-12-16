@@ -1,15 +1,15 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 define('IN_INSTALL', true);
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 define('IP_DB_UPDATE', true);
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './../');
 if (!defined('PHP_EXT')) define('PHP_EXT', substr(strrchr(__FILE__, '.'), 1));
@@ -27,7 +27,7 @@ if (@file_exists(@$ip_functions->ip_realpath(IP_ROOT_PATH . 'config.' . PHP_EXT)
 	include(IP_ROOT_PATH . 'config.' . PHP_EXT);
 }
 
-// Check if Icy Phoenix or phpBB are already installed
+// Check if InfinityCoreCMS or phpBB are already installed
 if (defined('IP_INSTALLED') || defined('PHPBB_INSTALLED'))
 {
 	if (empty($user->data) || !$user->data['session_logged_in'])
@@ -39,7 +39,7 @@ if (defined('IP_INSTALLED') || defined('PHPBB_INSTALLED'))
 	else
 	{
 		// phpBB only - BEGIN
-		// No need to add an IF because these vars won't damage anything if we are in Icy Phoenix ;-)
+		// No need to add an IF because these vars won't damage anything if we are in InfinityCoreCMS ;-)
 		define('IN_PHPBB', true);
 		$phpbb_root_path = IP_ROOT_PATH;
 		$phpEx = PHP_EXT;
@@ -95,7 +95,7 @@ if (defined('IP_INSTALLED') || defined('PHPBB_INSTALLED'))
 	require('includes/ip_tools.' . PHP_EXT);
 	exit;
 	/*
-	$page_framework->page_header('Icy Phoenix', '', false, false);
+	$page_framework->page_header('InfinityCoreCMS', '', false, false);
 	$page_framework->stats_box($current_ip_version, $current_phpbb_version);
 	$page_framework->box_upgrade_info();
 	$page_framework->page_footer(false);

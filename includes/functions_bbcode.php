@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -26,7 +26,7 @@ function generate_text_for_display($text, $only_smileys = false, $censor = true,
 		return '';
 	}
 
-	if (defined('IS_ICYPHOENIX') && $censor)
+	if (defined('IS_INFINITYCORECMS') && $censor)
 	{
 		$text = censor_text($text);
 	}

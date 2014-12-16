@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -16,7 +16,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	exit;
 }
@@ -31,7 +31,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 // If you want to credit the Author on the Statistics Page, uncomment the second line.
 // 'Version_info' => '<br />Statistics Mod Version %s', //%s = number
-	'Version_info' => '<br />Statistics recoded by <a href="http://www.icyphoenix.com/">Mighty Gorgon</a> based on Statistics Mod Version %s &copy; 2002 <a href="http://www.opentools.de/board">Acyd Burn</a>',
+	'Version_info' => '<br />Statistics recoded by <a href="http://www.infinitycore.org/">Mighty Gorgon</a> based on Statistics Mod Version %s &copy; 2002 <a href="http://www.opentools.de/board">Acyd Burn</a>',
 
 // These Language Variables are available for all installed Modules
 	'Rank' => 'Rank',
@@ -59,7 +59,7 @@ $lang = array_merge($lang, array(
 	'Clear_cache' => 'Clear Module Cache',
 	'Clear_cache_desc' => 'Check Box to Clear all the current cached data for all modules.',
 	'Modules_directory' => 'Modules Directory',
-	'Modules_directory_desc' => 'The directory relative to the home Icy Phoenix directory where modules are located.<br /><b>Note:</b> A trailing / or \ must not be used!',
+	'Modules_directory_desc' => 'The directory relative to the home InfinityCoreCMS directory where modules are located.<br /><b>Note:</b> A trailing / or \ must not be used!',
 
 // Status Messages
 	'Messages' => 'Admin Messages',

@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -16,7 +16,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	exit;
 }
@@ -192,7 +192,7 @@ $lang['Cash_settings_updated'] = 'Cash Mod Settings Updated Successfully';
 $lang['Cash_enabled'] = 'Enable Currency';
 $lang['Cash_custom_currency'] = 'Custom Currency for Cash Mod';
 $lang['Cash_image'] = 'Display the currency as an image';
-$lang['Cash_imageurl'] = 'Image (Relative to Icy Phoenix root path):';
+$lang['Cash_imageurl'] = 'Image (Relative to InfinityCoreCMS root path):';
 $lang['Cash_imageurl_explain'] = 'Use this to define a small image associated with the currency';
 $lang['Prefix'] = 'Prefix';
 $lang['Postfix'] = 'Postfix';

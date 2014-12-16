@@ -1,17 +1,17 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @Icy Phoenix is based on phpBB
-* @copyright (c) 2008 phpBB Group
+* @InfinityCoreCMS is based on phpBB
+* @copyright (c) 2014 phpBB Group
 *
 */
 
@@ -234,9 +234,9 @@ class emailer
 
 		$headers[] = 'X-Priority: ' . $this->mail_priority;
 		$headers[] = 'X-MSMail-Priority: ' . (($this->mail_priority == MAIL_LOW_PRIORITY) ? 'Low' : (($this->mail_priority == MAIL_NORMAL_PRIORITY) ? 'Normal' : 'High'));
-		$headers[] = 'X-Mailer: Icy Phoenix';
-		$headers[] = 'X-MimeOLE: Icy Phoenix';
-		$headers[] = 'X-Icy-Phoenix-Origin: icyphoenix://' . str_replace(array('http://', 'https://'), array('', ''), create_server_url());
+		$headers[] = 'X-Mailer: InfinityCoreCMS';
+		$headers[] = 'X-MimeOLE: InfinityCoreCMS';
+		$headers[] = 'X-Icy-Phoenix-Origin: infinitycore://' . str_replace(array('http://', 'https://'), array('', ''), create_server_url());
 
 		if (sizeof($this->extra_headers))
 		{
@@ -301,7 +301,7 @@ class emailer
 
 		$encode_eol = !empty($config['smtp_delivery']) ? "\r\n" : $this->eol;
 
-		// Old Icy Phoenix Code - BEGIN
+		// Old InfinityCoreCMS Code - BEGIN
 		// Note: this is for {} parsing
 		// Escape all quotes, else the eval will fail.
 		$this->msg = str_replace("'", "\'", $this->msg);
@@ -347,7 +347,7 @@ class emailer
 		{
 			$this->msg = trim(preg_replace('#' . $drop_header . '#s', '', $this->msg));
 		}
-		// Old Icy Phoenix Code - END
+		// Old InfinityCoreCMS Code - END
 
 		// Build to, cc and bcc strings
 		$to = '';
@@ -884,7 +884,7 @@ class queue
 			if ($fp = @fopen($this->cache_file, 'wb'))
 			{
 				@flock($fp, LOCK_EX);
-				fwrite($fp, "<?php\nif (!defined('IN_ICYPHOENIX')) exit;\n\$this->queue_data = unserialize(" . var_export(serialize($this->queue_data), true) . ");\n\n?>");
+				fwrite($fp, "<?php\nif (!defined('IN_INFINITYCORECMS')) exit;\n\$this->queue_data = unserialize(" . var_export(serialize($this->queue_data), true) . ");\n\n?>");
 				@flock($fp, LOCK_UN);
 				fclose($fp);
 
@@ -925,7 +925,7 @@ class queue
 		if ($fp = @fopen($this->cache_file, 'w'))
 		{
 			@flock($fp, LOCK_EX);
-			fwrite($fp, "<?php\nif (!defined('IN_ICYPHOENIX')) exit;\n\$this->queue_data = unserialize(" . var_export(serialize($this->data), true) . ");\n\n?>");
+			fwrite($fp, "<?php\nif (!defined('IN_INFINITYCORECMS')) exit;\n\$this->queue_data = unserialize(" . var_export(serialize($this->data), true) . ");\n\n?>");
 			@flock($fp, LOCK_UN);
 			fclose($fp);
 

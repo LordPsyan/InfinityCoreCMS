@@ -12,7 +12,7 @@
 [email] mightygorgon@mightygorgon.com
 
 # your webpage url
-[url] http://www.icyphoenix.com
+[url] http://www.infinitycore.org
 
 # module version
 [version] 1.0.0

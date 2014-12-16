@@ -1,21 +1,21 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @Icy Phoenix is based on phpBB
-* @copyright (c) 2008 phpBB Group
+* @InfinityCoreCMS is based on phpBB
+* @copyright (c) 2014 phpBB Group
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	exit;
 }
@@ -1031,7 +1031,7 @@ class sql_db
 <head>
 	<link rel="stylesheet" href="' . IP_ROOT_PATH . 'templates/common/acp.css" type="text/css" />
 	<meta name="author" content="Mighty Gorgon" />
-	<title>Icy Phoenix</title>
+	<title>InfinityCoreCMS</title>
 	<!--[if lt IE 7]>
 	<script type="text/javascript" src="' . IP_ROOT_PATH . 'templates/common/js/pngfix.js"></script>
 	<![endif]-->
@@ -1048,14 +1048,14 @@ class sql_db
 	<table class="" width="100%" cellspacing="0" cellpadding="0" border="0">
 	<tr>
 	<td height="150" align="left" valign="middle">
-		<a href="http://www.icyphoenix.com" title="Icy Phoenix"><img src="' . IP_ROOT_PATH . 'images/logo_ip.png" alt="Icy Phoenix" title="Icy Phoenix" border="0" /></a>
+		<a href="http://www.infinitycore.org" title="InfinityCoreCMS"><img src="' . IP_ROOT_PATH . 'images/logo_ip.png" alt="InfinityCoreCMS" title="InfinityCoreCMS" border="0" /></a>
 	</td>
 	</tr>
 	</table>
 	</div>
 	</td>
 </tr>
-<tr><td colspan="3" class="forum-buttons" valign="middle">Icy Phoenix Extra Debug</td></tr>
+<tr><td colspan="3" class="forum-buttons" valign="middle">InfinityCoreCMS Extra Debug</td></tr>
 <tr>
 	<td colspan="3" id="content">
 	<div class="post-text">
@@ -1077,7 +1077,7 @@ class sql_db
 		<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
 			<tr>
 				<td nowrap="nowrap" width="45%" align="left">
-					<br /><span class="copyright">&nbsp;Powered by <a href="http://www.icyphoenix.com/" target="_blank">Icy Phoenix</a> based on <a href="http://www.phpbb.com/" target="_blank">phpBB</a></span><br /><br />
+					<br /><span class="copyright">&nbsp;Powered by <a href="http://www.infinitycore.org/" target="_blank">InfinityCoreCMS</a> based on <a href="http://www.phpbb.com/" target="_blank">phpBB</a></span><br /><br />
 				</td>
 				<td nowrap="nowrap" align="center"><div style="text-align:center;">&nbsp;</div></td>
 				<td nowrap="nowrap" width="45%" align="right">

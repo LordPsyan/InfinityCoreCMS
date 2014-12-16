@@ -3,12 +3,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="content-style-type" content="text/css" />
-	<meta name="author" content="Icy Phoenix Team" />
+	<meta name="author" content="InfinityCoreCMS Team" />
 
 	<link rel="stylesheet" href="../templates/common/acp.css" type="text/css" />
 	<link rel="shortcut icon" href="../images/favicon.ico" />
 
-	<title>Icy Phoenix 1.3 :: Coding Standards</title>
+	<title>InfinityCoreCMS 1.3 :: Coding Standards</title>
 
 	<script type="text/javascript" src="../templates/common/js/ip_scripts.js"></script>
 	<!--[if lt IE 7]>
@@ -44,14 +44,14 @@ code {
 	<table class="" width="100%" cellspacing="0" cellpadding="0" border="0">
 	<tr>
 	<td height="150" align="left" valign="middle">
-		<a href="http://www.icyphoenix.com" title="Icy Phoenix"><img src="../images/logo_ip.png" alt="Icy Phoenix" title="Icy Phoenix" border="0" /></a>
+		<a href="http://www.infinitycore.org" title="InfinityCoreCMS"><img src="../images/logo_ip.png" alt="InfinityCoreCMS" title="InfinityCoreCMS" border="0" /></a>
 	</td>
 	</tr>
 	</table>
 	</div>
 	</td>
 </tr>
-<tr><td colspan="3" class="forum-buttons" valign="middle">Icy Phoenix 1.3 :: Coding Standards</td></tr>
+<tr><td colspan="3" class="forum-buttons" valign="middle">InfinityCoreCMS 1.3 :: Coding Standards</td></tr>
 <tr>
 	<td colspan="3" id="content">
 
@@ -91,7 +91,7 @@ code {
 <a name="editorsettings"></a><h2>1. Text Editor Settings</h2>
 <br />
 <b>Tabs vs Spaces</b>
-<p>When you need to indent your code please always use TABS not spaces. All Icy Phoenix files have been coded using 2 spaces tabs please check that your editor is configured properly.</p>
+<p>When you need to indent your code please always use TABS not spaces. All InfinityCoreCMS files have been coded using 2 spaces tabs please check that your editor is configured properly.</p>
 <p>Example:</p>
 <div class="spoiler" style="border-color:#999999;"><pre>
 {TAB}$mode = request_var('mode', '');
@@ -116,13 +116,13 @@ code {
 <a name="fileheader"></a><h2>2. File Header</h2>
 <br />
 <b>Standard header for new files:</b>
-<p>This template of the header must be included at the start of all Icy Phoenix files:</p>
+<p>This template of the header must be included at the start of all InfinityCoreCMS files:</p>
 <div class="spoiler" style="border-color:#999999;"><pre>
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version &#36;Id&#36;
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -443,7 +443,7 @@ $min = ($i &lt; $j) ? $i : $j;
 <br />
 
 <b>Don't use uninitialized variables.</b>
-<p>For Icy Phoenix, we intend to use a higher level of run-time error reporting. This will mean that the use of an uninitialized variable will be reported as a warning. These warnings can be avoided by using the built-in isset() function to check whether a variable has been set, examples:</p>
+<p>For InfinityCoreCMS, we intend to use a higher level of run-time error reporting. This will mean that the use of an uninitialized variable will be reported as a warning. These warnings can be avoided by using the built-in isset() function to check whether a variable has been set, examples:</p>
 <br />
 
 <p class="text_red">&raquo; Wrong</p>
@@ -820,7 +820,7 @@ $action_ary = request_var('action', array('' => 0));
 <b>Variables</b>
 <p>All template variables should be named appropriately (using underscores for spaces), language entries should be prefixed with L_, system data with S_, urls with U_, all other variables should be presented 'as is'.</p>
 <br />
-<p>Note that unlike 2.0.x most language strings are not assigned from the source. When a language variable is found {L_YYYYYY} Icy Phoenix first looks if an assigned variable exists with that name. If it does, it uses that. If not it looks if an exsting string defined in the language file exists. This should reduce the need to assign loads of new lang vars in Mods.</p>
+<p>Note that unlike 2.0.x most language strings are not assigned from the source. When a language variable is found {L_YYYYYY} InfinityCoreCMS first looks if an assigned variable exists with that name. If it does, it uses that. If not it looks if an exsting string defined in the language file exists. This should reduce the need to assign loads of new lang vars in Mods.</p>
 <br />
 <b>Blocks</b>
 <p>The basic block level loop remains and takes the form:</p>
@@ -1018,7 +1018,7 @@ markup
 		<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
 			<tr>
 				<td nowrap="nowrap" width="45%" align="left">
-					<br /><span class="copyright">&nbsp;Powered by <a href="http://www.icyphoenix.com/" target="_blank">Icy Phoenix</a> based on <a href="http://www.phpbb.com/" target="_blank">phpBB</a></span><br /><br />
+					<br /><span class="copyright">&nbsp;Powered by <a href="http://www.infinitycore.org/" target="_blank">InfinityCoreCMS</a> based on <a href="http://www.phpbb.com/" target="_blank">phpBB</a></span><br /><br />
 				</td>
 				<td nowrap="nowrap" align="center"><div style="text-align:center;">&nbsp;</div></td>
 				<td nowrap="nowrap" width="45%" align="right">

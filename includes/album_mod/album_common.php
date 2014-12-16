@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -72,14 +72,14 @@ if ((intval($album_config['set_memory']) > '0') && (intval($album_config['set_me
 if ($album_config['show_inline_copyright'] == 0)
 {
 	$album_copyright = '<div class="gensmall" style="text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; letter-spacing: -1px">';
-	$album_copyright .= 'Photo Album Powered by:&nbsp;<a href="http://www.icyphoenix.com" target="_blank">Mighty Gorgon</a> Full Album Pack ' . $album_config['fap_version'] . '&nbsp;&copy;&nbsp;2009<br />';
+	$album_copyright .= 'Photo Album Powered by:&nbsp;<a href="http://www.infinitycore.org" target="_blank">Mighty Gorgon</a> Full Album Pack ' . $album_config['fap_version'] . '&nbsp;&copy;&nbsp;2009<br />';
 	$album_copyright .= '[based on <a href="http://smartor.is-root.com" target="_blank">Smartor</a> Photo Album plus IdleVoid\'s Album CH &amp; CLowN SP1]';
 	$album_copyright .= '</div>';
 }
 else
 {
 	$album_copyright = '<div class="gensmall" style="text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; letter-spacing: -1px">';
-	$album_copyright .= 'Photo Album Powered by:&nbsp;<a href="http://www.icyphoenix.com" target="_blank">Mighty Gorgon</a> Full Album Pack ' . $album_config['fap_version'] . '&nbsp;&copy;&nbsp;2009';
+	$album_copyright .= 'Photo Album Powered by:&nbsp;<a href="http://www.infinitycore.org" target="_blank">Mighty Gorgon</a> Full Album Pack ' . $album_config['fap_version'] . '&nbsp;&copy;&nbsp;2009';
 	$album_copyright .= '&nbsp;[based on <a href="http://smartor.is-root.com" target="_blank">Smartor</a> Photo Album plus IdleVoid\'s Album CH &amp; CLowN SP1]';
 	$album_copyright .= '</div>';
 }

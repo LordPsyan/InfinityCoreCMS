@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -14,7 +14,7 @@
 * Philipp Kordowich
 */
 
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './../');
 if (!defined('PHP_EXT')) define('PHP_EXT', substr(strrchr(__FILE__, '.'), 1));
 include(IP_ROOT_PATH . 'config.' . PHP_EXT);
@@ -56,7 +56,7 @@ if ($mode == 'download')
 	$data = "<" . "?php\n" .
 		"\n" .
 		"//\n" .
-		"// Icy Phoenix auto-generated config file\n" .
+		"// InfinityCoreCMS auto-generated config file\n" .
 		"// Do not change anything in this file!\n" .
 		"//\n" .
 		"\n" .
@@ -971,7 +971,7 @@ switch($mode)
 				{
 					$sql = "INSERT INTO " . THEMES_TABLE . "
 						(template_name, style_name, head_stylesheet, body_background, td_class1, td_class2, td_class3) VALUES
-						('icy_phoenix', 'Icy Phoenix', 'style_ice.css', 'ice', 'row1', 'row2', 'row3')";
+						('icy_phoenix', 'InfinityCoreCMS', 'style_ice.css', 'ice', 'row1', 'row2', 'row3')";
 					$db->sql_return_on_error(true);
 					$result = $db->sql_query($sql);
 					$db->sql_return_on_error(false);
@@ -1186,7 +1186,7 @@ switch($mode)
 				&lt;?php<br />
 				<br />
 				//<br />
-				// Icy Phoenix auto-generated config file<br />
+				// InfinityCoreCMS auto-generated config file<br />
 				// Do not change anything in this file!<br />
 				//<br />
 				<br />

@@ -3,12 +3,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="content-style-type" content="text/css" />
-	<meta name="author" content="Icy Phoenix Team" />
+	<meta name="author" content="InfinityCoreCMS Team" />
 
 	<link rel="stylesheet" href="../templates/common/acp.css" type="text/css" />
 	<link rel="shortcut icon" href="../images/favicon.ico" />
 
-	<title>Icy Phoenix :: FAQs</title>
+	<title>InfinityCoreCMS :: FAQs</title>
 
 	<script type="text/javascript" src="../templates/common/js/ip_scripts.js"></script>
 	<!--[if lt IE 7]>
@@ -26,38 +26,38 @@
 	<table class="" width="100%" cellspacing="0" cellpadding="0" border="0">
 	<tr>
 	<td height="150" align="left" valign="middle">
-		<a href="http://www.icyphoenix.com" title="Icy Phoenix"><img src="../images/logo_ip.png" alt="Icy Phoenix" title="Icy Phoenix" border="0" /></a>
+		<a href="http://www.infinitycore.org" title="InfinityCoreCMS"><img src="../images/logo_ip.png" alt="InfinityCoreCMS" title="InfinityCoreCMS" border="0" /></a>
 	</td>
 	</tr>
 	</table>
 	</div>
 	</td>
 </tr>
-<tr><td colspan="3" class="forum-buttons" valign="middle">Icy Phoenix :: FAQs</td></tr>
+<tr><td colspan="3" class="forum-buttons" valign="middle">InfinityCoreCMS :: FAQs</td></tr>
 <tr>
 	<td colspan="3" id="content">
 
 <!-- CONTENT BEGIN -->
 <table cellspacing="0" cellpadding="0" width="100%" class="forumline">
-<tr><td class="row-header" colspan="3"><span>Icy Phoenix 1.3 FAQs</span></td></tr>
+<tr><td class="row-header" colspan="3"><span>InfinityCoreCMS 1.3 FAQs</span></td></tr>
 <tr><th><span>Table Of Contents</span></th></tr>
 <tr>
 	<td class="row-post">
 <div class="post-text">
 <br />
-<p>Here you will find some of the Frequently Asked Questions about Icy Phoenix. The list is not exhaustive, please refer to the <a href="http://www.icyphoenix.com">Support Site</a> for further details or help.</p>
+<p>Here you will find some of the Frequently Asked Questions about InfinityCoreCMS. The list is not exhaustive, please refer to the <a href="http://www.infinitycore.org">Support Site</a> for further details or help.</p>
 <br />
 
 <ol>
 <li>
 <b>I cannot install this software! What I can do?</b><br />
-<p>Please try to carefully follow the instructions in the install wizard, as there are many hints on how to properly install Icy Phoenix. Should you need further help, please refer to the <a href="http://www.icyphoenix.com">Support Site</a> and provide as much details as you can.</p>
+<p>Please try to carefully follow the instructions in the install wizard, as there are many hints on how to properly install InfinityCoreCMS. Should you need further help, please refer to the <a href="http://www.infinitycore.org">Support Site</a> and provide as much details as you can.</p>
 <br />
 </li>
 
 <li>
 <b>According to viewonline a user is doing/reading something they should not be able to!</b><br />
-<p>No, they probably are not. Icy Phoenix uses sessions to keep track of users as they move between pages. The session information tells us who this user is. Therefore in order to determine what a user can do on a page we first need the session details. Once this data is available we can check whether the user is permitted to do whatever it is they are trying to do. This can result in it appearing as if a user is reading a topic in a forum they should not be able to access. Or perhaps viewing private messages when they are only guests, etc. In practice the user is not doing these things, they are viewing a "You are not permitted to do this" type message. The session data has simply been updated before we were able to determine what the user could or could not do.</p>
+<p>No, they probably are not. InfinityCoreCMS uses sessions to keep track of users as they move between pages. The session information tells us who this user is. Therefore in order to determine what a user can do on a page we first need the session details. Once this data is available we can check whether the user is permitted to do whatever it is they are trying to do. This can result in it appearing as if a user is reading a topic in a forum they should not be able to access. Or perhaps viewing private messages when they are only guests, etc. In practice the user is not doing these things, they are viewing a "You are not permitted to do this" type message. The session data has simply been updated before we were able to determine what the user could or could not do.</p>
 
 <p>Of course this only applies where permissions have been set correctly!</p>
 <br />
@@ -66,7 +66,7 @@
 <li>
 <b>I keep getting Mail sending errors when me (or my users) post or send PM's</b><br />
 
-<p>This error will occur if Icy Phoenix cannot send mail. Icy Phoenix can send email two ways; using the PHP mail() function or directly via SMTP. Some hosting providers limit the mail() function to prevent its use in spamming, others may rename it or limit its functionality. In either case you may need to make use of SMTP. This requires that you have access to such a facility, e.g. your hosting provider may provide one (perhaps requiring specific written authorization), etc. Note that if your provider requires authorization we only support the simple AUTH method using plaintext username/password. We do not support secure sockets layer (SSL), POP3 send or any other method.</p>
+<p>This error will occur if InfinityCoreCMS cannot send mail. InfinityCoreCMS can send email two ways; using the PHP mail() function or directly via SMTP. Some hosting providers limit the mail() function to prevent its use in spamming, others may rename it or limit its functionality. In either case you may need to make use of SMTP. This requires that you have access to such a facility, e.g. your hosting provider may provide one (perhaps requiring specific written authorization), etc. Note that if your provider requires authorization we only support the simple AUTH method using plaintext username/password. We do not support secure sockets layer (SSL), POP3 send or any other method.</p>
 
 <p>If you do require SMTP services please do not ask (on our forums or elsewhere) for someone to provide you with one. Open relays are now things of the past thanks to the unthinking spammers out there. Therefore you are unlikely to find someone willing to offer you (free) services.</p>
 <br />
@@ -83,7 +83,7 @@
 <li>
 <b>I cannot search for certain words!</b><br />
 
-<p>Icy Phoenix uses a Fulltext search system, this has both advantages and disadvantages. The advantage is that on large or busy forums it has far less impact on server load than <i>standard</i> search methods as used by many alternative forums. The disadvantage is that to reduce the size of the database (every post is examined and unique words stored in a table) we have to limit the size and type of words we store. By default words must contain at least three characters but no more than 25, they must be either alpha or combinations of alpha and numerals (numbers alone are not stored). In addition all non-alphanumeric characters are removed, eg. _, +, -, etc. This is standard practice for fulltext search solutions.</p>
+<p>InfinityCoreCMS uses a Fulltext search system, this has both advantages and disadvantages. The advantage is that on large or busy forums it has far less impact on server load than <i>standard</i> search methods as used by many alternative forums. The disadvantage is that to reduce the size of the database (every post is examined and unique words stored in a table) we have to limit the size and type of words we store. By default words must contain at least three characters but no more than 25, they must be either alpha or combinations of alpha and numerals (numbers alone are not stored). In addition all non-alphanumeric characters are removed, eg. _, +, -, etc. This is standard practice for fulltext search solutions.</p>
 
 <p>A further downside is that non-latin alphabets, eg. Cyrillic, Greek, etc. require proper locale support to be compiled in and available on the server your board is running on. If this is not the case it is quite likely that words will not be properly indexed for storage.</p>
 <br />
@@ -143,7 +143,7 @@
 
 <p>Feel free to search our community forum for the information you require. <b>PLEASE DO NOT</b> post your question without having first used search, chances are someone has already asked and answered your question. You can find our board here:</p>
 
-<p><a href="http://www.icyphoenix.com/" target="_blank">http://www.icyphoenix.com/</a></p>
+<p><a href="http://www.infinitycore.org/" target="_blank">http://www.infinitycore.org/</a></p>
 <br />
 </li>
 
@@ -172,7 +172,7 @@
 		<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
 			<tr>
 				<td nowrap="nowrap" width="45%" align="left">
-					<br /><span class="copyright">&nbsp;Powered by <a href="http://www.icyphoenix.com/" target="_blank">Icy Phoenix</a> based on <a href="http://www.phpbb.com/" target="_blank">phpBB</a></span><br /><br />
+					<br /><span class="copyright">&nbsp;Powered by <a href="http://www.infinitycore.org/" target="_blank">InfinityCoreCMS</a> based on <a href="http://www.phpbb.com/" target="_blank">phpBB</a></span><br /><br />
 				</td>
 				<td nowrap="nowrap" align="center"><div style="text-align:center;">&nbsp;</div></td>
 				<td nowrap="nowrap" width="45%" align="right">

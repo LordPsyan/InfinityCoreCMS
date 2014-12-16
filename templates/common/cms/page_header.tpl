@@ -49,7 +49,7 @@
 		</ul>
 	</div>
 	<!-- <h2 class="sitename">{SITENAME}</h2> -->
-	<img src="{FULL_SITE_PATH}images/icy_phoenix_wb.png" alt="Icy Phoenix" class="sitelogo" /><h2 class="sitename">Icy Phoenix</h2>
+	<img src="{FULL_SITE_PATH}images/icy_phoenix_wb.png" alt="InfinityCoreCMS" class="sitelogo" /><h2 class="sitename">InfinityCoreCMS</h2>
 </div>
 
 <!-- <div class="top-header">&nbsp;</div> -->

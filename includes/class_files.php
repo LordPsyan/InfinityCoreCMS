@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -686,7 +686,7 @@ class class_files
 		echo('<head>' . "\n");
 		echo('	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />' . "\n");
 		echo('	<meta name="author" content="Mighty Gorgon" />' . "\n");
-		echo('	<title>' . (!empty($page_title) ? $page_title : 'Icy Phoenix') . '</title>' . "\n");
+		echo('	<title>' . (!empty($page_title) ? $page_title : 'InfinityCoreCMS') . '</title>' . "\n");
 		echo('</head>' . "\n");
 		echo('<body>' . "\n");
 	}

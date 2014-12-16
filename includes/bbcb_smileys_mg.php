@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -16,7 +16,7 @@ if (!defined('IN_ICYPHOENIX'))
 // Usage
 /*
 // BBCBMG SMILEYS - BEGIN
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 generate_smilies('inline');
 include(IP_ROOT_PATH . 'includes/bbcb_smileys_mg.' . PHP_EXT);
 $template->assign_var_from_handle('BBCB_SMILEYS_MG', 'bbcb_smileys_mg');
