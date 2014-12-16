@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -16,7 +16,7 @@ Example for items
 $lang['item_YOUR_ITEM_NAME'] = 'YOUR_ITEM_DESCRIPTION';
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	exit;
 }
@@ -29,7 +29,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'FEATURES' => 'Features',
 	'PHPBB2' => 'phpBB2',
-	'ICYPHOENIX' => 'Icy Phoenix',
+	'INFINITYCORECMS' => 'InfinityCoreCMS',
 	'PHPBB3' => 'phpBB3',
 	'PHPBB_FEATURES_PAGE' => 'Features for phpBB have been taken from official phpBB site [ <a href="http://www.phpbb.com/about/features/">LINK</a> ]',
 

@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -11,7 +11,7 @@
 /* MG Lang DB - BEGIN */
 /* MG Lang DB - END */
 
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 
 if(!empty($setmodules))
 {

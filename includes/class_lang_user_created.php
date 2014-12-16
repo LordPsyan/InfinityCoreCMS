@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -424,9 +424,9 @@ class lang_management
 		$file_content .= '<' . '?' . 'php' . "\n";
 		$file_content .= '/**' . "\n";
 		$file_content .= '*' . "\n";
-		$file_content .= '* @package Icy Phoenix' . "\n";
+		$file_content .= '* @package InfinityCoreCMS' . "\n";
 		$file_content .= '* @version $' . 'Id' . '$' . "\n";
-		$file_content .= '* @copyright (c) 2008 Icy Phoenix' . "\n";
+		$file_content .= '* @copyright (c) 2008 InfinityCoreCMS' . "\n";
 		$file_content .= '* @license http://opensource.org/licenses/gpl-license.php GNU Public License' . "\n";
 		$file_content .= '*' . "\n";
 		$file_content .= '*/' . "\n";
@@ -445,7 +445,7 @@ class lang_management
 		$file_content .= '*' . "\n";
 		$file_content .= '*/' . "\n";
 		$file_content .= '' . "\n";
-		$file_content .= 'if (!defined(\'IN_ICYPHOENIX\'))' . "\n";
+		$file_content .= 'if (!defined(\'IN_INFINITYCORECMS\'))' . "\n";
 		$file_content .= '{' . "\n";
 		$file_content .= '' . "\t" . 'die(\'Hacking attempt\');' . "\n";
 		$file_content .= '}' . "\n";

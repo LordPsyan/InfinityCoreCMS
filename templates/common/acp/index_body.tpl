@@ -12,7 +12,7 @@
 <br />
 <div class="text_cont_center" style="width: 500px;"><div class="text_yellow_cont">
 <b><span class="text_red">{L_PAYPAL_INFO}</span></b><br /><br />
-<a href="http://www.icyphoenix.com/donate.php" target="_blank"><img src="../images/paypal.gif" alt="Support us" border="0" /></a>
+<a href="http://www.infinitycore.org/donate.php" target="_blank"><img src="../images/paypal.gif" alt="Support us" border="0" /></a>
 </div></div>
 
 <h1>{L_WELCOME}</h1>

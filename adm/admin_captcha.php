@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 
 // Mighty Gorgon: force to return until new CAPTCHA is effectively in place!
 return;

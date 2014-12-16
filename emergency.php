@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -48,7 +48,7 @@ die("<img src=\"admin/console/console_pic.png\" border=\"0\" alt=\"ECON\" title=
 /*
  * Define some vars & constants we need
  */
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './');
 

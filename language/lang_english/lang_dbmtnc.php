@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -16,7 +16,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	exit;
 }
@@ -148,7 +148,7 @@ $mtnc[] = array('reset_auto_increment',
 	0);
 $mtnc[] = array('heap_convert',
 	'Convert Session-Table',
-	'This function converts the session-table to HEAP table type. This normaly will be done during installation and speed up Icy Phoenix a bit. You should use this function if your session-table is not of the HEAP table type.',
+	'This function converts the session-table to HEAP table type. This normaly will be done during installation and speed up InfinityCoreCMS a bit. You should use this function if your session-table is not of the HEAP table type.',
 	'Do you really want to convert the table?',
 	2);
 $mtnc[] = array('--', '', '', '', 3);
@@ -196,7 +196,7 @@ $lang = array_merge($lang, array(
 // Function specific vars
 // statistic
 	'Statistic_title' => 'Site and database statistics',
-	'Database_table_info' => 'Database statistics will deliver three different values: these for all tables of the database, these of all tables deliverd by Icy Phoenix by default (core tables) and these starting with the prefix of the board tables (advanced tables).',
+	'Database_table_info' => 'Database statistics will deliver three different values: these for all tables of the database, these of all tables deliverd by InfinityCoreCMS by default (core tables) and these starting with the prefix of the board tables (advanced tables).',
 	'Board_statistic' => 'Site statistics',
 	'Database_statistic' => 'Database statistics',
 	'Version_info' => 'Version information',
@@ -207,9 +207,9 @@ $lang = array_merge($lang, array(
 	'Number_tables' => 'Number of tables',
 	'Number_records' => 'Number of records',
 	'DB_size' => 'Size of the database',
-	'Thereof_phpbb_core' => 'thereof Icy Phoenix core tables',
-	'Thereof_phpbb_advanced' => 'thereof advanced Icy Phoenix tables',
-	'Version_of_board' => 'Version of Icy Phoenix',
+	'Thereof_phpbb_core' => 'thereof InfinityCoreCMS core tables',
+	'Thereof_phpbb_advanced' => 'thereof advanced InfinityCoreCMS tables',
+	'Version_of_board' => 'Version of InfinityCoreCMS',
 	'Version_of_mod' => 'Version of DB Maintenance',
 	'Version_of_PHP' => 'Version of PHP',
 	'Version_of_MySQL' => 'Version of MySQL',
@@ -513,8 +513,8 @@ $lang = array_merge($lang, array(
 	'rpd_info' => 'When proceeding the config data will be updated if the recommended setting is selected.',
 	'rcd_info' => 'When proceeding the cookie data will be updated. The Option whether to set a secure cookie or not can be found under \'Reset path data\'.',
 	'rld_info' => 'When proceeding the selected language will be used for both the board and the user used to authenticate.',
-	'rtd_info' => 'When proceeding either the selected style will be used for both the board and the user used to authenticate or the default theme (Icy Phoenix) will be recreated and used for board and user.',
-	'rtd_info_no_theme' => 'When proceeding the default theme (Icy Phoenix) will be recreated and used for both the board and the user used to authenticate.',
+	'rtd_info' => 'When proceeding either the selected style will be used for both the board and the user used to authenticate or the default theme (InfinityCoreCMS) will be recreated and used for board and user.',
+	'rtd_info_no_theme' => 'When proceeding the default theme (InfinityCoreCMS) will be recreated and used for both the board and the user used to authenticate.',
 	'dgc_info' => 'When proceeding the GZip compression will be disabled.',
 	'cbl_info' => 'When proceeding both the ban list and the disallowed users will be cleared.',
 	'raa_info' => 'When proceeding all admins will be set to normal users. If you use an admin account to authenticate, the account used for authentication will keep its admin level.',

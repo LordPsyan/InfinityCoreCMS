@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
@@ -175,7 +175,7 @@ class mysql_extractor extends base_extractor
 		if (!$started)
 		{
 			$sql_data .= "#\n";
-			$sql_data .= "# Icy Phoenix Backup Script\n";
+			$sql_data .= "# InfinityCoreCMS Backup Script\n";
 			$sql_data .= "# Dump of tables for $table_prefix\n";
 			$sql_data .= "# DATE : " . gmdate("d-m-Y H:i:s", $this->time) . " GMT\n";
 			$sql_data .= "#\n";

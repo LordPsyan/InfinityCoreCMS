@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -17,7 +17,7 @@
 
 define('MOD_VERSION', '2.0.5');
 define('MOD_CODE', 1);
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 
 if (!empty($setmodules))
 {

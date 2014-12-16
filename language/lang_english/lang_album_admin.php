@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -16,7 +16,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	exit;
 }
@@ -147,7 +147,7 @@ $lang = array_merge($lang, array(
 	'No_Self_Refering_Cat' => 'You cannot set a category\'s parent to itself',
 	'Can_Not_Change_Main_Parent' => 'You cannot change to parent of the main category of your personal gallery',
 	'Watermark' => 'WaterMark',
-	'Watermark_explain' => 'You can specify the watermark file to be used in this category. Insert the watermark file path respect to your Icy Phoenix root (i.e.: <b>images/album/mark_fap.png</b>). The watermark will be applied only if Watermark feature is on.',
+	'Watermark_explain' => 'You can specify the watermark file to be used in this category. Insert the watermark file path respect to your InfinityCoreCMS root (i.e.: <b>images/album/mark_fap.png</b>). The watermark will be applied only if Watermark feature is on.',
 	'Cat_Pics_Synchronize' => 'Sync Pics Counter',
 	'Cat_Pics_Synchronized' => 'All pictures counter have been synchronized.',
 
@@ -260,7 +260,7 @@ $lang = array_merge($lang, array(
 	'Enable_Nuffload_Explain' => 'Enabling this option, Nuffload will be used instead of the standard upload form.',
 	'progress_bar_configuration' => 'Nuffload - Progress Bar Configuration',
 	'perl_uploader' => 'Enable Perl uploader',
-	'path_to_bin' => 'Path from icyphoenix root to cgi-bin (i.e. <b>./cgi-bin/</b> if you have icyphoenix in a sub folder)',
+	'path_to_bin' => 'Path from infinitycore root to cgi-bin (i.e. <b>./cgi-bin/</b> if you have infinitycore in a sub folder)',
 	'show_progress_bar' => 'Show progress bar on upload',
 	'close_progress_bar' => 'Close progress bar on finish',
 	'activity_timeout' => 'Activity timeout (secs)',

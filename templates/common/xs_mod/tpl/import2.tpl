@@ -1,7 +1,7 @@
 <!-- BEGIN xs_file_version -->
 /**
 *
-* @package Icy Phoenix eXtreme Style 2.4.1
+* @package InfinityCoreCMS eXtreme Style 2.4.1
 * @file $Id import2.tpl
 * @author Vjacheslav Trushkin
 * @copyright (C) 2003 - 2007

@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -32,7 +32,7 @@ if (!defined('PHP_DIGESTS_CRON'))
 	// Decomment it to block the execution
 	die('This file cannot be run directly...');
 
-	define('IN_ICYPHOENIX', true);
+	define('IN_INFINITYCORECMS', true);
 	if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './');
 	if (!defined('PHP_EXT')) define('PHP_EXT', substr(strrchr(__FILE__, '.'), 1));
 	include(IP_ROOT_PATH . 'common.' . PHP_EXT);
@@ -49,18 +49,18 @@ if (!defined('PHP_DIGESTS_CRON'))
 	}
 }
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	die('Hacking attempt');
 }
 
 // COMMON INCLUSIONS WHERE NEEDED - BEGIN
-// Comment at least the whole "IF" if you are going to run this file outside Icy Phoenix
+// Comment at least the whole "IF" if you are going to run this file outside InfinityCoreCMS
 if (!defined('IN_CRON'))
 {
 	if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './');
 	if (!defined('PHP_EXT')) define('PHP_EXT', substr(strrchr(__FILE__, '.'), 1));
-	if (!defined('ICYPHOENIX_VERSION')) @include(IP_ROOT_PATH . 'includes/constants.' . PHP_EXT);
+	if (!defined('INFINITYCORECMS_VERSION')) @include(IP_ROOT_PATH . 'includes/constants.' . PHP_EXT);
 	if (!function_exists('append_sid')) @include(IP_ROOT_PATH . 'includes/functions.' . PHP_EXT);
 	if (!function_exists('check_mem_limit')) @include(IP_ROOT_PATH . 'includes/functions_admin.' . PHP_EXT);
 	if (!function_exists('auth')) @include(IP_ROOT_PATH . 'includes/auth.' . PHP_EXT);

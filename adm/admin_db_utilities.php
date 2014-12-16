@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 
 // Mighty Gorgon - ACP Privacy - BEGIN
 if (function_exists('check_acp_module_access'))
@@ -461,7 +461,7 @@ if(!empty($perform))
 
 			// Build the sql script file...
 			echo "#\n";
-			echo "# Icy Phoenix Backup Script\n";
+			echo "# InfinityCoreCMS Backup Script\n";
 			echo "# Dump of tables for $dbname\n";
 			echo "#\n# DATE : " .  gmdate("d-m-Y H:i:s", time()) . " GMT\n";
 			echo "#\n";

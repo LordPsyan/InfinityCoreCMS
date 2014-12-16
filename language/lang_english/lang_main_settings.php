@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	exit;
 }
@@ -25,17 +25,17 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-$lang['Index'] = 'Icy Phoenix';
-$lang['Default_META_Keywords'] = 'phpbb, forum, icy phoenix, icyphoenix, icy, phoenix, php, portal, cms, premodded, community, open source, mods, templates';
-$lang['Default_META_Description'] = 'Icy Phoenix is an highly customizable CMS based on phpBB which allows you to create a dynamic site with a lot of features for powering web communities.';
-$lang['Default_META_Title'] = 'Icy Phoenix';
-$lang['Default_META_Author'] = 'Mighty Gorgon And Icy Phoenix Staff :: http://www.icyphoenix.com/';
+$lang['Index'] = 'InfinityCoreCMS';
+$lang['Default_META_Keywords'] = 'phpbb, forum, icy phoenix, infinitycore, icy, phoenix, php, portal, cms, premodded, community, open source, mods, templates';
+$lang['Default_META_Description'] = 'InfinityCoreCMS is an highly customizable CMS based on phpBB which allows you to create a dynamic site with a lot of features for powering web communities.';
+$lang['Default_META_Title'] = 'InfinityCoreCMS';
+$lang['Default_META_Author'] = 'Mighty Gorgon And InfinityCoreCMS Staff :: http://www.infinitycore.org/';
 $lang['Default_META_Copyright'] = '(c) 2001-' . gmdate('Y') . ' Mighty Gorgon';
 $lang['Extra_Meta'] = '';
 
 $lang['REGISTER_MESSAGE'] = '';
 
-$lang['Welcome_Message'] = 'Welcome to <span class="topic_glo">Icy Phoenix</span><br />';
+$lang['Welcome_Message'] = 'Welcome to <span class="topic_glo">InfinityCoreCMS</span><br />';
 $lang['register_pm_subject'] = 'Welcome to %s';
 $lang['register_pm'] = "Hello!\n\nWelcome to %s.\n\nWe hope you enjoy your time at this site!\n\nFeel free to join in and share with others or start your own discussion!\n\nEnjoy!\n[b]%s[/b] Staff";
 
@@ -52,11 +52,11 @@ $lang['PayPal'] = '
 */
 
 $lang['OwnerSiteOwner'] = 'Mighty Gorgon';
-$lang['OwnerSite'] = 'Icy Phoenix';
-$lang['OwnerCompany'] = 'Icy Phoenix';
-$lang['OwnerDetails'] = 'Icy Phoenix';
+$lang['OwnerSite'] = 'InfinityCoreCMS';
+$lang['OwnerCompany'] = 'InfinityCoreCMS';
+$lang['OwnerDetails'] = 'InfinityCoreCMS';
 $lang['OwnerAdrress'] = 'Italy';
-$lang['OwnerServer'] = 'Icy Phoenix';
+$lang['OwnerServer'] = 'InfinityCoreCMS';
 
 $lang['PrivacyDisclaimer'] = 'You specifically agree that your personal data will be treated in respect to current law in the country of the site owner.<br />';
 

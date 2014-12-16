@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -14,7 +14,7 @@
 * geocator(geocator@gmail.com)
 */
 
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 define('IN_ADMIN', true);
 
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './../');

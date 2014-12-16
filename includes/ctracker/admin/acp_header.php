@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -27,7 +27,7 @@
 */
 
 // Constant check
-if (!defined('IN_ICYPHOENIX') || !defined('CTRACKER_ACP'))
+if (!defined('IN_INFINITYCORECMS') || !defined('CTRACKER_ACP'))
 {
 	die('Hacking attempt!');
 }

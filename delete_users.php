@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -48,7 +48,7 @@ define('CTRACKER_DISABLED', true);
 define('NOTIFY_USERS', true);
 // to disable confirmation when executing PRUNE_MG
 define('KILL_CONFIRM', false);
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './');
 if (!defined('PHP_EXT')) define('PHP_EXT', substr(strrchr(__FILE__, '.'), 1));
 include(IP_ROOT_PATH . 'common.' . PHP_EXT);

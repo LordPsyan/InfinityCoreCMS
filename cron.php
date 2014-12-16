@@ -1,23 +1,23 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2008 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 /**
 *
-* @Icy Phoenix is based on phpBB
+* @InfinityCoreCMS is based on phpBB
 * @copyright (c) 2008 phpBB Group
 *
 */
 
 define('IN_CRON', true);
 define('CTRACKER_DISABLED', true);
-define('IN_ICYPHOENIX', true);
+define('IN_INFINITYCORECMS', true);
 // Should we use this? Is absolute path always working fine?
 //if (!defined('IP_ROOT_PATH')) dirname(__FILE__) . DIRECTORY_SEPARATOR);
 if (!defined('IP_ROOT_PATH')) define('IP_ROOT_PATH', './');

@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package Icy Phoenix
+* @package InfinityCoreCMS
 * @version $Id$
-* @copyright (c) 2008 Icy Phoenix
+* @copyright (c) 2014 InfinityCoreCMS
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -15,7 +15,7 @@
 *
 */
 
-if (!defined('IN_ICYPHOENIX'))
+if (!defined('IN_INFINITYCORECMS'))
 {
 	exit;
 }
@@ -28,7 +28,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'Lang_extend_lang_extend' => 'Extension for languages packs',
 	'Lang_extend__custom' => 'Custom language pack',
-	'Lang_extend__phpBB' => 'Icy Phoenix language pack',
+	'Lang_extend__phpBB' => 'InfinityCoreCMS language pack',
 
 	'Languages' => 'Languages',
 	'Lang_management' => 'Management',
