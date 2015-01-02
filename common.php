@@ -167,7 +167,7 @@ require(IP_ROOT_PATH . 'config.' . PHP_EXT);
 
 if(!defined('IP_INSTALLED') && !defined('IN_INSTALL'))
 {
-	die('<center><br /><br /><img src="install/style/sitelogo_small.png" /></center><br /><table align="center" border="1"><tr><td align="center">config.' . PHP_EXT . ' could not be found.</td></td><tr><td align="center"><a href="' . IP_ROOT_PATH . 'install/install.' . PHP_EXT . '">Click here to install InfinityCoreCMS</a></td></tr></table>');
+	die('<html><head><title>InfinityCoreCMS Install</title><link rel="stylesheet" href="install/style/style2.css" type="text/css" /></head><body><center><br /><br /><img src="install/style/sitelogo_small.png" /></center><br /><table align="center" border="0"><tr><td align="center"><i>config.' . PHP_EXT . ' could not be found.</i></td></td><tr><td align="center"><a href="' . IP_ROOT_PATH . 'install/install.' . PHP_EXT . '"><br /><span class="click"></span></a></td></tr></table></body></html>');
 	//header('Location: ' . IP_ROOT_PATH . 'install/install.' . PHP_EXT);
 	exit;
 }

@@ -1,0 +1,22 @@
+body {
+	color: red;
+	background-image: url("background.gif");
+	background-color: #e8eef8;
+	margin: 0px 0px 0px 0;
+	padding: 0px 10px 0px;
+}
+
+.click{
+	display: block;
+	width: 200px;
+	height: 36px;
+	background-image: url(click.png);
+	background-repeat: no-repeat;
+	background-position: 0px -36px;
+	}
+
+
+.click:hover {
+    background: url('click.png') 0 0px;
+	}
+	
