@@ -658,9 +658,9 @@ class mg_functions
 		);
 
 		$replacement_array = array(
+			/*'[langvar]BBC_IP_CREDITS[/langvar]',
 			'[langvar]BBC_IP_CREDITS[/langvar]',
-			'[langvar]BBC_IP_CREDITS[/langvar]',
-			'[langvar]BBC_IP_CREDITS_STATIC[/langvar]',
+			'[langvar]BBC_IP_CREDITS_STATIC[/langvar]',*/
 			'[langvar]BBC_Overview[/langvar]',
 			'[langvar]BBC_License[/langvar]',
 			'[langvar]BBC_Requirements[/langvar]',
@@ -679,8 +679,8 @@ class mg_functions
 	function old_bbcode_replace_ip2($text)
 	{
 		$look_up_array = array(
-			'[langvar]BBC_IP_CREDITS[/langvar]',
-			'[langvar]BBC_IP_CREDITS_STATIC[/langvar]',
+			/*'[langvar]BBC_IP_CREDITS[/langvar]',
+			'[langvar]BBC_IP_CREDITS_STATIC[/langvar]',*/
 			'[langvar]BBC_Overview[/langvar]',
 			'[langvar]BBC_License[/langvar]',
 			'[langvar]BBC_Requirements[/langvar]',

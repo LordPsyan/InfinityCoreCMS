@@ -337,6 +337,6 @@ $lang['BBC_IP_CREDITS_STATIC'] = '
 <br />
 ';
 
-$lang['BBC_IP_CREDITS'] = '<div class="center-block"><marquee behavior="scroll" direction="up" scrolldelay="120">' . $lang['BBC_IP_CREDITS_STATIC'] . '</marquee></div>';
+$lang['BBC_IP_CREDITS'] = '';
 
 ?>

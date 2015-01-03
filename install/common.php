@@ -109,6 +109,8 @@ if (defined('INSTALLING_INFINITYCORECMS'))
 	$dbpasswd = $ip_functions->request_var('dbpasswd', '');
 	$dbname = $ip_functions->request_var('dbname', '');
 	$dbaname = $ip_functions->request_var('dbaname', '');
+	$dbcname = $ip_functions->request_var('dbcname', '');
+	$dbwname = $ip_functions->request_var('dbwname', '');
 
 	$table_prefix = $ip_functions->request_var('prefix', '');
 

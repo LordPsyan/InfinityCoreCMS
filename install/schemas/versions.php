@@ -29,6 +29,7 @@ $ip_version = '2.0.0.86';
 $chmod_777 = array();
 $chmod_777[] = '../backup';
 $chmod_777[] = '../cache';
+$chmod_777[] = '../config.php';
 $chmod_777[] = '../cache/cms';
 $chmod_777[] = '../cache/forums';
 $chmod_777[] = '../cache/posts';

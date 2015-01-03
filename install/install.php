@@ -472,7 +472,7 @@ else
 		$s_hidden_fields .= '<input type="hidden" name="login" value="true" />';
 		$s_hidden_fields .= '<input type="hidden" name="lang" value="' . $language. '" />';
 
-		$page_framework->page_header($lang['Welcome_install'], '<center>' . $lang['BBC_IP_CREDITS'] . '</center>', '../login_ip.' . PHP_EXT);
+		$page_framework->page_header($lang['Welcome_install'], '<center></center>', '../login_ip.' . PHP_EXT);
 		$page_framework->finish_install($s_hidden_fields);
 		$page_framework->page_footer();
 		exit;
