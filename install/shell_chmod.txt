@@ -1,5 +1,6 @@
 chmod 777 backup
 chmod 777 cache
+chmod 777 config.php
 chmod 777 cache/cms
 chmod 777 cache/forums
 chmod 777 cache/posts
@@ -26,4 +27,3 @@ chmod 666 logs/logfile_debug_mode.txt
 chmod 666 logs/logfile_malformed_logins.txt
 chmod 666 logs/logfile_spammer.txt
 chmod 666 logs/logfile_worms.txt
-

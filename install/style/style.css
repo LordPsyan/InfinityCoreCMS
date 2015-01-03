@@ -12,6 +12,7 @@ body {
 	font-family: /*"Lucida Grande",*/ Verdana, Helvetica, Arial, sans-serif;
 	/*font-size: 62.5%;*/ /* This sets the default font size to be equivalent to 10px */
 	font-size: 10px;
+	background-image: url("background.gif");
 	background-color: #e8eef8;
 	margin: 0px 0px 0px 0;
 	padding: 0px 10px 0px;
@@ -27,9 +28,9 @@ body {
 #wrapper {
 	width: 980px !important;
 	display: table-cell;
-	background: #ffffff url('bg/bg_b_l.gif') top left repeat-y;
+	/*background: #ffffff url('bg/bg_b_l.gif') top left repeat-y;*/
 }
-
+/*
 #wrapper1 { background: url('bg/bg_b_r.gif') top right repeat-y; }
 #wrapper2 { background: url('bg/bg_h_c.gif') top left repeat-x; }
 #wrapper3 { background: url('bg/bg_h_l.gif') top left no-repeat; }
@@ -37,7 +38,7 @@ body {
 #wrapper5 { background: url('bg/bg_f_c.gif') bottom left repeat-x; }
 #wrapper6 { background: url('bg/bg_f_l.gif') bottom left no-repeat; }
 #wrapper7 { background: url('bg/bg_f_r.gif') bottom right no-repeat; }
-
+*/
 #wrapper-inner {
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -283,9 +284,9 @@ hr.dashed {
 .forumline-no2 td { padding: 2px; }
 
 .row1, .row2, .row3, .row4, .row1h, .row1h-new, .row2h, .row3h, .row1hHover, .row1h-newHover {
-	border: solid 1px #ffffff;
+	/*border: solid 1px #ffffff;
 	border-right-color: #eeeeee;
-	border-bottom-color: #eeeeee;
+	border-bottom-color: #eeeeee;*/
 	text-align: left;
 }
 
@@ -375,7 +376,7 @@ hr.dashed {
 }
 
 .forumline th, .forumlinenb th {
-	background: #ffffff url('bg_th.gif') top left repeat-x;
+	/*background: #ffffff url('bg_th.gif') top left repeat-x;*/
 	color: #225599;
 	font-weight: bold;
 	font-size: 11px;
@@ -404,7 +405,7 @@ hr.dashed {
 }
 
 .forumline .row-header, .forumlinenb .row-header {
-	background: #c8c8c8 url('bg_th.gif');
+	/*background: #c8c8c8 url('bg_th.gif');*/
 	border: solid 1px #ffffff;
 	border-right-color: #dddddd;
 	border-bottom-color: #dddddd;

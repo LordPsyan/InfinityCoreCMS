@@ -247,7 +247,7 @@ elseif (($install_step == 1) || ($admin_pass1 != $admin_pass2) || empty($admin_p
 
 	$upgrade_option = '';
 	$page_framework->page_header($lang['Welcome_install'], $instruction_text);
-	$page_framework->setup_form($error, $lang_select, $dbms_select, $upgrade_option, $dbhost, $dbname, $dbaname, $dbuser, $dbpasswd, $table_prefix, $board_email, $server_name, $server_port, $script_path, $admin_name, $admin_pass1, $admin_pass2, $language, $s_hidden_fields);
+	$page_framework->setup_form($error, $lang_select, $dbms_select, $upgrade_option, $dbhost, $dbname, $dbaname, $dbcname, $dbwname, $dbuser, $dbpasswd, $table_prefix, $board_email, $server_name, $server_port, $script_path, $admin_name, $admin_pass1, $admin_pass2, $language, $s_hidden_fields);
 	$page_framework->page_footer();
 	exit;
 }
@@ -424,6 +424,8 @@ else
 		$config_data .= '$dbhost = \'' . $dbhost . '\';' . "\n";
 		$config_data .= '$dbname = \'' . $dbname . '\';' . "\n";
 		$config_data .= '$dbaname = \'' . $dbaname . '\';' . "\n";
+		$config_data .= '$dbcname = \'' . $dbcname . '\';' . "\n";
+		$config_data .= '$dbwname = \'' . $dbwname . '\';' . "\n";
 		$config_data .= '$dbuser = \'' . $dbuser . '\';' . "\n";
 		$config_data .= '$dbpasswd = \'' . $dbpasswd . '\';' . "\n\n";
 		$config_data .= '$table_prefix = \'' . $table_prefix . '\';' . "\n\n";

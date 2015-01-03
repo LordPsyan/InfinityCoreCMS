@@ -1396,7 +1396,7 @@ class ip_page
 		echo('	</table>' . "\n");
 	}
 
-	function setup_form($error, $lang_select, $dbms_select, $upgrade_option, $dbhost, $dbname, $dbaname, $dbuser, $dbpasswd, $table_prefix, $board_email, $server_name, $server_port, $script_path, $admin_name, $admin_pass1, $admin_pass2, $language, $hidden_fields)
+	function setup_form($error, $lang_select, $dbms_select, $upgrade_option, $dbhost, $dbname, $dbaname, $dbcname, $dbwname, $dbuser, $dbpasswd, $table_prefix, $board_email, $server_name, $server_port, $script_path, $admin_name, $admin_pass1, $admin_pass2, $language, $hidden_fields)
 	{
 		global $lang;
 
@@ -1455,7 +1455,7 @@ class ip_page
 		echo('	</tr>' . "\n");
 
 		echo('	<tr><th colspan="3">' . $lang['DB_config'] . '</th></tr>' . "\n");
-		echo('	<tr><td class="row1 row-center" rowspan="7" width="90"><img src="style/db_status.png" alt="' . $lang['DB_config'] . '" title="' . $lang['DB_config'] . '" /></td></tr>' . "\n");
+		echo('	<tr><td class="row1 row-center" rowspan="9" width="90"><img src="style/db_status.png" alt="' . $lang['DB_config'] . '" title="' . $lang['DB_config'] . '" /></td></tr>' . "\n");
 		echo('	<tr>' . "\n");
 		echo('		<td class="row1" align="right"><span class="gen">' . $lang['dbms'] . ': </span></td>' . "\n");
 		echo('		<td class="row2">' . $dbms_select . '</td>' . "\n");
@@ -1467,6 +1467,14 @@ class ip_page
 		echo('	<tr>' . "\n");
 		echo('		<td class="row1" align="right"><span class="gen">' . $lang['DB_AName'] . ': </span></td>' . "\n");
 		echo('		<td class="row2"><input type="text" class="post" name="dbaname" value="' . (($dbaname != '') ? $dbaname : '') . '" /></td>' . "\n");
+		echo('	</tr>' . "\n");
+		echo('	<tr>' . "\n");
+		echo('		<td class="row1" align="right"><span class="gen">' . $lang['DB_CName'] . ': </span></td>' . "\n");
+		echo('		<td class="row2"><input type="text" class="post" name="dbcname" value="' . (($dbcname != '') ? $dbcname : '') . '" /></td>' . "\n");
+		echo('	</tr>' . "\n");
+		echo('	<tr>' . "\n");
+		echo('		<td class="row1" align="right"><span class="gen">' . $lang['DB_WName'] . ': </span></td>' . "\n");
+		echo('		<td class="row2"><input type="text" class="post" name="dbwname" value="' . (($dbwname != '') ? $dbwname : '') . '" /></td>' . "\n");
 		echo('	</tr>' . "\n");
 		echo('	<tr>' . "\n");
 		echo('		<td class="row1" align="right"><span class="gen">' . $lang['DB_Name'] . ': </span></td>' . "\n");
