@@ -361,6 +361,7 @@ INSERT INTO `phpbb_cms_blocks` (`bid`, `bs_id`, `block_cms_id`, `layout`, `layou
 INSERT INTO `phpbb_cms_blocks` (`bid`, `bs_id`, `block_cms_id`, `layout`, `layout_special`, `title`, `bposition`, `weight`, `active`, `border`, `titlebar`, `background`, `local`) VALUES(13, 13, 0, 1, 0, 'Wordgraph', 'b', 2, 1, 0, 0, 0, 1);
 INSERT INTO `phpbb_cms_blocks` (`bid`, `bs_id`, `block_cms_id`, `layout`, `layout_special`, `title`, `bposition`, `weight`, `active`, `border`, `titlebar`, `background`, `local`) VALUES(14, 14, 0, 1, 0, 'Welcome', 'c', 2, 1, 1, 1, 1, 1);
 INSERT INTO `phpbb_cms_blocks` (`bid`, `bs_id`, `block_cms_id`, `layout`, `layout_special`, `title`, `bposition`, `weight`, `active`, `border`, `titlebar`, `background`, `local`) VALUES(15, 15, 0, 1, 0, 'Shoutbox', 'n', 1, 1, 1, 1, 1, 1);
+INSERT INTO `phpbb_cms_blocks` (`bid`, `bs_id`, `block_cms_id`, `layout`, `layout_special`, `title`, `bposition`, `weight`, `active`, `border`, `titlebar`, `background`, `local`) VALUES(16, 16, 0, 1, 0, 'Realm Status', 'r', 2, 1, 1, 1, 1, 1);
 
 ## `phpbb_cms_config`
 ##
@@ -388,6 +389,15 @@ INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALU
 INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (21, 11, 'md_links_code', '1');
 INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (22, 13, 'md_wordgraph_words', '250');
 INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (23, 13, 'md_wordgraph_count', '1');
+INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (24, 16, 'rs_config_name', 'Realms of Warcraft');
+INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (25, 16, 'rs_config_port', '8085');
+INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (26, 16, 'rs_config_realmlist', 'logon.realmsofwarcraft.com');
+INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (27, 16, 'rs_config_db', 'characters');
+INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (28, 16, 'rs_config_border', 'red');
+INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (29, 16, 'rs_config_max_online', '10');
+INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (30, 16, 'rs_config_graph_fill', '#2fa4f3');
+INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (31, 16, 'rs_config_right_border', '#6cc02c');
+INSERT INTO `phpbb_cms_config` (`id`, `bid`, `config_name`, `config_value`) VALUES (32, 16, 'rs_config_source', '8.38.76.204');
 
 ## `phpbb_cms_layout`
 ##
