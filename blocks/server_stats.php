@@ -39,7 +39,8 @@ $memb = mysql_result($sqlquery,0,0);
 
 $port=$cms_config_vars['rs_config_port'][$block_id];
 function test_serv($port){
-    $source = "8.38.76.204";
+    global $lang, $template, $board_config, $config, $cms_config_vars, $block_id;
+    $source = $cms_config_vars['rs_config_source'][$block_id];
 	$s = @fsockopen($source, $port, $ERROR_NO, $ERROR_STR,(float)0.5);
 	if($s){@fclose($s);return true;} else return false;
 	}
