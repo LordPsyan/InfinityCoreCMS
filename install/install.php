@@ -429,6 +429,26 @@ else
 		$config_data .= '$dbuser = \'' . $dbuser . '\';' . "\n";
 		$config_data .= '$dbpasswd = \'' . $dbpasswd . '\';' . "\n\n";
 		$config_data .= '$table_prefix = \'' . $table_prefix . '\';' . "\n\n";
+		$config_data .= '######################################################' . "\n";
+		$config_data .= '# Realm Configuration' . "\n";
+		$config_data .= '#  - You can have unlimited amount of realms' . "\n";
+		$config_data .= '#  - Example: (X represents number 1 -> infinity)' . "\n";
+		$config_data .= '#' . "\n";
+		$config_data .= '#  //Server no.X' . "\n";
+		$config_data .= '#  $realm[X] = array(' . "\n";
+		$config_data .= '#  "name" => "Realm Name",' . "\n";
+		$config_data .= '#  "port" => "8085",' . "\n";
+		$config_data .= '#  "port_ra" => "3443",' . "\n";
+		$config_data .= '#  "db"   => "realm_database"' . "\n";
+		$config_data .= '#  );' . "\n";
+		$config_data .= '######################################################' . "\n\n";
+		$config_data .= '$realm[1] = array(' . "\n";
+		$config_data .= '"name" => "Realms of Warcraft",' . "\n";
+		$config_data .= '"port" => "8085",' . "\n";
+		$config_data .= '"port_ra" => "3443",' . "\n";
+		$config_data .= '"realmlist" => "logon.realmsofwarcraft.com",' . "\n";
+		$config_data .= '"db" => "characters",' . "\n";
+		$config_data .= ');' . "\n\n";
 		$config_data .= 'define(\'IP_INSTALLED\', true);' . "\n\n";
 		$config_data .= '?' . '>';
 
