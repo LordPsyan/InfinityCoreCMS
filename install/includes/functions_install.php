@@ -2902,16 +2902,16 @@ class ip_page
 				$phpbb_string = $lang['phpBB_Version_NotUpToDate'] . '<br /><br />';
 			}
 
-			$ip_string = $lang['IcyPhoenix_Version_NotUpToDate'] . '<br /><br />';
+			$ip_string = $lang['InfinityCore_Version_NotUpToDate'] . '<br /><br />';
 			if ($current_ip_version == $lang['NotInstalled'])
 			{
-				$ip_string = $lang['IcyPhoenix_Version_NotInstalled'] . '<br /><br />';
+				$ip_string = $lang['InfinityCore_Version_NotInstalled'] . '<br /><br />';
 			}
 		}
 
 		if ($needs_update == false)
 		{
-			$box_message = $lang['IcyPhoenix_Version_UpToDate'];
+			$box_message = $lang['InfinityCore_Version_UpToDate'];
 			$this->box('green', 'green', $box_message);
 		}
 		elseif (($needs_update == true) && version_compare($current_ip_version, '1.2.9.36', '<') && !defined('IP_DB_UPDATE'))
@@ -2955,7 +2955,7 @@ class ip_page
 		$table_update_options .= '<li><a href="' . ip_functions::append_sid(THIS_FILE . '?mode=fix_forums' . $lang_append) . '"><span class="text_orange">' . $lang['FixForums'] . '</span></a><br /><br /></li>' . "\n";
 		$table_update_options .= '<li><a href="' . ip_functions::append_sid(THIS_FILE . '?mode=fix_posts' . $lang_append) . '"><span class="text_orange">' . $lang['Remove_BBCodeUID'] . '</span></a><br /><br /></li>' . "\n";
 		$table_update_options .= '<li><a href="' . ip_functions::append_sid(THIS_FILE . '?mode=update' . $lang_append) . '"><span class="text_orange">' . $lang['Merge_PostsTables'] . '</span></a><br /><br /></li>' . "\n";
-		$table_update_options .= '<li><a href="' . ip_functions::append_sid(THIS_FILE . '?mode=update' . $lang_append) . '"><span class="text_orange">' . $lang['Update_IcyPhoenix'] . '</span></a><br /><br /></li>' . "\n";
+		$table_update_options .= '<li><a href="' . ip_functions::append_sid(THIS_FILE . '?mode=update' . $lang_append) . '"><span class="text_orange">' . $lang['Update_InfinityCore'] . '</span></a><br /><br /></li>' . "\n";
 		$table_update_options .= '<li><span class="text_red">' . $lang['Upload_NewFiles'] . '</span><br /><br /></li>' . "\n";
 		$table_update_options .= '<li><a href="' . ip_functions::append_sid(THIS_FILE . '?mode=fix_constants' . $lang_append) . '"><span class="text_orange">' . $lang['Adjust_Config'] . '</span></a><br /><br /></li>' . "\n";
 		$table_update_options .= '<li><a href="' . ip_functions::append_sid(THIS_FILE . '?mode=fix_constants' . $lang_append) . '"><span class="text_orange">' . $lang['Adjust_CMSPages'] . '</span></a><br /><br /></li>' . "\n";

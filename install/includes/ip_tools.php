@@ -42,7 +42,7 @@ switch ($mode_test)
 {
 	case 'chmod':
 
-		$page_framework->page_header($lang['IcyPhoenix'], '', false, false);
+		$page_framework->page_header($lang['InfinityCore'], '', false, false);
 		echo('<br /><br />' . "\n");
 		$box_message = $lang['UpdateInProgress'];
 		$page_framework->box('yellow', 'red', $box_message);
@@ -67,7 +67,7 @@ switch ($mode_test)
 
 	case 'clean_old_files':
 
-		$page_framework->page_header($lang['IcyPhoenix'], '', false, false);
+		$page_framework->page_header($lang['InfinityCore'], '', false, false);
 		echo('<br /><br />' . "\n");
 		if ($action == 'clean')
 		{
@@ -123,7 +123,7 @@ switch ($mode_test)
 				$meta_refresh = '<meta http-equiv="refresh" content="3;url=' . $ip_functions->append_sid($tmp_url) . '">';
 			}
 
-			$page_framework->page_header($lang['IcyPhoenix'], '', false, false, false, false, $meta_refresh);
+			$page_framework->page_header($lang['InfinityCore'], '', false, false, false, false, $meta_refresh);
 			echo('<br /><br />' . "\n");
 
 			echo('<br /><br />' . "\n");
@@ -145,7 +145,7 @@ switch ($mode_test)
 		}
 		else
 		{
-			$page_framework->page_header($lang['IcyPhoenix'], '', false, false);
+			$page_framework->page_header($lang['InfinityCore'], '', false, false);
 			echo('<br /><br />' . "\n");
 			$box_message = $lang['ActionUndone'];
 			$page_framework->box('red', 'red', $box_message);
@@ -165,7 +165,7 @@ switch ($mode_test)
 
 	case 'fix_constants':
 
-		$page_framework->page_header($lang['IcyPhoenix'], '', false, false);
+		$page_framework->page_header($lang['InfinityCore'], '', false, false);
 		echo('<br /><br />' . "\n");
 		if (substr($action, 0, 3) == 'fix')
 		{
@@ -200,7 +200,7 @@ switch ($mode_test)
 
 	case 'fix_forums':
 
-		$page_framework->page_header($lang['IcyPhoenix'], '', false, false);
+		$page_framework->page_header($lang['InfinityCore'], '', false, false);
 		echo('<br /><br />' . "\n");
 		if (substr($action, 0, 3) == 'fix')
 		{
@@ -255,7 +255,7 @@ switch ($mode_test)
 				$meta_refresh = '<meta http-equiv="refresh" content="3;url=' . $ip_functions->append_sid($tmp_url) . '">';
 			}
 
-			$page_framework->page_header($lang['IcyPhoenix'], '', false, false, false, false, $meta_refresh);
+			$page_framework->page_header($lang['InfinityCore'], '', false, false, false, false, $meta_refresh);
 			echo('<br /><br />' . "\n");
 
 			echo('<br /><br />' . "\n");
@@ -277,7 +277,7 @@ switch ($mode_test)
 		}
 		else
 		{
-			$page_framework->page_header($lang['IcyPhoenix'], '', false, false);
+			$page_framework->page_header($lang['InfinityCore'], '', false, false);
 			echo('<br /><br />' . "\n");
 			$box_message = $lang['ActionUndone'];
 			$page_framework->box('red', 'red', $box_message);
@@ -332,7 +332,7 @@ switch ($mode_test)
 				$meta_refresh = '<meta http-equiv="refresh" content="3;url=' . $ip_functions->append_sid($tmp_url) . '">';
 			}
 
-			$page_framework->page_header($lang['IcyPhoenix'], '', false, false, false, false, $meta_refresh);
+			$page_framework->page_header($lang['InfinityCore'], '', false, false, false, false, $meta_refresh);
 			echo('<br /><br />' . "\n");
 
 			echo('<br /><br />' . "\n");
@@ -358,7 +358,7 @@ switch ($mode_test)
 		}
 		else
 		{
-			$page_framework->page_header($lang['IcyPhoenix'], '', false, false);
+			$page_framework->page_header($lang['InfinityCore'], '', false, false);
 			echo('<br /><br />' . "\n");
 			$box_message = $lang['ActionUndone'];
 			$page_framework->box('red', 'red', $box_message);
@@ -398,7 +398,7 @@ switch ($mode_test)
 				$meta_refresh = '<meta http-equiv="refresh" content="3;url=' . $ip_functions->append_sid($tmp_url) . '">';
 			}
 
-			$page_framework->page_header($lang['IcyPhoenix'], '', false, false, false, false, $meta_refresh);
+			$page_framework->page_header($lang['InfinityCore'], '', false, false, false, false, $meta_refresh);
 			echo('<br /><br />' . "\n");
 
 			echo('<br /><br />' . "\n");
@@ -420,7 +420,7 @@ switch ($mode_test)
 		}
 		else
 		{
-			$page_framework->page_header($lang['IcyPhoenix'], '', false, false);
+			$page_framework->page_header($lang['InfinityCore'], '', false, false);
 			echo('<br /><br />' . "\n");
 			$box_message = $lang['ActionUndone'];
 			$page_framework->box('red', 'red', $box_message);
@@ -457,7 +457,7 @@ switch ($mode_test)
 				$meta_refresh = '<meta http-equiv="refresh" content="3;url=' . $ip_functions->append_sid($tmp_url) . '">';
 			}
 
-			$page_framework->page_header($lang['IcyPhoenix'], '', false, false, false, false, $meta_refresh);
+			$page_framework->page_header($lang['InfinityCore'], '', false, false, false, false, $meta_refresh);
 			echo('<br /><br />' . "\n");
 
 			echo('<br /><br />' . "\n");
@@ -479,7 +479,7 @@ switch ($mode_test)
 		}
 		else
 		{
-			$page_framework->page_header($lang['IcyPhoenix'], '', false, false);
+			$page_framework->page_header($lang['InfinityCore'], '', false, false);
 			echo('<br /><br />' . "\n");
 			$box_message = $lang['ActionUndone'];
 			$page_framework->box('red', 'red', $box_message);
@@ -498,7 +498,7 @@ switch ($mode_test)
 
 	case 'update_phpbb':
 
-		$page_framework->page_header($lang['IcyPhoenix'], '', false, false);
+		$page_framework->page_header($lang['InfinityCore'], '', false, false);
 		echo('<br /><br />' . "\n");
 		$box_message = $lang['UpdateInProgress'];
 		$page_framework->box('yellow', 'red', $box_message);
@@ -512,7 +512,7 @@ switch ($mode_test)
 
 	case 'update':
 
-		$page_framework->page_header($lang['IcyPhoenix'], '', false, false);
+		$page_framework->page_header($lang['InfinityCore'], '', false, false);
 		echo('<br /><br />' . "\n");
 		$box_message = $lang['UpdateInProgress'];
 		$page_framework->box('yellow', 'red', $box_message);
@@ -548,7 +548,7 @@ switch ($mode_test)
 		{
 			empty_cache_folders();
 		}
-		$page_framework->table_begin($lang['IcyPhoenix'] . ' - ' . $lang['UpdateInProgress'], 'row-post');
+		$page_framework->table_begin($lang['InfinityCore'] . ' - ' . $lang['UpdateInProgress'], 'row-post');
 		echo('<div class="post-text">' . "\n");
 		echo('<b>' . $lang['DBUpdate_Errors'] . ':</b><br />' . "\n");
 		$page_framework->spoiler('sql_error', '<ul>' . $sql_results_error . '</ul>' . "\n");
@@ -566,7 +566,7 @@ switch ($mode_test)
 
 	default:
 
-		$page_framework->page_header($lang['IcyPhoenix'], '', false, false);
+		$page_framework->page_header($lang['InfinityCore'], '', false, false);
 		$page_framework->output_lang_select(THIS_FILE, true);
 		$page_framework->stats_box($current_ip_version, $current_phpbb_version);
 		$page_framework->box_upgrade_info();
