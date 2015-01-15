@@ -449,9 +449,31 @@ else
 		$config_data .= '"realmlist" => "logon.realmsofwarcraft.com",' . "\n";
 		$config_data .= '"db" => "characters",' . "\n";
 		$config_data .= ');' . "\n\n";
+		$config_data .= '######################################################' . "\n";
+		$config_data .= '# Vote Settings' . "\n";
+		$config_data .= '#  - You can have unlimited amount of vote urls' . "\n";
+		$config_data .= '#  - Images for vote are stored in:' . "\n";
+		$config_data .= '#  - htdocs/styles/<yourstyle>/images/<votenumber>.jpg' . "\n";
+		$config_data .= '#  Example with 3 vote urls:' . "\n";
+		$config_data .= '#' . "\n";
+		$config_data .= '#  $voteurls = array(' . "\n";
+		$config_data .= '#  1 => "http://vote_url_1",' . "\n";
+		$config_data .= '#  2 => "http://vote_url_2",' . "\n";
+		$config_data .= '#  3 => "http://vote_url_3"' . "\n";
+		$config_data .= '#  );"' . "\n";
+		$config_data .= '######################################################' . "\n";
+		$config_data .= '$voteurls = array(' . "\n";
+		$config_data .= '1 => "http://www.xtremetop100.com/in.php?site=1132334058",' . "\n";
+		$config_data .= '2 => "http://www.jagtoplist.com/in.php?site=17764",' . "\n";
+		$config_data .= '3 => "http://www.gamesitestop100.com/in.php?site=19646",' . "\n";
+		$config_data .= '4 => "http://www.gtop100.com/in.php?site=71864",' . "\n";
+		$config_data .= '5 => "http://www.mmorpgtop200.com/in.php?site=10401",' . "\n";
+		$config_data .= '6 => "http://www.mmorpgtoplist.com/in.php?site=55192",' . "\n";
+		$config_data .= '7 => "http://topg.org/in-353812",' . "\n";
+		$config_data .= '8 => "http://www.top100arena.com/in.asp?id=77664",' . "\n";
+		$config_data .= ');' . "\n\n";
 		$config_data .= 'define(\'IP_INSTALLED\', true);' . "\n\n";
 		$config_data .= '?' . '>';
-
 		@umask(0111);
 		$no_open = false;
 
