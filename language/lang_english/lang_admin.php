@@ -1087,10 +1087,10 @@ $lang = array_merge($lang, array(
 
 	'Php_Info_Explain' => 'This page lists information on the version of PHP installed on this server. It includes details of loaded modules, available variables and default settings. This information may be useful when diagnosing problems. Please be aware that some hosting companies will limit what information is displayed here for security reasons. You are advised to not give out any details on this page except when asked for by support or other Team Member on the support forums.',
 
-	'IcyPhoenix_Main' => 'InfinityCoreCMS Home Page',
-	'IcyPhoenix_Download' => 'InfinityCoreCMS Download',
-	'IcyPhoenix_Code_Changes' => 'Code Changes Mod',
-	'IcyPhoenix_Updates' => 'InfinityCoreCMS Updates',
+	'InfinityCoreCMS_Main' => 'InfinityCoreCMS Home Page',
+	'InfinityCoreCMS_Download' => 'InfinityCoreCMS Download',
+	'InfinityCoreCMS_Code_Changes' => 'Code Changes Mod',
+	'InfinityCoreCMS_Updates' => 'InfinityCoreCMS Updates',
 	'PhpBB_Upgrade' => 'phpBB Upgrade',
 	'Header_Welcome' => 'Welcome to InfinityCoreCMS Administration Control Panel',
 

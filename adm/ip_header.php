@@ -72,7 +72,7 @@ if(!empty($check_update))
 	}
 	else
 	{
-		$fsock = @fsockopen('www.icyphoenix.com', 80, $errno, $errstr, 15);
+		$fsock = @fsockopen('www.infinitycore.info', 80, $errno, $errstr, 15);
 		if ($errstr)
 		{
 			$version_info = '<span class="text_red">' . sprintf($lang['Connect_socket_error_ip'], $errstr) . '</span>';
@@ -105,10 +105,10 @@ $template->assign_vars(array(
 	'U_CMS' => append_sid('../cms.' . PHP_EXT),
 	'U_CACHE_CLEAR' => append_sid('admin_board_clearcache.' . PHP_EXT . '?pane=right'),
 
-	'U_IP_MAIN' => '<a href="http://www.icyphoenix.com" target="_blank">' . $lang['IcyPhoenix_Main'] . '</a>',
-	'U_IP_DOWNLOAD' => '<a href="http://www.icyphoenix.com/dload.php" target="_blank">' . $lang['IcyPhoenix_Download'] . '</a>',
-	'U_IP_CODE_CHANGES' => '<a href="http://www.icyphoenix.com/" target="_blank">' . $lang['IcyPhoenix_Code_Changes'] . '</a>',
-	'U_IP_UPGRADE' => '<a href="http://www.icyphoenix.com/forum.php" target="_blank">' . $lang['IcyPhoenix_Updates'] . '</a>',
+	'U_IP_MAIN' => '<a href="http://www.infinitycore.info" target="_blank">' . $lang['InfinityCoreCMS_Main'] . '</a>',
+	'U_IP_DOWNLOAD' => '<a href="http://www.infinitycore.info/dload.php" target="_blank">' . $lang['InfinityCoreCMS_Download'] . '</a>',
+	'U_IP_CODE_CHANGES' => '<a href="http://www.infinitycore.info/" target="_blank">' . $lang['InfinityCoreCMS_Code_Changes'] . '</a>',
+	'U_IP_UPGRADE' => '<a href="http://www.infinitycore.info/forum.php" target="_blank">' . $lang['InfinityCoreCMS_Updates'] . '</a>',
 	'U_PHPBB_UPGRADE' => '<a href="http://www.phpbb.com/" target="_blank">' . $lang['PhpBB_Upgrade'] . '</a>',
 	)
 );
